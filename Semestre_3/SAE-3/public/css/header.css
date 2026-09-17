@@ -1,0 +1,317 @@
+/* ====================================
+   HEADER - Navigation principale
+   ==================================== */
+
+.navbar {
+    background-color: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    color: var(--primary-color);
+}
+
+/* Logo */
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-cine {
+    width: 80px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+    background-color: rgba(175, 17, 25, 0.849);
+}
+
+/* Boutons de connexion/inscription */
+.btn-login,
+.btn-register {
+    padding: 10px 20px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease;
+}
+
+.btn-login {
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+}
+
+.btn-login:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+.btn-register {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-register:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Menu utilisateur connecté */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.username {
+    color: var(--text-gray);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-menu img {
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.btn-logout {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid var(--text-gray);
+    border-radius: 6px;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-logout:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: rgba(229, 9, 20, 0.1);
+}
+
+/* Bandeau d'information système */
+.system-banner {
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.system-banner.ajout {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #000;
+}
+
+.system-banner.vote {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+}
+
+.system-banner.resultats {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+    color: #fff;
+}
+
+.system-banner a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.system-banner a:hover {
+    color: #f0f0f0;
+}
+
+/* BANNIERE COOKIES */
+
+#cookie-notice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#cookie-notice p {
+    margin: 0 0 15px 0;
+    font-size: 0.95em;
+}
+
+#cookie-notice strong {
+    color: #667eea;
+}
+
+#cookie-notice a {
+    color: #667eea;
+    text-decoration: underline;
+}
+
+#cookie-notice a:hover {
+    color: #8b9aff;
+}
+
+.cookie-notice-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.cookie-notice-btn:hover {
+    background: #5568d3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #cookie-notice {
+        padding: 15px;
+    }
+
+    #cookie-notice p {
+        font-size: 0.9em;
+    }
+
+    .cookie-notice-btn {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .nav-container {
+        padding: 0 20px;
+    }
+    
+    .nav-links {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    .logo-icon {
+        font-size: 28px;
+    }
+    
+    .user-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+    
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links a {
+        width: 100%;
+        display: block;
+    }
+}

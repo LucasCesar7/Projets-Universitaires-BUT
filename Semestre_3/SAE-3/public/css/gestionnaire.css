@@ -1,0 +1,194 @@
+h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 30px;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(201, 164, 84, 0.5);
+}
+
+.table {
+    width: 95%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-family: var(--font-main);
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.table thead {
+    background: var(--secondary-color);
+}
+
+.table th {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--dark-color);
+}
+
+.table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.table td {
+    padding: 15px;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+.table img {
+    width: 90px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.btn-success {
+    background-color: #1B8E3C;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #146E2E;
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #a12525;
+}
+
+table input[type="text"] {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--secondary-color);
+    background: var(--light-color);
+    width: 90%;
+    margin-top: 5px;
+}
+
+table input[type="text"]:focus {
+    outline: 2px solid var(--secondary-color);
+}
+
+.table td.actions {
+    display: flex;
+    flex-direction: column; /* super important */
+    gap: 10px;
+}
+
+/* ----- RESPONSIVE MODE (≤ 1200px) ----- */
+@media (max-width: 1200px) {
+
+    /* On enlève l’en-tête du tableau */
+    .table thead {
+        display: none;
+    }
+
+    /* Chaque ligne devient une carte verticale */
+    .table tr {
+        display: block;
+        margin: 20px 0;
+        background: var(--dark-color);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(0,0,0,0.5);
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Les cellules s’empilent */
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px;
+        font-size: 0.95rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Dernière cellule sans bordure */
+    .table td:last-child {
+        border-bottom: none;
+    }
+
+    /* Ajout du label dynamique */
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: var(--secondary-color);
+        text-transform: uppercase;
+        margin-right: 10px;
+        flex-shrink: 0;
+    }
+
+    /* Image centrée et plus grande */
+    .table img {
+        width: 140px;
+        height: 200px;
+        margin: 0 auto 15px;
+        display: block;
+    }
+
+    /* Mise à jour des inputs */
+    table input[type="text"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Boutons en pleine largeur */
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+        .table td.actions {
+        display: flex !important;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        border-bottom: none;
+    }
+
+    /* On empêche les boutons de s'étirer */
+    .table td.actions .btn {
+        width: auto;
+        align-self: flex-start;
+    }
+
+    /* Le formulaire doit rester compact */
+    .table td.actions form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Le champ motif reste propre */
+    .table td.actions input[type="text"] {
+        width: 100%;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,81 @@
+.admin-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.admin-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colonnes */
+    gap: 20px;
+    /* espace entre les cards */
+    padding: 40px;
+}
+
+.admin-card {
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    width: 90%;
+}
+
+.admin-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.admin-card h3 {
+    margin: 0;
+    padding: 15px;
+    background-color: #34495e;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.admin-card p {
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.admin-card a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #48545f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 40%;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2e465a;
+}
+
+@media (max-width: 900px) {
+    .admin-menu {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}

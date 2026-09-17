@@ -1,0 +1,544 @@
+/* STYLES POUR LA PAGE CONTACT - SOCIAL MEDIA AWARDS */
+
+/* Variables CSS pour la charte graphique */
+:root {
+    --principal: #4FBDAB;
+    --principal-dark: #45a999;
+    --secondary: #FF5A79;
+    --tertiary: #FFD166;
+    --white: #ffffff;
+    --dark: #2c3e50;
+    --gray: #6c757d;
+    --light-gray: #f8f9fa;
+}
+
+/* RESET ET CONFIGURATION GÉNÉRALE*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.main-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* SECTION HERO - PLEINE LARGEUR SANS ESPACE*/
+
+/**
+ * Section Hero principale sans marges latérales et sans espace avec le header
+ * @description Utilise un dégradé et compense l'espace du header fixe
+ */
+.contact-hero {
+    background: linear-gradient(135deg, var(--principal) 0%, #3da895 100%);
+    color: white;
+    padding: 140px 0 80px; /* Compensation pour le header fixe */
+    text-align: center;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: -80px; /* Compense l'espace du header */
+    box-sizing: border-box;
+}
+
+/**
+ * Container pour le contenu du Hero
+ * @description Centre le contenu tout en laissant le fond en pleine largeur
+ */
+.contact-hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--white);
+    opacity: 0.95;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+}
+
+/* SECTION PRINCIPALE DE CONTACT */
+
+.contact-section {
+    padding: 80px 0;
+    background: var(--light-gray);
+}
+
+/**
+ * Container principal pour le contenu
+ * @description Limite la largeur du contenu tout en maintenant le responsive
+ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* GRILLE DE CONTACT*/
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/*FORMULAIRE DE CONTACT*/
+
+.contact-form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-form-container:hover {
+    transform: translateY(-5px);
+}
+
+.contact-form-container h2 {
+    color: var(--dark);
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.form-description {
+    color: var(--gray);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: var(--dark);
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--principal);
+    box-shadow: 0 0 0 3px rgba(79, 189, 171, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-button {
+    background: var(--principal);
+    color: white;
+    border: none;
+    padding: 18px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background: var(--principal-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(79, 189, 171, 0.3);
+}
+
+/*INFORMATIONS DE CONTACT */
+
+.contact-info-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    transition: transform 0.3s ease;
+}
+
+.contact-info-container:hover {
+    transform: translateY(-5px);
+}
+
+.contact-info-container h2 {
+    color: var(--dark);
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.info-description {
+    color: var(--gray);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-method:hover {
+    border-color: var(--principal);
+    background: rgba(79, 189, 171, 0.05);
+}
+
+.method-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--principal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.contact-method:hover .method-icon {
+    transform: scale(1.1);
+}
+
+.method-icon i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.method-content h3 {
+    color: var(--dark);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.method-content p {
+    color: var(--dark);
+    margin-bottom: 5px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.method-content span {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/*  LIENS SOCIAUX */
+
+.social-contact h3 {
+    color: var(--dark);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(79, 189, 171, 0.1);
+    border-radius: 50%;
+    color: var(--principal);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: var(--principal);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/*  SECTION FAQ */
+
+.faq-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 50px;
+}
+
+.faq-grid {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--principal);
+}
+
+.faq-question {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.faq-question h3 {
+    color: var(--dark);
+    font-size: 1.1rem;
+    margin: 0;
+    flex: 1;
+}
+
+.faq-question i {
+    color: var(--principal);
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 0 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: var(--light-gray);
+}
+
+.faq-answer p {
+    color: var(--gray);
+    line-height: 1.6;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.faq-item.active .faq-question {
+    background: var(--principal);
+}
+
+.faq-item.active .faq-question h3 {
+    color: white;
+}
+
+.faq-item.active .faq-question i {
+    color: white;
+    transform: rotate(180deg);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 0 25px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-form-container,
+.contact-info-container {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.contact-form-container {
+    animation-delay: 0.1s;
+}
+
+.contact-info-container {
+    animation-delay: 0.2s;
+}
+
+/* DESIGN RESPONSIVE - TABLETTES */
+
+@media (max-width: 968px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .contact-hero {
+        padding: 120px 0 60px; /* Ajustement pour mobile */
+        margin-top: -70px; /* Compensation header mobile */
+    }
+    
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* DESIGN RESPONSIVE - TÉLÉPHONES MOBILES*/
+
+@media (max-width: 768px) {
+    .contact-hero {
+        padding: 100px 0 50px;
+    }
+    
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-section,
+    .faq-section {
+        padding: 60px 0;
+    }
+    
+    .contact-form-container,
+    .contact-info-container {
+        padding: 30px 25px;
+    }
+    
+    .faq-section h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-hero .container,
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/*  DESIGN RESPONSIVE - PETITS TÉLÉPHONES */
+
+@media (max-width: 480px) {
+    .contact-hero {
+        padding: 90px 0 40px;
+        margin-top: -60px; /* Compensation header mobile petit */
+    }
+    
+    .contact-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-hero p {
+        font-size: 1rem;
+    }
+    
+    .contact-form-container,
+    .contact-info-container {
+        padding: 25px 20px;
+    }
+    
+    .contact-method {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .method-icon {
+        align-self: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .faq-question {
+        padding: 20px;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+    
+    .contact-hero .container,
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* GRANDS ÉCRANS*/
+
+@media (min-width: 1400px) {
+    .contact-hero .container,
+    .container {
+        max-width: 1300px;
+    }
+    
+    .contact-grid {
+        gap: 80px;
+    }
+}

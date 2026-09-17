@@ -1,0 +1,366 @@
+/* Reset et variables CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --principal: #4fbdab;
+  --white-background: #fff;
+  --text-dark: #2e2e2e;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  line-height: 1.6;
+  padding-top: 80px;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Navigation principale */
+.navbar {
+  padding: 12px 5%;
+  background: #ffffff;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  opacity: 0.98;
+  box-shadow: var(--shadow);
+}
+
+/* Logo et texte */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-logo .logo {
+  width: 80px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--principal, #4fbdab);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.logo-text::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--principal, #4fbdab),
+    transparent
+  );
+  opacity: 0.7;
+}
+
+/* Menu de navigation */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+.navbar li {
+  margin: 0;
+  position: relative;
+}
+
+.navbar a {
+  color: #2e2e2e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  display: block;
+}
+
+.navbar a:hover {
+  color: #4fbdab;
+  background-color: rgba(79, 189, 171, 0.15);
+  text-shadow: 0 0 8px rgba(79, 189, 171, 0.7);
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4fbdab;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Boutons de connexion/inscription */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.signup-button {
+  display: flex;
+  height: 48px;
+  padding: 12px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: var(--principal, #4fbdab);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup-button:hover {
+  background: #3da895;
+  transform: translateY(-2px);
+}
+
+.login-button {
+  display: flex;
+  height: 48px;
+  padding: 12px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 2px solid var(--principal, #4fbdab);
+  background: var(--white-background, #fff);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--principal, #4fbdab);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.login-button:hover {
+  background: rgba(79, 189, 171, 0.1);
+  transform: translateY(-2px);
+}
+
+.logout-button {
+  display: flex;
+  height: 48px;
+  padding: 12px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 2px solid var(--principal, #4fbdab);
+  background: var(--white-background, #fff);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--principal, #4fbdab);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.logout-button:hover {
+  background: rgba(79, 189, 171, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Menu hamburger pour mobile */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+  z-index: 1001;
+}
+
+.nav-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #2e2e2e;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+/* Animation du menu hamburger */
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+.main-content {
+  padding: 40px 5%;
+  min-height: calc(100vh - 160px);
+}
+
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 12px 4%;
+  }
+  
+  .navbar ul {
+    gap: 10px;
+  }
+  
+  .navbar a {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+  
+  .logo-text {
+    font-size: 1.4rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .navbar {
+    padding: 10px 4%;
+  }
+
+
+  .navbar ul {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(13, 13, 13, 0.98);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    transition: left 0.3s ease;
+    gap: 30px;
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar ul.active {
+    left: 0;
+  }
+
+  .navbar a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 25px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .navbar a:hover {
+    color: #4fbdab;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+  
+  .logo-text {
+    font-size: 1.3rem;
+  }
+  
+  .nav-logo .logo {
+    width: 60px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 3%;
+  }
+  
+  .logo-text {
+    font-size: 1.1rem;
+  }
+  
+  .nav-logo .logo {
+    width: 50px;
+  }
+  
+  .navbar ul {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+  
+  body {
+    padding-top: 60px;
+  }
+  
+  .navbar a {
+    font-size: 1.1rem;
+    width: 180px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar {
+    padding: 12px 8%;
+  }
+}

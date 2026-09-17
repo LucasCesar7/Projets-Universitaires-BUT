@@ -1,0 +1,271 @@
+body {
+    font-family: var(--font-main);
+    background: var(--light-color);
+    color: var(--dark-color);
+    margin: 0;
+}
+
+main {
+    padding: var(--spacing);
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: var(--primary-color-title);
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 0.5rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing) 0;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+    background: var(--primary-color);
+    color: #fff;
+    font-family: var(--font-alt);
+}
+
+.table th,
+.table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.table tbody tr:nth-child(even) {
+    background: var(--light-color);
+}
+
+.table tbody tr:hover {
+    background: var(--tertiary-color);
+    transition: background 0.3s ease;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+    margin: 0.2rem;
+}
+
+.btn-primary {
+    background: var(--dark-gold-color);
+    color: #fff;
+    width: 130px;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+}
+
+.btn-success {
+    background: var(--green-color);
+    color: #fff;
+}
+
+.btn-success:hover {
+    background: var(--success-color);
+}
+
+.btn-danger {
+    background: var(--danger-color);
+    color: #fff;
+    width: 150px;
+}
+
+.btn-danger:hover {
+    background: var(--dark-pink-color);
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    color: var(--primary-color-title);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.modal-content form input {
+    width: 100%;
+    padding: 0.6rem;
+    margin: 0.5rem 0;
+    border: 1px solid var(--grey-color);
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+}
+
+.modal-content form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 4px rgba(4, 108, 246, 0.4);
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--grey-color);
+}
+
+.close:hover {
+    color: var(--dark-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1100px) {
+    main {
+        padding: calc(var(--spacing) * 0.75);
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+        border-left-width: 3px;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    /* Chaque ligne devient une boîte */
+    .table,
+    .table tbody,
+    .table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin: 1rem 0;
+        background: #fff;
+        padding: 1rem 1.25rem;
+        border-radius: var(--border-radius);
+        border: 1px solid var(--border-color);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        animation: fadeIn 0.3s ease;
+    }
+
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0.6rem 0;
+        font-size: 0.95rem;
+        border-bottom: 1px solid var(--light-color);
+        gap: 0.75rem;
+    }
+
+    .table td:last-child {
+        border-bottom: none;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: var(--primary-color-title);
+        min-width: 160px;          
+        margin-right: 0.5rem;
+        flex-shrink: 0;
+    }
+
+    .table tr:hover {
+        background: var(--tertiary-color);
+    }
+
+    .btn {
+        width: 100%;
+        margin: 0.3rem 0;
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    .btn-danger {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 92%;
+        max-width: 520px;
+        padding: 1.25rem;
+    }
+
+    .modal-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content form input {
+        font-size: 0.9rem;
+        padding: 0.55rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .table tr {
+        padding: 0.9rem 1rem;
+    }
+
+    .table td {
+        font-size: 0.9rem;
+        gap: 0.6rem;
+    }
+
+    .table td::before {
+        min-width: 130px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}

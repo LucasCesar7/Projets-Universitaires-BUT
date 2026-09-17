@@ -1,0 +1,42 @@
+# Fichiers de configuration sensibles
+/app/config/.env
+.env
+vendor/
+node_modules/
+*.log
+
+#scripts
+/app/scripts/
+
+# Fichiers système et éditeurs
+.DS_Store
+
+# IDEs et éditeurs
+.idea/
+.vscode/
+.project
+.settings/
+
+# Fichiers de base de données
+*.sql
+*.sqlite
+*.db
+
+# Fichiers de backup
+*.backup
+*.old
+
+
+# Documentation générée
+/docs/
+.phpdoc/
+data/cache/
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.rar
+
+#Tests
+

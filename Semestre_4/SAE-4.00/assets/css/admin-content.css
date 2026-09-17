@@ -1,0 +1,113 @@
+/* assets/css/admin-content.css */
+
+/* Conteúdo principal que respeita a sidebar */
+.admin-main-content {
+    margin-left: var(--sidebar-width);
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    transition: all 0.3s ease;
+}
+
+/* Quando a sidebar está colapsada (mobile) */
+.sidebar.active ~ .admin-main-content {
+    margin-left: 0;
+    position: relative;
+}
+
+/* Para desktop, mantém a margem */
+@media (min-width: 769px) {
+    .admin-main-content {
+        margin-left: var(--sidebar-width);
+    }
+}
+
+/* Para mobile, remove a margem quando sidebar está fechada */
+@media (max-width: 768px) {
+    .admin-main-content {
+        margin-left: 0;
+        padding-top: 80px; /* Espaço para o botão hamburger */
+    }
+    
+    .sidebar.active ~ .admin-main-content {
+        transform: translateX(var(--sidebar-width));
+        width: calc(100% - var(--sidebar-width));
+        overflow: hidden;
+    }
+    
+    .sidebar-toggle.active {
+        left: calc(var(--sidebar-width) + 20px);
+        transform: rotate(90deg);
+    }
+}
+
+/* Header fixo para mobile */
+.mobile-header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--dark);
+    color: white;
+    padding: 15px 20px;
+    z-index: 999;
+    box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .mobile-header h1 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    
+    .admin-main-content {
+        padding-top: 70px;
+    }
+}
+
+/* Classes utilitárias para padding */
+.content-padding {
+    padding: 20px;
+}
+
+.full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Container responsivo */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 968px) {
+    .admin-main-content {
+        margin-left: 220px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Responsividade para telefones */
+@media (max-width: 768px) {
+    .admin-main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+}

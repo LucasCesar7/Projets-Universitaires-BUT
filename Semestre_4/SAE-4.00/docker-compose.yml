@@ -1,0 +1,49 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PHP_VERSION: "8.5"
+    container_name: sma-web
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - config/.env
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+
+  db:
+    image: mysql:8.0.43
+    container_name: sma-db
+    env_file:
+      - config/.env
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./database/schema.sql:/docker-entrypoint-schema/schema.sql:ro
+      - ./docker/mysql/init/10-load-schema.sh:/docker-entrypoint-initdb.d/10-load-schema.sh:ro
+
+  phpmyadmin:
+    image: phpmyadmin:5-apache
+    container_name: sma-phpmyadmin
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - config/.env
+    ports:
+      - "8081:80"
+
+volumes:
+  mysql_data:

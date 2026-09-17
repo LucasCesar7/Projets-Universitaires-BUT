@@ -1,0 +1,14 @@
+<Files *>
+    # Bloquer accès HTTP direct
+    RewriteEngine On
+    RewriteCond %{HTTP_REFERER} !^$
+    RewriteCond %{REQUEST_URI} !image\.php [NC]
+    RewriteRule \.(jpg|jpeg|png|gif|webp|svg)$ - [F,L]
+</Files>
+
+# Bloquer l'indexation des dossiers
+Options -Indexes
+
+# Autoriser lecture des fichiers en interne (pour PHP)
+Order Allow,Deny
+Allow from all

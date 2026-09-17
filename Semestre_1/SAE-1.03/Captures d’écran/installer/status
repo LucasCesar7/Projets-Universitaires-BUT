@@ -1,0 +1,2631 @@
+Package: acpi-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: acpi-modules
+Depends: kernel-image-6.1.0-27-amd64-di
+Description: ACPI support modules
+
+Package: alsa-utils-udeb
+Status: install ok installed
+Version: 1.2.8-1
+Provides: audio-mixer
+Depends: libasound2-udeb (>= 1.2.8), libc6-udeb (>= 2.36)
+Description: Utilities for configuring and using ALSA (udeb)
+
+Package: anna
+Status: install ok installed
+Version: 1.91
+Depends: libc6-udeb (>= 2.36), libdebconfclient0-udeb (>= 0.269), libdebian-installer4-udeb (>= 0.124), cdebconf-udeb
+Description: anna's not nearly apt, but for the Debian installer, it will do
+
+Package: archdetect
+Status: install ok installed
+Version: 1.159
+Depends: libc6-udeb (>= 2.36), libdebian-installer4-udeb (>= 0.124)
+Description: Hardware architecture detector
+
+Package: ata-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: ata-modules
+Depends: kernel-image-6.1.0-27-amd64-di, scsi-core-modules-6.1.0-27-amd64-di
+Description: ATA disk modules
+
+Package: bogl-bterm-udeb
+Status: install ok unpacked
+Version: 0.1.18-20
+Depends: libc6-udeb (>= 2.34)
+Description: Ben's Own Graphics Library - graphical terminal
+
+Package: brltty-udeb
+Status: install ok installed
+Version: 6.5-7+deb12u1
+Depends: libasound2-udeb (>= 1.2.8), libc6-udeb (>= 2.36), libcap2-udeb (>= 1:2.63), libexpat1-udeb (>= 1.95.8), preseed-common
+Description: Access software for a blind person using a braille display
+Installer-Menu-Item: 1050
+
+Package: busybox-udeb
+Status: install ok installed
+Version: 1:1.35.0-4+b3
+Depends: libc6-udeb (>= 2.36)
+Description: Tiny utilities for the debian-installer
+
+Package: ca-certificates-udeb
+Status: install ok unpacked
+Version: 20230311
+Description: Common CA certificates - udeb
+
+Package: cdebconf-gtk-terminal
+Status: install ok unpacked
+Version: 0.43
+Provides: cdebconf-terminal
+Depends: cdebconf-gtk-udeb, fonts-dejavu-mono-udeb, libc6-udeb (>= 2.36), libglib2.0-udeb (>= 2.74.6), libgtk2.0-0-udeb (>= 2.24.0), libpango1.0-udeb (>= 1.50.12+ds), libvte9-udeb (>= 1:0.28.2), cdebconf-udeb
+Description: cdebconf gtk plugin displaying a terminal
+
+Package: cdebconf-gtk-udeb
+Status: install ok unpacked
+Version: 0.270
+Depends: cdebconf-udeb, libc6-udeb (>= 2.36), libcairo2-udeb (>= 1.16.0), libgdk-pixbuf-2.0-0-udeb (>= 2.42.10+dfsg), libglib2.0-udeb (>= 2.74.6), libgtk2.0-0-udeb (>= 2.24.0), libpango1.0-udeb (>= 1.50.12+ds), rootskel-gtk
+Description: Gtk+ frontend for Debian Configuration Management System
+
+Package: cdebconf-newt-terminal
+Status: install ok unpacked
+Version: 0.43
+Provides: cdebconf-terminal
+Depends: cdebconf-newt-udeb (>= 0.146), libc6-udeb (>= 2.36), libnewt0.52-udeb (>= 0.52.23)
+Description: cdebconf newt plugin to provide a clean terminal
+
+Package: cdebconf-newt-udeb
+Status: install ok unpacked
+Version: 0.270
+Depends: cdebconf-udeb, di-utils-terminfo, libc6-udeb (>= 2.36), libnewt0.52-udeb (>= 0.52.23), libslang2-udeb (>= 2.3.3), libtextwrap1-udeb (>= 0.1)
+Description: Newt frontend for Debian Configuration Management System
+
+Package: cdebconf-priority
+Status: install ok unpacked
+Version: 0.270
+Depends: cdebconf-udeb
+Description: Change debconf priority
+Installer-Menu-Item: 93000
+
+Package: cdebconf-text-udeb
+Status: install ok unpacked
+Version: 0.270
+Depends: cdebconf-udeb, libc6-udeb (>= 2.36), libreadline8-udeb
+Description: Plain text frontend for Debian Configuration Management System
+
+Package: cdebconf-udeb
+Status: install ok installed
+Version: 0.270
+Provides: debconf-2.0
+Depends: libc6-udeb (>= 2.36), libdebian-installer4-udeb (>= 0.124), libtextwrap1-udeb (>= 0.1)
+Description: Debian Configuration Management System (C-implementation)
+
+Package: cdrom-checker
+Status: install ok unpacked
+Version: 1.61
+Depends: cdrom-detect, cdebconf-udeb
+Description: Verify the cd contents
+Installer-Menu-Item: 94000
+
+Package: cdrom-core-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: cdrom-core-modules
+Depends: kernel-image-6.1.0-27-amd64-di, scsi-core-modules-6.1.0-27-amd64-di
+Description: CDROM support
+
+Package: cdrom-detect
+Status: install ok installed
+Version: 1.106
+Depends: cdebconf-udeb, hw-detect, di-utils
+Description: Detect CDROM devices and mount the CD
+Installer-Menu-Item: 1300
+
+Package: cdrom-retriever
+Status: install ok installed
+Version: 1.63
+Provides: retriever
+Depends: cdebconf-udeb, cdrom-detect
+Description: Fetch modules from a CDROM
+
+Package: console-setup-linux-fonts-udeb
+Status: install ok unpacked
+Version: 1.221
+Depends: kbd-udeb
+Description: Linux console fonts for Debian Installer
+
+Package: console-setup-pc-ekmap
+Status: install ok unpacked
+Version: 1.221
+Provides: console-setup-ekmap
+Description: encoded Linux keyboard layouts for PC keyboards
+
+Package: console-setup-udeb
+Status: install ok installed
+Version: 1.221
+Provides: keyboard-setup
+Depends: archdetect, cdebconf-udeb, kbd-udeb | kbdcontrol-udeb | hurd-udeb
+Description: Configure the keyboard
+Installer-Menu-Item: 1200
+
+Package: crc-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: crc-modules
+Depends: kernel-image-6.1.0-27-amd64-di
+Description: CRC modules
+
+Package: di-utils
+Status: install ok installed
+Version: 1.146
+Depends: libc6-udeb (>= 2.36), libdebian-installer4-udeb (>= 0.124), cdebconf-udeb, busybox-udeb (>= 1:1.35.0-2)
+Description: Miscellaneous utilities for the debian installer
+
+Package: di-utils-reboot
+Status: install ok unpacked
+Version: 1.146
+Depends: cdebconf-udeb
+Description: Reboot
+Installer-Menu-Item: 99500
+
+Package: di-utils-shell
+Status: install ok unpacked
+Version: 1.146
+Depends: cdebconf-udeb, di-utils
+Description: Execute a shell
+Installer-Menu-Item: 95000
+
+Package: di-utils-terminfo
+Status: install ok unpacked
+Version: 1.146
+Description: Terminfo entries needed by newt/slang in debian installer
+
+Package: env-preseed
+Status: install ok unpacked
+Version: 1.117
+Description: debconf preseeding via environment variables
+
+Package: espeak-ng-data-udeb
+Status: install ok installed
+Version: 1.51+dfsg-10+deb12u1
+Description: Multi-lingual software speech synthesizer: data for d-i
+
+Package: espeakup-udeb
+Status: install ok installed
+Version: 1:0.90-13
+Depends: libasound2-udeb (>= 1.2.8), libc6-udeb (>= 2.36), cdebconf-udeb, espeak-ng-data-udeb (>= 1.51+dfsg~), espeak-ng-data-udeb (<< 1.51+dfsgA), libkmod2-udeb, alsa-utils-udeb, preseed-common
+Description: Configure the speech synthesizer voice
+Installer-Menu-Item: 1050
+
+Package: event-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: event-modules
+Depends: kernel-image-6.1.0-27-amd64-di
+Description: Event support
+
+Package: fat-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: fat-modules
+Depends: kernel-image-6.1.0-27-amd64-di
+Description: FAT filesystem support
+
+Package: fb-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: fb-modules
+Depends: kernel-image-6.1.0-27-amd64-di, i2c-modules-6.1.0-27-amd64-di
+Description: Frame buffer support
+
+Package: file-preseed
+Status: install ok unpacked
+Version: 1.117
+Depends: cdebconf-udeb, di-utils, preseed-common
+Description: load debconf preseed file
+Installer-Menu-Item: 1400
+
+Package: firewire-core-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: firewire-core-modules
+Depends: kernel-image-6.1.0-27-amd64-di, scsi-core-modules-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di
+Description: Core FireWire drivers
+
+Package: fontconfig-udeb
+Status: install ok unpacked
+Version: 2.14.1-4
+Depends: libc6-udeb (>= 2.36), libexpat1-udeb (>= 1.95.8), libfreetype6-udeb (>= 2.12)
+Description: generic font configuration library - minimal runtime
+
+Package: fonts-android-udeb
+Status: install ok unpacked
+Version: 1:6.0.1r16-1.1
+Description: sans-serif font family released with Android Ice Cream Sandwich
+
+Package: fonts-dejavu-mono-udeb
+Status: install ok unpacked
+Version: 2.37-6
+Description: Monospace Vera font family derivate with additional characters
+
+Package: fonts-dejavu-udeb
+Status: install ok unpacked
+Version: 2.37-6
+Description: Vera font family derivate with additional characters
+
+Package: fonts-farsiweb-udeb
+Status: install ok unpacked
+Version: 0.4.dfsg-13
+Provides: ttf-installer
+Description: Farsiweb TrueType fonts for the graphical installer
+
+Package: fonts-freefont-udeb
+Status: install ok unpacked
+Version: 20120503-10
+Provides: ttf-installer
+Description: Freefont Sans fonts for the graphical installer
+
+Package: fonts-khmeros-udeb
+Status: install ok unpacked
+Version: 5.0-9
+Provides: fonts-installer
+Description: Debian-Installer font for the Khmer language of Cambodia
+
+Package: fonts-knda-udeb
+Status: install ok unpacked
+Version: 1.3-7
+Description: Free fonts for Kannada language (udeb)
+
+Package: fonts-lao-udeb
+Status: install ok unpacked
+Version: 0.0.20060226-10
+Description: TrueType font for Lao language
+
+Package: fonts-lohit-guru-udeb
+Status: install ok unpacked
+Version: 2.91.2-3
+Description: Lohit TrueType font for Punjabi Language (udeb)
+
+Package: fonts-mlym-udeb
+Status: install ok unpacked
+Version: 7.0.2-1
+Description: Free fonts for Malayalam language (udeb)
+
+Package: fonts-noto-hinted-udeb
+Status: install ok unpacked
+Version: 20201225-1
+Description: "No Tofu" font families with large Unicode coverage (d-i default)
+
+Package: fonts-sil-abyssinica-udeb
+Status: install ok unpacked
+Version: 2.100-3
+Provides: ttf-installer
+Description: Debian-Installer font for Ethiopian and Erythrean scripts (Amharic et al.)
+
+Package: fonts-sil-padauk-udeb
+Status: install ok unpacked
+Version: 5.000-3
+Provides: ttf-installer
+Description: Debian-Installer font for the Burmese language
+
+Package: fonts-taml-udeb
+Status: install ok unpacked
+Version: 1.2.2-6
+Description: Free TrueType fonts for Tamil language (udeb)
+
+Package: fonts-telu-udeb
+Status: install ok unpacked
+Version: 2.5.5-2
+Description: Free fonts for Telugu script (udeb)
+
+Package: fonts-thai-tlwg-udeb
+Status: install ok unpacked
+Version: 1:0.7.3-1
+Description: Thai fonts in TrueType format for D-I use
+
+Package: fonts-tibetan-machine-udeb
+Status: install ok unpacked
+Version: 1.901b-6
+Provides: ttf-installer
+Description: font for Tibetan, Dzongkha and Ladakhi (OpenType Unicode)
+
+Package: fonts-ukij-uyghur-udeb
+Status: install ok unpacked
+Version: 20110217-4
+Description: uyghur font for the graphical installer (UKIJEkran)
+
+Package: gtk2-engines-udeb
+Status: install ok unpacked
+Version: 1:2.20.2-5+b1
+Depends: libc6-udeb (>= 2.31), libcairo2-udeb (>= 1.16.0), libgdk-pixbuf-2.0-0-udeb (>= 2.42.6+dfsg), libglib2.0-udeb (>= 2.68.3)
+Description: theme engines for GTK+ 2.x in the Debian installer
+
+Package: haveged-udeb
+Status: install ok unpacked
+Version: 1.9.14-1+b1
+Depends: libc6-udeb (>= 2.35)
+Description: Linux entropy source using the HAVEGE algorithm -- udeb
+
+Package: hw-detect
+Status: install ok installed
+Version: 1.159
+Depends: rootskel, archdetect, cdebconf-udeb, di-utils, pciutils-udeb, udpkg
+Description: Detect hardware and load kernel drivers for it
+
+Package: i2c-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: i2c-modules
+Depends: kernel-image-6.1.0-27-amd64-di
+Description: i2c support modules
+
+Package: initrd-preseed
+Status: install ok unpacked
+Version: 1.117
+Depends: preseed-common
+Description: load debconf preseed file from /preseed.cfg on the initrd
+
+Package: input-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: input-modules
+Depends: kernel-image-6.1.0-27-amd64-di, usb-modules-6.1.0-27-amd64-di, i2c-modules-6.1.0-27-amd64-di, rfkill-modules-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di
+Description: Input devices support
+
+Package: installation-locale
+Status: install ok unpacked
+Version: 1.9
+Depends: rootskel
+Description: UTF-8 C locale
+
+Package: isofs-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: isofs-modules
+Depends: kernel-image-6.1.0-27-amd64-di, cdrom-core-modules-6.1.0-27-amd64-di
+Description: ISOFS filesystem support
+
+Package: kbd-udeb
+Status: install ok installed
+Version: 2.5.1-1+b1
+Depends: libc6-udeb (>= 2.36)
+Description: Linux console keyboard setup utilities
+
+Package: kernel-image-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: kernel-image
+Description: Linux kernel image and core modules for the Debian installer
+
+Package: kmod-udeb
+Status: install ok unpacked
+Version: 30+20221128-1
+Depends: libc6-udeb (>= 2.36)
+Description: libkmod shared library
+
+Package: libacl1-udeb
+Status: install ok installed
+Version: 2.3.1-3
+Depends: libc6-udeb (>= 2.36)
+Description: access control list - udeb shared library
+
+Package: libasound2-udeb
+Status: install ok installed
+Version: 1.2.8-1+b1
+Depends: libc6-udeb (>= 2.36)
+Description: shared library for ALSA applications (udeb)
+
+Package: libatk-adaptor-udeb
+Status: install ok unpacked
+Version: 2.46.0-5
+Depends: libatk-bridge-2.0-0-udeb (>= 2.46.0), libglib2.0-udeb (>= 2.74.5)
+Description: AT-SPI 2 toolkit bridge - module for d-i
+
+Package: libatk-bridge-2.0-0-udeb
+Status: install ok unpacked
+Version: 2.46.0-5
+Depends: libatk1.0-udeb (>= 2.46.0), libatspi0-udeb (>= 2.9.90), libc6-udeb (>= 2.36), libdbus-1-3-udeb (>= 1.14.4), libglib2.0-udeb (>= 2.74.5)
+Description: AT-SPI 2 toolkit bridge - shared library for d-i
+
+Package: libatk1.0-udeb
+Status: install ok unpacked
+Version: 2.46.0-5
+Depends: libc6-udeb (>= 2.36), libglib2.0-udeb (>= 2.74.5)
+Description: ATK accessibility toolkit
+
+Package: libatspi0-udeb
+Status: install ok unpacked
+Version: 2.46.0-5
+Depends: libc6-udeb (>= 2.36), libdbus-1-3-udeb (>= 1.14.4), libglib2.0-udeb (>= 2.74.5), libx11-6-udeb (>= 2:1.6.0), libxi6-udeb (>= 2:1.6.99.1)
+Description: Assistive Technology Service Provider Interface - module for d-i
+
+Package: libblkid1-udeb
+Status: install ok installed
+Version: 2.38.1-5+deb12u2
+Depends: libc6-udeb (>= 2.36)
+Description: stripped down block device ID library, for debian-installer
+
+Package: libbsd0-udeb
+Status: install ok unpacked
+Version: 0.11.7-2
+Depends: libc6-udeb (>= 2.36), libmd0-udeb (>= 1.0.4)
+Description: utility functions from BSD systems - shared library
+
+Package: libc6-udeb
+Status: install ok installed
+Version: 2.36-9+deb12u9
+Provides: libc-udeb, libc6, libnss-dns-udeb, libnss-files-udeb
+Description: GNU C Library: Shared libraries - udeb
+
+Package: libcairo2-udeb
+Status: install ok unpacked
+Version: 1.16.0-7
+Depends: fontconfig-udeb (>= 2.13), libc6-udeb (>= 2.36), libfreetype6-udeb (>= 2.12), libglib2.0-udeb (>= 2.74.2), libpixman-1-0-udeb (>= 0.40.0), libpng16-16-udeb (>= 1.6.2-1), libx11-6-udeb (>= 2:1.6.0), libxext6-udeb (>= 2:1.3.0), libxrender1-udeb, zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: Cairo 2D vector graphics library
+
+Package: libcap2-udeb
+Status: install ok installed
+Version: 1:2.66-4
+Depends: libc6-udeb (>= 2.36)
+Description: POSIX 1003.1e capabilities (library)
+
+Package: libcrypt1-udeb
+Status: install ok unpacked
+Version: 1:4.4.33-2
+Description: libcrypt shared library
+
+Package: libcrypto3-udeb
+Status: install ok unpacked
+Version: 3.0.15-1~deb12u1
+Depends: libc6-udeb (>= 2.36)
+Description: Secure Sockets Layer toolkit - libcrypto udeb
+
+Package: libdatrie1-udeb
+Status: install ok unpacked
+Version: 0.2.13-2+b1
+Depends: libc6-udeb (>= 2.34)
+Description: Double-array trie library for D-I use
+
+Package: libdbus-1-3-udeb
+Status: install ok unpacked
+Version: 1.14.10-1~deb12u1
+Depends: libc6-udeb (>= 2.36)
+Description: simple interprocess messaging system (minimal library)
+
+Package: libdebconfclient0-udeb
+Status: install ok installed
+Version: 0.270
+Depends: libc6-udeb (>= 2.36), cdebconf-udeb
+Description: Debian Configuration Management System (C-implementation)
+
+Package: libdebian-installer4-udeb
+Status: install ok installed
+Version: 0.124
+Depends: libc6-udeb (>= 2.35)
+Description: Library of common debian-installer functions
+
+Package: libdrm2-udeb
+Status: install ok unpacked
+Version: 2.4.114-1+b1
+Depends: libc6-udeb (>= 2.36)
+Description: Userspace interface to kernel DRM services -- runtime
+
+Package: libevdev2-udeb
+Status: install ok unpacked
+Version: 1.13.0+dfsg-1
+Depends: libc6-udeb (>= 2.34)
+Description: wrapper library for evdev devices - udeb
+
+Package: libexpat1-udeb
+Status: install ok installed
+Version: 2.5.0-1+deb12u1
+Depends: libc6-udeb (>= 2.36)
+Description: XML parsing C library - runtime library
+
+Package: libffi8-udeb
+Status: install ok unpacked
+Version: 3.4.4-1
+Depends: libc6-udeb (>= 2.35)
+Description: Foreign Function Interface library runtime
+
+Package: libfontenc1-udeb
+Status: install ok unpacked
+Version: 1:1.1.4-1
+Depends: libc6-udeb (>= 2.31), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: X11 font encoding library
+
+Package: libfreetype6-udeb
+Status: install ok unpacked
+Version: 2.12.1+dfsg-5+deb12u3
+Depends: libc6-udeb (>= 2.36), libpng16-16-udeb (>= 1.6.2-1), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: FreeType 2 font engine for the debian-installer
+
+Package: libfribidi0-udeb
+Status: install ok unpacked
+Version: 1.0.8-2.1
+Depends: libc6-udeb (>= 2.33)
+Description: Free Implementation of the Unicode BiDi algorithm
+
+Package: libgail18-udeb
+Status: install ok unpacked
+Version: 2.24.33-2+deb12u1
+Depends: libatk1.0-udeb (>= 2.46.0), libc6-udeb (>= 2.36), libgdk-pixbuf-2.0-0-udeb (>= 2.42.10+dfsg), libglib2.0-udeb (>= 2.74.6), libgtk2.0-0-udeb (= 2.24.33-2+deb12u1), libpango1.0-udeb (>= 1.50.12+ds), libx11-6-udeb (>= 2:1.6.0)
+Description: GNOME Accessibility Implementation Library -- shared libraries
+
+Package: libgdk-pixbuf-2.0-0-udeb
+Status: install ok unpacked
+Version: 2.42.10+dfsg-1+deb12u1
+Depends: libc6-udeb (>= 2.36), libglib2.0-udeb (>= 2.74.6), libpng16-16-udeb (>= 1.6.2-1)
+Description: GDK Pixbuf library - minimal runtime
+
+Package: libglib2.0-udeb
+Status: install ok unpacked
+Version: 2.74.6-2+deb12u4
+Depends: libc6-udeb (>= 2.36), libffi8-udeb, libpcre2-8-0-udeb (>= 10.42), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: GLib library of C routines - minimal runtime
+
+Package: libgtk2.0-0-udeb
+Status: install ok unpacked
+Version: 2.24.33-2+deb12u1
+Provides: gtk2.0-binver-2.10.0
+Depends: fontconfig-udeb (>= 2.13), libatk1.0-udeb (>= 2.46.0), libc6-udeb (>= 2.36), libcairo2-udeb (>= 1.16.0), libgdk-pixbuf-2.0-0-udeb (>= 2.42.10+dfsg), libglib2.0-udeb (>= 2.74.6), libpango1.0-udeb (>= 1.50.12+ds), libx11-6-udeb (>= 2:1.6.0), libxcursor1-udeb (>> 1.1.2), libxext6-udeb (>= 2:1.3.0), libxi6-udeb (>= 2:1.6.99.1), libxinerama1-udeb (>= 2:1.1.4), libxrender1-udeb
+Description: GTK graphical user interface library - minimal runtime
+
+Package: libharfbuzz0-udeb
+Status: install ok unpacked
+Version: 6.0.0+dfsg-3
+Depends: libc6-udeb (>= 2.36), libfreetype6-udeb (>= 2.12), libglib2.0-udeb (>= 2.74.5)
+Description: OpenType text shaping engine
+
+Package: libinput10-udeb
+Status: install ok unpacked
+Version: 1.22.1-1
+Depends: libc6-udeb (>= 2.36), libevdev2-udeb (>= 1.13.0+dfsg), libmtdev1-udeb, libudev1-udeb (>= 252.4)
+Description: input device management and event handling library - shared library
+
+Package: libkmod2-udeb
+Status: install ok installed
+Version: 30+20221128-1
+Depends: libc6-udeb (>= 2.36)
+Description: libkmod shared library
+
+Package: libmd0-udeb
+Status: install ok unpacked
+Version: 1.0.4-2
+Depends: libc6-udeb (>= 2.33)
+Description: message digest functions from BSD systems - shared library
+
+Package: libmtdev1-udeb
+Status: install ok unpacked
+Version: 1.1.6-1
+Depends: libc6-udeb (>= 2.30)
+Description: Multitouch Protocol Translation Library - shared library
+
+Package: libncursesw6-udeb
+Status: install ok unpacked
+Version: 6.4-4
+Depends: libtinfo6-udeb (= 6.4-4), libc6-udeb (>= 2.36)
+Description: shared libraries for terminal handling (wide character support) - udeb
+
+Package: libnewt0.52-udeb
+Status: install ok unpacked
+Version: 0.52.23-1+b1
+Depends: libc6-udeb (>= 2.36), libslang2-udeb (>= 2.3.3)
+Description: Not Erik's Windowing Toolkit for Debian Installer
+
+Package: libpango1.0-udeb
+Status: install ok unpacked
+Version: 1.50.12+ds-1
+Depends: fontconfig-udeb (>= 2.13), libc6-udeb (>= 2.36), libcairo2-udeb (>= 1.16.0), libfreetype6-udeb (>= 2.12), libfribidi0-udeb (>= 1.0.8), libglib2.0-udeb (>= 2.74.3), libharfbuzz0-udeb (>= 5.3.1), libthai0-udeb (>= 0.1.12), libx11-6-udeb (>= 2:1.6.0), libxft2-udeb (>> 2.1.1), libxrender1-udeb
+Description: Layout and rendering of internationalized text - minimal runtime
+
+Package: libpci3-udeb
+Status: install ok installed
+Version: 1:3.9.0-4
+Depends: libc6-udeb (>= 2.36), libudev1-udeb (>= 252.4), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: PCI Utilities (udeb shared library)
+
+Package: libpciaccess0-udeb
+Status: install ok unpacked
+Version: 0.17-2
+Depends: libc6-udeb (>= 2.36), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: Generic PCI access library for X
+
+Package: libpcre2-8-0-udeb
+Status: install ok installed
+Version: 10.42-1
+Depends: libc6-udeb (>= 2.36)
+Description: New Perl Compatible Regular Expression Library- 8 bit runtime files (udeb)
+
+Package: libpixman-1-0-udeb
+Status: install ok unpacked
+Version: 0.42.2-1
+Depends: libc6-udeb (>= 2.36)
+Description: pixel-manipulation library for X and cairo
+
+Package: libpng16-16-udeb
+Status: install ok unpacked
+Version: 1.6.39-2
+Depends: libc6-udeb (>= 2.36), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: PNG library - minimal runtime library (version 1.6)
+
+Package: libreadline8-udeb
+Status: install ok unpacked
+Version: 8.2-1.3
+Depends: readline-common-udeb, libc6-udeb (>= 2.36), libtinfo6-udeb (>= 6.3+20220423)
+Description: GNU readline and history libraries, run-time libraries (d-i)
+
+Package: libselinux1-udeb
+Status: install ok installed
+Version: 3.4-1+b6
+Depends: libc6-udeb (>= 2.36), libpcre2-8-0-udeb (>= 10.42)
+Description: SELinux runtime shared libraries
+
+Package: libslang2-udeb
+Status: install ok unpacked
+Version: 2.3.3-3
+Depends: libc6-udeb (>= 2.36)
+Description: S-Lang library for Debian Installer
+
+Package: libssl3-udeb
+Status: install ok unpacked
+Version: 3.0.15-1~deb12u1
+Depends: libc6-udeb (>= 2.36), libcrypto3-udeb (>= 3.0.15)
+Description: ssl shared library - udeb
+
+Package: libtextwrap1-udeb
+Status: install ok installed
+Version: 0.1-16
+Depends: libc6-udeb (>= 2.36)
+Description: text-wrapping library with i18n - runtime udeb
+
+Package: libthai-data-udeb
+Status: install ok unpacked
+Version: 0.1.29-1
+Description: Data files for libthai for D-I use
+
+Package: libthai0-udeb
+Status: install ok unpacked
+Version: 0.1.29-1
+Depends: libthai-data-udeb (>= 0.1.10), libc6-udeb (>= 2.33), libdatrie1-udeb (>= 0.2.0)
+Description: Thai language support library for D-I use
+
+Package: libtinfo6-udeb
+Status: install ok unpacked
+Version: 6.4-4
+Depends: libc6-udeb (>= 2.36)
+Description: shared low-level terminfo library for terminal handling - udeb
+
+Package: libudev1-udeb
+Status: install ok installed
+Version: 252.31-1~deb12u1
+Depends: libc6-udeb (>= 2.36)
+Description: libudev shared library
+
+Package: libuuid1-udeb
+Status: install ok unpacked
+Version: 2.38.1-5+deb12u2
+Depends: libc6-udeb (>= 2.36)
+Description: stripped down Universally Unique ID library, for debian-installer
+
+Package: libvte9-udeb
+Status: install ok unpacked
+Version: 1:0.28.2-6+b1
+Depends: libatk1.0-udeb (>= 2.36.0), libc6-udeb (>= 2.31), libcairo2-udeb (>= 1.16.0), libgdk-pixbuf-2.0-0-udeb (>= 2.42.6+dfsg), libglib2.0-udeb (>= 2.68.3), libgtk2.0-0-udeb (>= 2.24.0), libpango1.0-udeb (>= 1.46.2), libtinfo6-udeb (>= 6.2), libx11-6-udeb (>= 2:1.6.0)
+Description: Terminal emulator widget for GTK+ 2.0 - minimal runtime
+
+Package: libx11-6-udeb
+Status: install ok unpacked
+Version: 2:1.8.4-2+deb12u2
+Depends: libc6-udeb (>= 2.36), libxcb1-udeb (>= 1.12)
+Description: X11 client-side library
+
+Package: libxau6-udeb
+Status: install ok unpacked
+Version: 1:1.0.9-1
+Depends: libc6-udeb (>= 2.31)
+Description: X11 authorisation library
+
+Package: libxcb1-udeb
+Status: install ok unpacked
+Version: 1.15-1
+Depends: libc6-udeb (>= 2.33), libxau6-udeb (>= 1:1.0.9), libxdmcp6-udeb
+Description: X C Binding
+
+Package: libxcursor1-udeb
+Status: install ok unpacked
+Version: 1:1.2.1-1
+Depends: libc6-udeb (>= 2.33), libx11-6-udeb (>= 2:1.6.0), libxfixes3-udeb (>= 1:5.0), libxrender1-udeb
+Description: X cursor management library
+
+Package: libxcvt0-udeb
+Status: install ok unpacked
+Version: 0.1.2-1
+Depends: libc6-udeb (>= 2.33)
+Description: VESA CVT standard timing modelines generator -- udeb
+
+Package: libxdmcp6-udeb
+Status: install ok unpacked
+Version: 1:1.1.2-3
+Depends: libbsd0-udeb, libc6-udeb (>= 2.24)
+Description: X11 Display Manager Control Protocol library
+
+Package: libxext6-udeb
+Status: install ok unpacked
+Version: 2:1.3.4-1+b1
+Depends: libc6-udeb (>= 2.34), libx11-6-udeb (>= 2:1.6.0)
+Description: X11 miscellaneous extension library
+
+Package: libxfixes3-udeb
+Status: install ok unpacked
+Version: 1:6.0.0-2
+Depends: libc6-udeb (>= 2.35), libx11-6-udeb (>= 2:1.6.0)
+Description: X11 miscellaneous 'fixes' extension library
+
+Package: libxfont2-udeb
+Status: install ok unpacked
+Version: 1:2.0.6-1
+Depends: libc6-udeb (>= 2.34), libfontenc1-udeb (>= 1:1.1.4), libfreetype6-udeb (>= 2.12), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: X11 font rasterisation library
+
+Package: libxft2-udeb
+Status: install ok unpacked
+Version: 2.3.6-1
+Depends: fontconfig-udeb (>= 2.13), libc6-udeb (>= 2.35), libfreetype6-udeb (>= 2.12), libx11-6-udeb (>= 2:1.6.0), libxrender1-udeb
+Description: FreeType-based font drawing library for X
+
+Package: libxi6-udeb
+Status: install ok unpacked
+Version: 2:1.8-1+b1
+Depends: libc6-udeb (>= 2.34), libx11-6-udeb (>= 2:1.6.0), libxext6-udeb (>= 2:1.3.0)
+Description: X11 Input extension library
+
+Package: libxinerama1-udeb
+Status: install ok unpacked
+Version: 2:1.1.4-3
+Depends: libc6-udeb (>= 2.33), libx11-6-udeb (>= 2:1.6.0), libxext6-udeb (>= 2:1.3.0)
+Description: X11 Xinerama extension library
+
+Package: libxkbfile1-udeb
+Status: install ok unpacked
+Version: 1:1.1.0-1
+Depends: libc6-udeb (>= 2.30), libx11-6-udeb (>= 2:1.6.0)
+Description: X11 keyboard file manipulation library
+
+Package: libxrandr2-udeb
+Status: install ok unpacked
+Version: 2:1.5.2-2+b1
+Depends: libc6-udeb (>= 2.33), libx11-6-udeb (>= 2:1.6.0), libxext6-udeb (>= 2:1.3.0), libxrender1-udeb
+Description: X11 RandR extension library
+
+Package: libxrender1-udeb
+Status: install ok unpacked
+Version: 1:0.9.10-1.1
+Depends: libc6-udeb (>= 2.33), libx11-6-udeb (>= 2:1.6.0)
+Description: X Rendering Extension client library
+
+Package: libxshmfence1-udeb
+Status: install ok unpacked
+Version: 1.3-1
+Depends: libc6-udeb (>= 2.27)
+Description: X shared memory fences
+
+Package: load-cdrom
+Status: install ok installed
+Version: 1.63
+Depends: cdebconf-udeb, cdrom-retriever, anna
+Description: Load installer components from CD
+Installer-Menu-Item: 1600
+
+Package: localechooser
+Status: install ok installed
+Version: 2.103
+Depends: cdebconf-udeb
+Description: choose language/country/locale
+Installer-Menu-Item: 1000
+
+Package: lowmemcheck
+Status: install ok unpacked
+Version: 1.51
+Depends: libc6-udeb (>= 2.33), cdebconf-udeb, main-menu
+Description: detect low-memory systems and enter lowmem mode
+
+Package: main-menu
+Status: install ok unpacked
+Version: 1.65
+Depends: libc6-udeb (>= 2.33), libdebconfclient0-udeb (>= 0.263), libdebian-installer4-udeb (>= 0.123), cdebconf-udeb
+Description: Debian installer main menu
+
+Package: media-retriever
+Status: install ok unpacked
+Version: 1.57
+Provides: retriever
+Depends: cdebconf-udeb, mountmedia
+Description: Fetches modules from removable media
+
+Package: mmc-core-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: mmc-core-modules
+Depends: kernel-image-6.1.0-27-amd64-di
+Description: MMC/SD/SDIO core modules
+
+Package: mmc-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: mmc-modules
+Depends: kernel-image-6.1.0-27-amd64-di, mmc-core-modules-6.1.0-27-amd64-di, usb-modules-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di
+Description: MMC/SD card modules
+
+Package: mountmedia
+Status: install ok unpacked
+Version: 0.26
+Depends: di-utils (>= 1.66)
+Description: Mounts media
+
+Package: mouse-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: mouse-modules
+Depends: kernel-image-6.1.0-27-amd64-di, event-modules-6.1.0-27-amd64-di, input-modules-6.1.0-27-amd64-di, usb-modules-6.1.0-27-amd64-di
+Description: Mouse support
+
+Package: nano-udeb
+Status: install ok unpacked
+Version: 7.2-1+deb12u1
+Depends: libc6-udeb (>= 2.36), libncursesw6-udeb (>= 6.3+20220423), libtinfo6-udeb (>= 6.3+20220423)
+Description: small, friendly text editor inspired by Pico - udeb
+
+Package: pata-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: pata-modules
+Depends: kernel-image-6.1.0-27-amd64-di, ata-modules-6.1.0-27-amd64-di
+Description: PATA drivers
+
+Package: pciutils-udeb
+Status: install ok installed
+Version: 1:3.9.0-4
+Depends: libc6-udeb (>= 2.36), libkmod2-udeb (>= 30~), libpci3-udeb (>= 1:3.5.2-1)
+Description: PCI Utilities (udeb)
+
+Package: pcmcia-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: pcmcia-modules
+Depends: kernel-image-6.1.0-27-amd64-di
+Description: Common PCMCIA drivers
+
+Package: pcmcia-storage-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: pcmcia-storage-modules
+Depends: kernel-image-6.1.0-27-amd64-di, cdrom-core-modules-6.1.0-27-amd64-di, pcmcia-modules-6.1.0-27-amd64-di, ata-modules-6.1.0-27-amd64-di
+Description: PCMCIA storage drivers
+
+Package: pcmciautils-udeb
+Status: install ok unpacked
+Version: 018-14
+Depends: udev-udeb, libc6-udeb (>= 2.36)
+Description: PCMCIA utilities for Linux 2.6
+
+Package: preseed-common
+Status: install ok installed
+Version: 1.117
+Depends: cdebconf-udeb, di-utils
+Description: common files for preseeding
+
+Package: readline-common-udeb
+Status: install ok unpacked
+Version: 8.2-1.3
+Description: GNU readline and history libraries, common files (d-i)
+
+Package: rescue-check
+Status: install ok unpacked
+Version: 1.93
+Depends: cdebconf-udeb, main-menu, di-utils
+Description: enter d-i rescue mode if requested
+
+Package: rfkill-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: rfkill-modules
+Depends: kernel-image-6.1.0-27-amd64-di
+Description: rfkill modules
+
+Package: rootskel
+Status: install ok installed
+Version: 1.136
+Depends: di-utils, udev-udeb, cdebconf-udeb
+Description: Skeleton root filesystem used by debian-installer
+
+Package: rootskel-gtk
+Status: install ok unpacked
+Version: 12.0.2
+Depends: cdebconf-udeb, rootskel
+Description: graphics for use in debian-installer (gtk user interface)
+
+Package: sata-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: sata-modules
+Depends: kernel-image-6.1.0-27-amd64-di, scsi-core-modules-6.1.0-27-amd64-di, ata-modules-6.1.0-27-amd64-di
+Description: SATA drivers
+
+Package: save-logs
+Status: install ok unpacked
+Version: 2.89
+Depends: cdebconf-udeb
+Description: save logs and configuration for debug purposes
+Installer-Menu-Item: 94000
+
+Package: scsi-core-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: scsi-core-modules
+Depends: kernel-image-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di
+Description: Core SCSI subsystem
+
+Package: scsi-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: scsi-modules
+Depends: kernel-image-6.1.0-27-amd64-di, scsi-core-modules-6.1.0-27-amd64-di, cdrom-core-modules-6.1.0-27-amd64-di, ata-modules-6.1.0-27-amd64-di
+Description: SCSI drivers
+
+Package: serial-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: serial-modules
+Depends: kernel-image-6.1.0-27-amd64-di, pcmcia-modules-6.1.0-27-amd64-di
+Description: Serial drivers
+
+Package: sound-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: sound-modules
+Depends: kernel-image-6.1.0-27-amd64-di, i2c-modules-6.1.0-27-amd64-di, usb-modules-6.1.0-27-amd64-di, pcmcia-modules-6.1.0-27-amd64-di, firewire-core-modules-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di
+Description: sound support
+
+Package: speakup-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: speakup-modules
+Depends: kernel-image-6.1.0-27-amd64-di
+Description: speakup modules
+
+Package: udev-udeb
+Status: install ok installed
+Version: 252.31-1~deb12u1
+Depends: libacl1-udeb (>= 2.3.1), libblkid1-udeb (>= 2.31), libc6-udeb (>= 2.36), libcap2-udeb (>= 1:2.63), libkmod2-udeb (>= 30~), libselinux1-udeb (>= 3.4), util-linux-udeb
+Description: /dev/ and hotplug management daemon
+
+Package: udpkg
+Status: install ok installed
+Version: 1.21
+Depends: libc6-udeb (>= 2.32), libdebian-installer4-udeb (>= 0.122)
+Description: tiny dpkg clone
+
+Package: uinput-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: uinput-modules
+Depends: kernel-image-6.1.0-27-amd64-di
+Description: uinput support
+
+Package: usb-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: usb-modules
+Depends: kernel-image-6.1.0-27-amd64-di
+Description: USB support
+
+Package: usb-serial-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: usb-serial-modules
+Depends: kernel-image-6.1.0-27-amd64-di, usb-modules-6.1.0-27-amd64-di
+Description: USB serial drivers
+
+Package: usb-storage-modules-6.1.0-27-amd64-di
+Status: install ok unpacked
+Version: 6.1.115-1
+Provides: usb-storage-modules
+Depends: kernel-image-6.1.0-27-amd64-di, scsi-core-modules-6.1.0-27-amd64-di, usb-modules-6.1.0-27-amd64-di
+Description: USB storage support
+
+Package: util-linux-udeb
+Status: install ok installed
+Version: 2.38.1-5+deb12u2
+Depends: libc6-udeb (>= 2.36)
+Description: stripped down miscellaneous system utilities, for debian-installer
+
+Package: wget-udeb
+Status: install ok unpacked
+Version: 1.21.3-1+b2
+Depends: libc6-udeb (>= 2.33), libcrypto3-udeb (>= 3.0.3), libpcre2-8-0-udeb (>= 10.40), libssl3-udeb (>= 3.0.3), libuuid1-udeb (>= 2.31), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: retrieves files from the web
+
+Package: wireless-regdb-udeb
+Status: install ok unpacked
+Version: 2022.06.06-1
+Description: wireless regulatory database for Linux - udeb
+
+Package: x11-xkb-utils-udeb
+Status: install ok unpacked
+Version: 7.7+7
+Depends: libc6-udeb (>= 2.33), libx11-6-udeb (>= 2:1.6.0), libxkbfile1-udeb (>= 1:1.1.0), libxrandr2-udeb (>= 2:1.5)
+Description: X11 XKB utilities
+
+Package: xkb-data-udeb
+Status: install ok unpacked
+Version: 2.35.1-1
+Description: X Keyboard Extension (XKB) configuration data
+
+Package: xserver-xorg-core-udeb
+Status: install ok unpacked
+Version: 2:21.1.7-3+deb12u8
+Provides: xorg-input-abi-24, xorg-video-abi-25
+Depends: xkb-data-udeb, x11-xkb-utils-udeb, udev-udeb (>= 149), libbsd0-udeb (>= 0.11.7), libc6-udeb (>= 2.36), libdrm2-udeb (>= 2.4.89), libpciaccess0-udeb (>= 0.12.902), libpixman-1-0-udeb (>= 0.40.0), libudev1-udeb (>= 252.30), libxau6-udeb (>= 1:1.0.9), libxcvt0-udeb (>= 0.1.2), libxfont2-udeb (>= 1:2.0.1), libxshmfence1-udeb
+Description: Xorg X server - core server
+
+Package: xserver-xorg-input-libinput-udeb
+Status: install ok unpacked
+Version: 1.2.1-1+b1
+Provides: xorg-driver-input
+Depends: libc6-udeb (>= 2.33), libinput10-udeb (>= 1.19.3), xorg-input-abi-24, xserver-xorg-core-udeb (>= 2:21.1.1), udev-udeb
+Description: X.Org X server -- libinput input driver
+
+Package: xserver-xorg-video-fbdev-udeb
+Status: install ok unpacked
+Version: 1:0.5.0-2
+Provides: xorg-driver-video
+Depends: libc6-udeb (>= 2.33), xorg-video-abi-25, xserver-xorg-core-udeb (>= 2:21.1.1)
+Description: X.Org X server -- fbdev display driver
+
+Package: zlib1g-udeb
+Status: install ok installed
+Version: 1:1.2.13.dfsg-1
+Description: compression library - runtime for Debian installer
+
+Package: debian-installer
+Status: install ok installed
+Version: cdrom-gtk-20230607+deb12u8
+Description: debian installation image
+
+Package: apt-cdrom-setup
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 238
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1:0.182
+Depends: cdrom-detect, cdebconf-udeb
+Provides: apt-mirror-setup
+Description: set up a CD in sources.list
+
+Package: apt-mirror-setup
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 194
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1:0.182
+Depends: choose-mirror-bin, base-installer (>= 1.195), cdebconf-udeb
+Description: set up a mirror in sources.list
+
+Package: apt-setup-udeb
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 268
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1:0.182
+Depends: apt-mirror-setup, installed-base, di-utils, cdebconf-udeb
+Description: Configure apt
+Installer-Menu-Item: 7000
+
+Package: base-installer
+Status: install ok installed
+Priority: required
+Section: debian-installer
+Installed-Size: 162
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.213
+Depends: cdebconf-udeb, di-utils-mapdevfs, di-utils, rootskel
+Description: base system installation framework
+
+Package: bootstrap-base
+Status: install ok installed
+Priority: required
+Section: debian-installer
+Installed-Size: 685
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.213
+Depends: libc6-udeb (>= 2.36), libdebconfclient0-udeb (>= 0.269), libdebian-installer4-udeb (>= 0.124), mounted-partitions, created-fstab, base-installer, debootstrap-udeb, gpgv-udeb, debian-archive-keyring-udeb, archdetect, cdebconf-udeb
+Provides: installed-base, kernel-installer
+Description: Install the base system
+Installer-Menu-Item: 6500
+
+Package: btrfs-progs-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 1410
+Maintainer: Adam Borowski <kilobyte@angband.pl>
+Version: 6.2-1+deb12u1
+Depends: libblkid1-udeb (>= 2.31), libc6-udeb (>= 2.36), liblzo2-2-udeb (>= 2.10), libudev1-udeb (>= 252.30), libuuid1-udeb (>= 2.31), libzstd1-udeb (>= 1.5.2), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: Checksumming Copy on Write Filesystem utilities (udeb)
+
+Package: choose-mirror-bin
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 609
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 2.123+deb12u1
+Depends: libc6-udeb (>= 2.36), libdebconfclient0-udeb (>= 0.270), libdebian-installer4-udeb (>= 0.124), cdebconf-udeb
+Description: Choose mirror to install from (program)
+
+Package: clock-setup
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 176
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 0.161
+Depends: libc6-udeb (>= 2.36), cdebconf-udeb, localechooser, tzsetup-udeb, di-utils, configured-network, rdate-udeb
+Description: set up clock
+Installer-Menu-Item: 2600
+
+Package: debian-archive-keyring-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 120
+Maintainer: Debian Release Team <packages@release.debian.org>
+Version: 2023.3+deb12u1
+Recommends: gpgv-udeb
+Description: GnuPG keys of the Debian archive
+ The Debian project digitally signs its Release files. This package
+ contains the archive keys used for that, in a minimal form for use
+ in the installer.
+
+Package: di-utils-mapdevfs
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 18
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.146
+Depends: libc6-udeb (>= 2.36), libdebian-installer4-udeb (>= 0.124)
+Description: mapdevfs utility for the debian installer
+
+Package: debootstrap-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 266
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.0.128+nmu2+deb12u1
+Depends: mounted-partitions
+Description: Bootstrap the Debian system
+
+Package: depthcharge-tools-installer
+Status: install ok unpacked
+Priority: standard
+Section: debian-installer
+Installed-Size: 10
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 2
+Depends: cdebconf-udeb, installed-base
+Provides: bootable-system
+Description: Make this ChromeOS board bootable
+Installer-Menu-Item: 7300
+
+Package: dmidecode-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 131
+Maintainer: Jörg Frings-Fürst <debian@jff.email>
+Version: 3.4-1
+Depends: libc6-udeb (>= 2.33)
+Description: SMBIOS/DMI table decoder (udeb)
+
+Package: dosfstools-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 198
+Maintainer: Andreas Bombe <aeb@debian.org>
+Version: 4.2-1
+Depends: libc6-udeb (>= 2.31)
+Description: utilities for making and checking MS-DOS FAT filesystems (udeb)
+
+Package: e2fsprogs-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 1248
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Version: 1.47.0-2
+Depends: libblkid1-udeb, libc6-udeb (>= 2.36), libuuid1-udeb
+Description: stripped-down versions of e2fsprogs, for debian-installer
+ This package is an e2fsprogs package built for a reduced size, so that
+ it can help to save space in debian-installer.
+ .
+ Don't attempt to install this package, it has no support for a couple of
+ features you surely want.  Anyway it should refuse to install.
+
+Package: finish-install
+Status: install ok unpacked
+Priority: required
+Section: debian-installer
+Installed-Size: 79
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 2.117
+Depends: cdebconf-udeb, archdetect, installed-base, created-fstab, bootable-system
+Description: Finish the installation and reboot
+Installer-Menu-Item: 7800
+
+Package: libfuse2-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 274
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Version: 2.9.9-6+b1
+Depends: libc6-udeb (>= 2.36)
+Description: Filesystem in Userspace (library)
+
+Package: fuse3-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 57
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Version: 3.14.0-4
+Depends: libc6-udeb (>= 2.36), libfuse3-3-udeb (= 3.14.0-4)
+Description: Filesystem in Userspace (3.x version)
+
+Package: libfuse3-3-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 263
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Version: 3.14.0-4
+Depends: libc6-udeb (>= 2.36)
+Description: Filesystem in Userspace (library) (3.x version)
+
+Package: gpgv-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 467
+Maintainer: Debian GnuPG Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+Version: 2.2.40-1.1
+Depends: libc6-udeb (>= 2.36), libgcrypt20-udeb (>= 1.10.1), libgpg-error0-udeb (>= 1.46), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: minimal signature verification tool
+ GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures.
+ It includes an advanced key management facility and is compliant
+ with the proposed OpenPGP Internet standard as described in RFC 4880.
+ .
+ This is GnuPG's signature verification tool, gpgv, packaged in minimal
+ form for use in debian-installer.
+
+Package: grub-installer
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 730
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.194
+Depends: libc6-udeb (>= 2.36), libparted2-udeb (>= 3.5), cdebconf-udeb, kernel-installer, created-fstab, di-utils, di-utils-mapdevfs, os-prober, partman-utils
+Provides: bootable-system
+Description: Install GRUB on a hard disk
+Installer-Menu-Item: 7400
+
+Package: grub-mount-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 1694
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Version: 2.06-13+deb12u1
+Depends: libc6-udeb (>= 2.36), libdevmapper1.02.1-udeb (>= 2:1.02.185), libfuse2-udeb (>= 2.9.9)
+Description: export GRUB filesystems using FUSE
+
+Package: disk-detect
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 67
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.159
+Depends: cdebconf-udeb, hw-detect, di-utils, pciutils-udeb
+Provides: harddrive-detection
+Description: Detect disk drives
+Installer-Menu-Item: 3500
+
+Package: ethdetect
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 94
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.159
+Depends: rootskel, cdebconf-udeb, hw-detect, di-utils, pciutils-udeb
+Provides: ethernet-card-detection
+Description: Detect network hardware and load kernel drivers for it
+Installer-Menu-Item: 1700
+
+Package: jfsutils-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 1528
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Version: 1.1.15-5
+Depends: libc6-udeb (>= 2.30), libuuid1-udeb (>= 2.31)
+Description: stripped-down version of jfsutils, for debian-installer
+ This package is a jfsutils package built for reduced size, so that it
+ can help to save space in debian-installer.
+ .
+ Don't attempt to install this package, it has no support for a couple of
+ features you surely want.  Anyway, it should fail to install.
+
+Package: kickseed-common
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 75
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 0.63
+Depends: di-utils (>= 1.20)
+Description: Common files for Kickstart compatibility
+ This package reads Kickstart files and preseeds an installation with them,
+ translating to the d-i preseeding infrastructure.
+
+Package: libgcrypt20-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 1308
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Version: 1.10.1-3
+Depends: libc6-udeb (>= 2.36), libgpg-error0-udeb (>= 1.46)
+Description: LGPL Crypto library - runtime library
+ libgcrypt contains cryptographic functions.  Many important free
+ ciphers, hash algorithms and public key signing algorithms have been
+ implemented:
+ .
+ Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
+ Poly1305, Camellia, ChaCha20, IDEA, Salsa, SM4, Blake-2, CRC, MD2, MD4, MD5,
+ RIPE-MD160, SM3, SHA-1, SHA-256, SHA-512, SHA3-224, SHA3-256, SHA3-384,
+ SHA3-512, SHAKE128, SHAKE256, Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC
+ (Curve25519, sec256k1, GOST R 34.10-2001 and GOST R 34.10-2012, etc.)
+
+Package: libgpg-error0-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 158
+Maintainer: Debian GnuPG Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+Version: 1.46-1
+Depends: libc6-udeb (>= 2.35)
+Description: library for common error values and messages in GnuPG components
+ Library that defines common error values for all GnuPG
+ components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
+ pinentry, SmartCard Daemon and possibly more in the future.
+ .
+ It will likely be renamed "gpgrt" in the future.
+
+Package: libinih1-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 19
+Maintainer: Yangfl <mmyangfl@gmail.com>
+Version: 55-1
+Depends: libc6-udeb (>= 2.33)
+Description: simple .INI file parser - udeb
+ inih (INI Not Invented Here) is a simple .INI file parser written in C.
+ It's only a couple of pages of code, and it was designed to be small and
+ simple, so it's good for embedded systems.
+ .
+ This is a version for use with the Debian Installer.
+ Do not install it on a normal system.
+
+Package: libnl-3-200-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 140
+Maintainer: Heiko Stuebner <mmind@debian.org>
+Version: 3.7.0-0.2+b1
+Depends: libc6-udeb (>= 2.34)
+Description: library for dealing with netlink sockets
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+ .
+ This package is a udeb. It's only useful inside of debian-installer.
+
+Package: libnl-genl-3-200-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 33
+Maintainer: Heiko Stuebner <mmind@debian.org>
+Version: 3.7.0-0.2+b1
+Depends: libnl-3-200-udeb (= 3.7.0-0.2+b1), libc6-udeb (>= 2.34)
+Description: library for dealing with netlink sockets - generic netlink
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+ .
+ This package is a udeb. It's only useful inside of debian-installer.
+
+Package: liburcu8-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 287
+Maintainer: Jon Bernard <jbernard@debian.org>
+Version: 0.13.2-1
+Depends: libc6-udeb (>= 2.34)
+Description: userspace RCU (read-copy-update) library -- udeb
+ This is a udeb version of liburcu8.
+
+Package: libzstd1-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 751
+Maintainer: RPM packaging team <team+pkg-rpm@tracker.debian.org>
+Version: 1.5.4+dfsg2-5
+Depends: libc6-udeb (>= 2.36)
+Description: fast lossless compression algorithm library for debian-installer
+
+Package: libdevmapper1.02.1-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 424
+Maintainer: Debian LVM Team <team+lvm@tracker.debian.org>
+Version: 2:1.02.185-2
+Depends: libc6-udeb (>= 2.35)
+Description: Linux Kernel Device Mapper userspace library
+ This is a udeb, or a microdeb, for the debian-installer.
+ .
+ The Linux Kernel Device Mapper is the LVM (Linux Logical Volume Management)
+ Team's implementation of a minimalistic kernel-space driver that handles
+ volume management, while keeping knowledge of the underlying device layout
+ in user-space.  This makes it useful for not only LVM, but software raid,
+ and other drivers that create "virtual" block devices.
+
+Package: liblzo2-2-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 147
+Maintainer: Stephen Kitt <skitt@debian.org>
+Version: 2.10-2
+Depends: libc6-udeb (>= 2.29)
+Description: data compression library
+
+Package: mdadm-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 945
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Version: 4.2-5
+Depends: libc6-udeb (>= 2.36), libudev1-udeb (>= 252.5)
+Description: Tool to administer Linux MD arrays (software RAID)
+ The mdadm utility can be used to create, manage, and monitor MD
+ (multi-disk) arrays for software RAID or multipath I/O.
+ .
+ This is a minimal package used by the debian-installer.
+
+Package: ndisc6-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 30
+Maintainer: Bernhard Schmidt <berni@debian.org>
+Version: 1.0.5-1+b2
+Depends: libc6-udeb (>= 2.36)
+Description: IPv6 diagnostic tools
+ ndisc6 gathers a few diagnostic tools for IPv6 networks including:
+  - rdisc6, which performs ICMPv6 Router Discovery in userland,
+ .
+ This is a udeb containing just the rdisc6 utility, for use by the
+ Debian installer.
+
+Package: rdnssd-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 26
+Maintainer: Bernhard Schmidt <berni@debian.org>
+Version: 1.0.5-1+b2
+Depends: libc6-udeb (>= 2.36)
+Description: IPv6 recursive DNS server discovery daemon
+ rdnssd autoconfigures recursive DNS servers on IPv6 networks
+ using ICMPv6 Neighbor Discovery (RFC 5006), and can update the
+ DNS resolvers configuration (/etc/resolv.conf) accordingly.
+ .
+ This is a udeb of rdnssd, for use by the debian-installer.
+
+Package: netcfg
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 1235
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.187+deb12u1
+Depends: libc6-udeb (>= 2.36), libdebconfclient0-udeb (>= 0.270), libdebian-installer4-udeb (>= 0.124), libiw30-udeb (>= 30~pre1), ethernet-card-detection, wpasupplicant-udeb, crypto-modules, rdnssd-udeb, ndisc6-udeb, wide-dhcpv6-client-udeb
+Provides: configured-network
+Description: Configure the network
+ To install additional installer components or the Debian Base System over
+ the network, you need to configure the network in the installer. This
+ component will first try to configure your network with DHCP and ask
+ you for static network configuration if this fails. The configured
+ network settings will be copied to your newly installed system.
+Installer-Menu-Item: 1800
+
+Package: nobootloader
+Status: install ok unpacked
+Priority: standard
+Section: debian-installer
+Installed-Size: 219
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.67
+Depends: cdebconf-udeb, installed-base, di-utils-mapdevfs
+Provides: bootable-system
+Description: Don't install any bootloader
+ This package will skip installing a boot-loader
+Installer-Menu-Item: 7700
+
+Package: ntfs-3g-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 587
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Version: 1:2022.10.3-1+deb12u2
+Depends: libc6-udeb (>= 2.36), fuse3-udeb
+Description: read/write NTFS driver for FUSE
+
+Package: open-iscsi-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 1349
+Maintainer: Debian iSCSI Maintainers <open-iscsi@packages.debian.org>
+Version: 2.1.8-1
+Depends: libc6-udeb (>= 2.35), libcrypto3-udeb (>= 3.0.5), libisns-udeb, libkmod2-udeb (>= 30~), libmount1-udeb (>= 2.33), scsi-modules
+Description: Configure iSCSI
+ The Open-iSCSI project is a high-performance, transport independent,
+ multi-platform implementation of RFC3720 iSCSI.
+ .
+ This is the minimal package (udeb) used by debian-installer.
+
+Package: libisns-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 492
+Maintainer: Debian iSCSI Maintainers <open-isns@packages.debian.org>
+Version: 0.101-0.2+b1
+Depends: libc6-udeb (>= 2.35), libcrypto3-udeb (>= 3.0.5)
+Description: Internet Storage Name Service - shared libraries
+ Open-iSNS is an implementation of the Internet Storage Name Service
+ (iSNS), according to RFC 4171, which facilitates automated discovery,
+ management, and configuration of iSCSI and Fibre Channel devices on a
+ TCP/IP network.
+ .
+ This package provides the libisns shared library for use within the
+ Debian Installer. Do not install it on a normal system.
+
+Package: os-prober-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 88
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.81
+Depends: libc6-udeb (>= 2.33), di-utils-mapdevfs, anna, grub-mount-udeb
+Provides: os-prober
+Description: utility to detect other OSes on a set of drives
+ This package is to be used by boot loader installers to detect other OSes
+ available on a system, in a generic format, which it can then adapt to its
+ own configuration format.
+
+Package: libparted-fs-resize0-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 86
+Maintainer: Parted Maintainer Team <parted-maintainers@alioth-lists.debian.net>
+Version: 3.5-3
+Depends: libc6-udeb (>= 2.36), libparted2-udeb (= 3.5-3)
+Description: disk partition manipulator - FS resizing library udeb
+ GNU Parted is a program that allows you to create, destroy, resize,
+ move, and copy disk partitions. This is useful for creating space
+ for new operating systems, reorganizing disk usage, and copying data
+ to new hard disks.
+ .
+ This is a cut-down library package for use in debian-installer.  It
+ contains the libparted-fs-resize shared library for resizing HFS+ and
+ FAT file systems.
+
+Package: libparted2-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 281
+Maintainer: Parted Maintainer Team <parted-maintainers@alioth-lists.debian.net>
+Version: 3.5-3
+Depends: libblkid1-udeb (>= 2.31), libc6-udeb (>= 2.36), libdevmapper1.02.1-udeb (>= 2:1.02.185), libuuid1-udeb (>= 2.31), dmidecode-udeb
+Description: disk partition manipulator - library udeb
+ GNU Parted is a program that allows you to create, destroy, resize,
+ move, and copy disk partitions. This is useful for creating space
+ for new operating systems, reorganizing disk usage, and copying data
+ to new hard disks.
+ .
+ This is a cut-down library package for use in debian-installer.
+
+Package: partman-auto
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 290
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 162
+Depends: cdebconf-udeb, di-utils, partman-base, partman-basicfilesystems, partman-ext3
+Description: Automatically partition storage devices (partman)
+
+Package: partman-auto-raid
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 63
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 51
+Depends: cdebconf-udeb, partman-base, partman-basicfilesystems, partman-ext3, partman-auto, partman-md
+Description: Allow preseeded RAID installs
+
+Package: partman-base
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 644
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 226
+Depends: libc6-udeb (>= 2.36), libparted-fs-resize0-udeb (>= 3.5), libparted2-udeb (>= 3.5), cdebconf-udeb, partman-utils, partman-partitioning, partman-target, archdetect, harddrive-detection, di-utils-mapdevfs, di-utils
+Provides: created-fstab, made-filesystems, mounted-partitions, partitioned-harddrives
+Description: Partition the storage devices (partman)
+Installer-Menu-Item: 4200
+
+Package: partman-utils
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 33
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 226
+Depends: libc6-udeb (>= 2.36), libparted2-udeb (>= 3.5)
+Description: Utilities related to partitioning
+
+Package: partman-basicfilesystems
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 729
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 164
+Depends: cdebconf-udeb, e2fsprogs-udeb, ext2-modules, fat-modules, dosfstools-udeb
+Provides: partman-filesystem
+Description: Add to partman support for ext2, linux-swap, fat16, fat32 and ntfs
+
+Package: partman-basicmethods
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 86
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 74
+Depends: cdebconf-udeb
+Provides: partman-method
+Description: Basic partition usage methods for partman
+ This package provides partman with two methods to use partitions.
+ The first is to format the partition.  The second is to keep and use
+ the existing data in the partition as it is.
+
+Package: partman-btrfs
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 84
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 59
+Depends: cdebconf-udeb, btrfs-progs-udeb, btrfs-modules, partman-basicfilesystems, partman-base
+Provides: partman-filesystem
+Description: Add to partman support for btrfs
+
+Package: partman-cros
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 25
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 3
+Depends: cdebconf-udeb, partman-base, libparted2-udeb (>= 3.3-3)
+Description: Add partman support for ChromeOS kernel partitions
+ This package provides a 'cros' partition method for partman. The
+ firmware and bootloader used on ChromeOS systems require a special
+ ChromeOS kernel partition created by this method.
+
+Package: partman-efi
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 106
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 101
+Depends: partman-base, efi-modules, dosfstools-udeb, cdebconf-udeb
+Description: Add to partman support for EFI System Partitions
+
+Package: partman-ext3
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 265
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 112
+Depends: cdebconf-udeb, e2fsprogs-udeb, ext3-modules, ext4-modules, partman-basicfilesystems, partman-base
+Provides: partman-filesystem
+Description: Add to partman support for ext3 and ext4
+
+Package: partman-iscsi
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 151
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 76
+Depends: cdebconf-udeb, partman-base, di-utils, open-iscsi-udeb
+Description: Adds support for iSCSI to partman
+
+Package: partman-jfs
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 39
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 62
+Depends: cdebconf-udeb, jfsutils-udeb, jfs-modules, partman-basicfilesystems (>= 59), partman-base (>= 124)
+Provides: partman-filesystem
+Description: Add support for jfs to partman
+
+Package: partman-md
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 629
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 106
+Depends: cdebconf-udeb, di-utils, md-modules, mdadm-udeb, partman-base
+Description: Add to partman support for MD
+
+Package: partman-partitioning
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 587
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 147
+Depends: e2fsprogs-udeb, ntfs-3g-udeb, cdebconf-udeb, di-utils
+Description: Partitioning operations for partman
+ This udeb provides partman with editing operations for creation
+ of new partitions, deletion of partitions and initialisation of the
+ partition table.
+
+Package: partman-target
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 388
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 127
+Depends: cdebconf-udeb, partman-basicfilesystems, partman-basicmethods, di-utils-mapdevfs, di-utils
+Description: Provides partman with ability to prepare /target
+ This udeb allows the user to choose how partitions should be used.
+
+Package: partman-xfs
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 39
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 68
+Depends: cdebconf-udeb, xfsprogs-udeb, xfs-modules, partman-basicfilesystems (>= 59), partman-base (>= 124)
+Provides: partman-filesystem
+Description: Add to partman support for xfs
+
+Package: pkgsel
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 103
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 0.79
+Depends: cdebconf-udeb, apt-setup-udeb, di-utils (>= 1.56)
+Description: Select and install packages
+Installer-Menu-Item: 7000
+
+Package: network-preseed
+Status: install ok unpacked
+Priority: standard
+Section: debian-installer
+Installed-Size: 90
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.117
+Depends: cdebconf-udeb, configured-network, preseed-common
+Description: download debconf preseed file
+Installer-Menu-Item: 2100
+
+Package: rdate-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 22
+Maintainer: Thiago Andrade Marques <andrade@debian.org>
+Version: 1:1.11-3
+Depends: libbsd0-udeb (>= 0.11.7), libc6-udeb (>= 2.36)
+Description: sets the system's date from a remote host
+
+Package: tzsetup-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 284
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1:0.122
+Depends: cdebconf-udeb, localechooser
+Description: choose time zone
+
+Package: user-setup-udeb
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 409
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.95
+Depends: cdebconf-udeb
+Description: Set up users and passwords
+Installer-Menu-Item: 2400
+
+Package: eject-udeb
+Status: install ok unpacked
+Priority: optional
+Section: debian-installer
+Installed-Size: 93
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Version: 2.38.1-5+deb12u2
+Depends: cdebconf-udeb, libc6-udeb (>= 2.36), libmount1-udeb (>= 2.33)
+Description: ejects CDs from d-i menu
+Installer-Menu-Item: 96000
+
+Package: libmount1-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 401
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Version: 2.38.1-5+deb12u2
+Depends: libblkid1-udeb (>= 2.31), libc6-udeb (>= 2.36), libselinux1-udeb (>= 3.4)
+Description: stripped down device mounting library, for debian-installer
+ The device mounting library, used by mount and umount helpers.
+ .
+ This is a minimal package for debian-installer.
+
+Package: wide-dhcpv6-client-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 162
+Maintainer: Roger Shimizu <rosh@debian.org>
+Version: 20080615-23
+Depends: libc6-udeb (>= 2.31)
+Description: DHCPv6 client for automatic IPv6 hosts configuration
+ This is the DHCPv6 client from WIDE project.
+ .
+ DHCPv6 allows prefix delagation and host configuration for the IPv6 network
+ protocol.
+ .
+ Multiple network interfaces are supported by this DHCPv6 package.
+ .
+ This is a udeb, designed to be used by Debian installer.
+
+Package: libiw30-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 34
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Version: 30~pre9-14
+Depends: libc6-udeb (>= 2.36)
+Description: Tools for manipulating Linux Wireless Extensions
+ This package contains the Wireless tools, used to manipulate the Linux
+ Wireless Extensions. The Wireless Extension is an interface allowing you to
+ set Wireless LAN specific parameters and get the specific stats.
+ .
+ This is a udeb of the wireless tools.
+
+Package: wpasupplicant-udeb
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 976
+Maintainer: Debian wpasupplicant Maintainers <wpa@packages.debian.org>
+Version: 2:2.10-12+deb12u2
+Depends: libc6-udeb (>= 2.36), libcrypto3-udeb (>= 3.0.13), libnl-3-200-udeb, libnl-genl-3-200-udeb, busybox-udeb
+Description: client support for WPA and WPA2 (IEEE 802.11i)
+ wpa-supplicant is a userspace daemon handling connection and authentication
+ in wireless and wired networks, primarily secured with the WPA/WPA2/WPA3
+ protocols. This software provides key negotiation with the access point
+ (WPA Authenticator), and controls association with IEEE 802.11i networks.
+ .
+ This is a udeb of wpasupplicant for use by the debian-installer.
+
+Package: xfsprogs-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 344
+Maintainer: XFS Development Team <linux-xfs@vger.kernel.org>
+Version: 6.1.0-1
+Depends: libblkid1-udeb (>= 2.31), libc6-udeb (>= 2.36), libinih1-udeb (>= 55), liburcu8-udeb (>= 0.13.2), libuuid1-udeb (>= 2.31)
+Description: A stripped-down version of xfsprogs, for debian-installer
+ This package is an xfsprogs package built for reduced size, so that it
+ can help to save space in debian-installer.
+ .
+ Don't attempt to install this package, it has no support for a couple of
+ features you surely want.  Anyway, it should fail to install.
+
+Package: btrfs-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 3757
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di, md-modules-6.1.0-27-amd64-di
+Provides: btrfs-modules
+Description: BTRFS filesystem support
+ This package contains the BTRFS filesystem module for the kernel.
+
+Package: crypto-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 319
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di
+Provides: crypto-modules
+Description: crypto modules
+ This package contains crypto modules.
+
+Package: efi-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 55
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di
+Provides: efi-modules
+Description: EFI modules
+ This package contains EFI modules.
+
+Package: ext4-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 2379
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di
+Provides: ext2-modules, ext3-modules, ext4-modules
+Description: ext2/ext3/ext4 filesystem support
+ This package contains the ext4 filesystem module for the kernel, which
+ also supports ext2 and ext3.
+
+Package: jfs-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 455
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di
+Provides: jfs-modules
+Description: JFS filesystem support
+ This package contains the JFS filesystem module for the kernel.
+
+Package: loop-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 82
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di
+Provides: loop-modules
+Description: Loopback filesystem support
+ This package contains loopback filesystem support for the kernel.
+
+Package: md-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 2931
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di
+Provides: md-modules
+Description: RAID and LVM support
+ This package contains RAID and LVM modules for the kernel.
+
+Package: mtd-core-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 187
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di
+Provides: mtd-core-modules
+Description: MTD core
+ This package contains the MTD core.
+
+Package: nic-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 34707
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di, nic-shared-modules-6.1.0-27-amd64-di, i2c-modules-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di, mtd-core-modules-6.1.0-27-amd64-di
+Provides: nic-extra-modules, nic-modules
+Description: NIC drivers
+ This package contains Ethernet and some paravirtualised network drivers
+ for the kernel.
+
+Package: nic-pcmcia-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 1475
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di, nic-shared-modules-6.1.0-27-amd64-di, nic-wireless-modules-6.1.0-27-amd64-di, pcmcia-modules-6.1.0-27-amd64-di, mmc-core-modules-6.1.0-27-amd64-di
+Provides: nic-pcmcia-modules
+Description: Common PCMCIA NIC drivers
+ This package contains common PCMCIA NIC drivers for the kernel.
+
+Package: nic-shared-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 1779
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di
+Provides: nic-shared-modules
+Description: Shared NIC drivers
+ This package contains NIC drivers needed by combinations of nic-modules,
+ nic-pcmcia-modules, nic-usb-modules and nic-wireless-modules.
+
+Package: nic-usb-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 1910
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di, nic-shared-modules-6.1.0-27-amd64-di, nic-wireless-modules-6.1.0-27-amd64-di, usb-modules-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di
+Provides: nic-usb-modules
+Description: USB NIC drivers
+ This package contains USB network adapter drivers for the kernel.
+
+Package: nic-wireless-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 43194
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di, nic-shared-modules-6.1.0-27-amd64-di, usb-modules-6.1.0-27-amd64-di, mmc-core-modules-6.1.0-27-amd64-di, pcmcia-modules-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di, rfkill-modules-6.1.0-27-amd64-di, crypto-modules-6.1.0-27-amd64-di
+Provides: nic-wireless-modules
+Description: Wireless NIC drivers
+ This package contains wireless NIC drivers for the kernel.  Includes
+ crypto modules only needed for wireless (WEP, WPA).
+
+Package: xfs-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 4104
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di, crc-modules-6.1.0-27-amd64-di
+Provides: xfs-modules
+Description: XFS filesystem support
+ This package contains the XFS filesystem module for the kernel.
+
+Package: firmware-iwlwifi
+Status: install ok unpacked
+Priority: optional
+Section: non-free-firmware/kernel
+Installed-Size: 82286
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 20230210-5
+Suggests: initramfs-tools
+Description: Binary firmware for Intel Wireless cards
+ This package contains the binary firmware for Intel Wireless cards
+ supported by the iwl3945, iwl4965, and iwlwifi drivers.
+ .
+ Contents:
+  * Intel Wireless 8260 Bluetooth configuration, version 20.10.0.8
+    (intel/ibt-11-5.ddc)
+  * Intel Wireless 8260 Bluetooth firmware, version 20.100.0.3
+    (intel/ibt-11-5.sfi)
+  * Intel Wireless 8265 Bluetooth configuration, version 20.30.0.1
+    (intel/ibt-12-16.ddc)
+  * Intel Wireless 8265 Bluetooth firmware, version 21.10.0.6
+    (intel/ibt-12-16.sfi)
+  * Intel Wireless 9460/9650 (var 0 rev 1) Bluetooth configuration,
+    version 20.10 (intel/ibt-17-0-1.ddc)
+  * Intel Wireless 9460/9650 (var 0 rev 1) Bluetooth firmware, version
+    20.30.0.1 (intel/ibt-17-0-1.sfi)
+  * Intel Wireless 9460/9650 (var 16 rev 1) Bluetooth configuration,
+    version 20.60.0.2 (intel/ibt-17-16-1.ddc)
+  * Intel Wireless 9460/9650 (var 16 rev 1) Bluetooth firmware, version
+    22.200.0.2 (intel/ibt-17-16-1.sfi)
+  * Intel Wireless 9160/9260 (var 0 rev 1) Bluetooth configuration,
+    version 20.10 (intel/ibt-18-0-1.ddc)
+  * Intel Wireless 9160/9260 (var 0 rev 1) Bluetooth firmware, version
+    20.30.0.1 (intel/ibt-18-0-1.sfi)
+  * Intel Wireless 9160/9260 (var 16 rev 1) Bluetooth configuration,
+    version 20.60.0.2 (intel/ibt-18-16-1.ddc)
+  * Intel Wireless 9160/9260 (var 16 rev 1) Bluetooth firmware, version
+    22.200.0.2 (intel/ibt-18-16-1.sfi)
+  * Intel Bluetooth AX201 (var 0 rev 0) configuration, version 21.20.0.4
+    (intel/ibt-19-0-0.ddc)
+  * Intel Bluetooth AX201 (var 0 rev 0) firmware, version 22.200.0.2
+    (intel/ibt-19-0-0.sfi)
+  * Intel Bluetooth AX201 (var 0 rev 1) configuration, version
+    22.200.0.2 (intel/ibt-19-0-1.ddc)
+  * Intel Bluetooth AX201 (var 0 rev 1) firmware, version 22.180.0.2
+    (intel/ibt-19-0-1.sfi)
+  * Intel Bluetooth AX201 (var 0 rev 4) configuration, version 21.20.0.4
+    (intel/ibt-19-0-4.ddc)
+  * Intel Bluetooth AX201 (var 0 rev 4) firmware, version 22.200.0.2
+    (intel/ibt-19-0-4.sfi)
+  * Intel Bluetooth AX201 (var 16 rev 4) configuration, version
+    21.20.0.4 (intel/ibt-19-16-4.ddc)
+  * Intel Bluetooth AX201 (var 16 rev 4) firmware, version 22.200.0.2
+    (intel/ibt-19-16-4.sfi)
+  * Intel Bluetooth AX201 firmware, version 21.110.0.3
+    (intel/ibt-19-240-1.ddc)
+  * Intel Bluetooth AX201 firmware, version 22.200.0.2
+    (intel/ibt-19-240-1.sfi)
+  * Intel Bluetooth AX201 firmware, version 21.90.0.3
+    (intel/ibt-19-240-4.ddc)
+  * Intel Bluetooth AX201 firmware, version 22.200.0.2
+    (intel/ibt-19-240-4.sfi)
+  * Intel Bluetooth AX201 (var 32 rev 0) configuration
+    (intel/ibt-19-32-0.ddc)
+  * Intel Bluetooth AX201 (var 32 rev 0) firmware, version 22.200.0.2
+    (intel/ibt-19-32-0.sfi)
+  * Intel Bluetooth AX201 (var 32 rev 1) configuration, version
+    21.20.0.4 (intel/ibt-19-32-1.ddc)
+  * Intel Bluetooth AX201 (var 32 rev 1) firmware, version 22.200.0.2
+    (intel/ibt-19-32-1.sfi)
+  * Intel Bluetooth AX201 (var 32 rev 4) configuration, version
+    21.90.0.3 (intel/ibt-19-32-4.ddc)
+  * Intel Bluetooth AX201 (var 32 rev 4) firmware, version 22.200.0.2
+    (intel/ibt-19-32-4.sfi)
+  * Intel Wireless 22161 (var 0 rev 3) Bluetooth configuration, version
+    22.200.0.2 (intel/ibt-20-0-3.ddc)
+  * Intel Wireless 22161 (var 0 rev 3) Bluetooth firmware, version
+    22.180.0.2 (intel/ibt-20-0-3.sfi)
+  * Intel Wireless 22161 (var 1 rev 3) Bluetooth configuration, version
+    21.0.0.4 (intel/ibt-20-1-3.ddc)
+  * Intel Wireless 22161 (var 1 rev 3) Bluetooth firmware, version
+    22.200.0.2 (intel/ibt-20-1-3.sfi)
+  * Intel Wireless 22161 (var 1 rev 4) Bluetooth configuration
+    (intel/ibt-20-1-4.ddc)
+  * Intel Wireless 22161 (var 1 rev 4) Bluetooth firmware, version
+    22.200.0.2 (intel/ibt-20-1-4.sfi)
+  * Intel Wireless AX211 Bluethooth configuration, version 22.80.0.4
+    (intel/ibt-0040-0041.ddc)
+  * Intel Wireless AX211 Bluethooth firmware, version 22.200.0.2
+    (intel/ibt-0040-0041.sfi)
+  * intel/ibt-1040-0041.ddc
+  * intel/ibt-1040-0041.sfi
+  * Intel Wireless AX2100 Bluethooth configuration, version 22.00.0.0
+    (intel/ibt-0041-0041.ddc)
+  * Intel Wireless AX2100 Bluethooth firmware, version 22.200.0.2
+    (intel/ibt-0041-0041.sfi)
+  * Intel Wireless Bluetooth AX201 configuration, version 22.80.0.4
+    (intel/ibt-0040-4150.ddc)
+  * Intel Wireless Bluetooth AX201 firmware, version 22.200.0.2
+    (intel/ibt-0040-4150.sfi)
+  * Intel Wireless Bluetooth AX201 configuration, version 22.80.0.4
+    (intel/ibt-1040-4150.ddc)
+  * Intel Wireless Bluetooth AX201 firmware, version 22.200.0.2
+    (intel/ibt-1040-4150.sfi)
+  * Intel Wireless 3160 (B6) Bluetooth firmware patch, version 19.30
+    (intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq)
+  * Intel Wireless 3160 (B4) Bluetooth firmware patch, version 19.01
+    (intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq)
+  * Intel Wireless 7260 (B5) Bluetooth firmware patch, version 20.60.0.2
+    (intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq)
+  * Intel Wireless 7260 (B3) Bluetooth firmware patch, version 20.60.0.2
+    (intel/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq)
+  * Intel Wireless 7260 Bluetooth firmware generic patch
+    (intel/ibt-hw-37.7.bseq)
+  * Intel Wireless 7265 (C0) Bluetooth firmware patch, version 19.30
+    (intel/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq)
+  * Intel Wireless 7265 (D0) Bluetooth firmware patch, version 20.60.0.2
+    (intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq)
+  * Intel Wireless 7265 (D1) Bluetooth firmware patch, version 20.70.0.4
+    (intel/ibt-hw-37.8.10-fw-22.50.19.14.f.bseq)
+  * Intel Wireless 7265 Bluetooth firmware generic patch
+    (intel/ibt-hw-37.8.bseq)
+  * Intel Wireless 100 firmware, version 39.31.5.1 (iwlwifi-100-5.ucode)
+  * Intel Wireless 105 firmware, version 18.168.6.1
+    (iwlwifi-105-6.ucode)
+  * Intel Wireless 135 firmware, version 18.168.6.1
+    (iwlwifi-135-6.ucode)
+  * Intel Wireless 1000 firmware, version 39.31.5.1
+    (iwlwifi-1000-5.ucode)
+  * Intel Wireless 2200 firmware, version 18.168.6.1
+    (iwlwifi-2000-6.ucode)
+  * Intel Wireless 2230 firmware, version 18.168.6.1
+    (iwlwifi-2030-6.ucode)
+  * Intel Wireless 3160 firmware, version 17.bfb58538.0
+    (iwlwifi-3160-17.ucode)
+  * Intel Wireless 3168 firmware, version 29.0bd893f3.0
+    (iwlwifi-3168-29.ucode)
+  * Intel Wireless 3945 firmware, version 15.32.2.9
+    (iwlwifi-3945-2.ucode)
+  * Intel Wireless 4965 firmware, version 228.61.2.24
+    (iwlwifi-4965-2.ucode)
+  * Intel Wireless 5100, 5300 and 5350 firmware, version 8.83.5.1
+    (iwlwifi-5000-5.ucode)
+  * Intel Wireless 5150 firmware, version 8.24.2.2
+    (iwlwifi-5150-2.ucode)
+  * Intel Wireless 6000 firmware, version 9.221.4.1
+    (iwlwifi-6000-4.ucode)
+  * Intel Wireless 6005/6205 firmware, version 18.168.6.1
+    (iwlwifi-6000g2a-6.ucode)
+  * Intel Wireless 6030 firmware, version 18.168.6.1
+    (iwlwifi-6000g2b-6.ucode)
+  * Intel Wireless 6250 firmware, version 41.28.5.1
+    (iwlwifi-6050-5.ucode)
+  * Intel Wireless 7260 firmware, version 17.bfb58538.0
+    (iwlwifi-7260-17.ucode)
+  * Intel Wireless 7265 firmware, version 17.bfb58538.0
+    (iwlwifi-7265-17.ucode)
+  * Intel Wireless 7265D firmware, version 29.0bd893f3.0
+    (iwlwifi-7265D-29.ucode)
+  * Intel Wireless 8000C firmware, version 36.ca7b901d.0
+    (iwlwifi-8000C-36.ucode)
+  * Intel Wireless 8265 firmware, version 36.ca7b901.0
+    (iwlwifi-8265-36.ucode)
+  * Intel Wireless 9000 firmware, version 34.ba501b11.0
+    (iwlwifi-9000-pu-b0-jf-b0-34.ucode)
+  * Intel Wireless 9000 firmware, version 38.755cfdd8.0
+    (iwlwifi-9000-pu-b0-jf-b0-38.ucode)
+  * Intel Wireless 9000 firmware, version 46.ea3728ee.0
+    (iwlwifi-9000-pu-b0-jf-b0-46.ucode)
+  * Intel Wireless 9260 firmware, version 34.ba501b11.0
+    (iwlwifi-9260-th-b0-jf-b0-34.ucode)
+  * Intel Wireless 9260 firmware, version 38.755cfdd8.0
+    (iwlwifi-9260-th-b0-jf-b0-38.ucode)
+  * Intel Wireless 9260 firmware, version 46.ea3728ee.0
+    (iwlwifi-9260-th-b0-jf-b0-46.ucode)
+  * Intel Wireless 22000 series (QU-B-HR-B) firmware, version
+    50.3e391d3e.0 (iwlwifi-Qu-b0-hr-b0-50.ucode)
+  * Intel Wireless 22000 series (QU-B-HR-B) firmware, version
+    59.601f3a66.0 (iwlwifi-Qu-b0-hr-b0-59.ucode)
+  * Intel Wireless 22000 series (QU-B-HR-B) firmware, version
+    72.daa05125.0 (iwlwifi-Qu-b0-hr-b0-72.ucode)
+  * Intel Wireless 22000 series (QU-B-JF-B) firmware, version
+    50.3e391d3e.0 (iwlwifi-Qu-b0-jf-b0-50.ucode)
+  * Intel Wireless 22000 series (QU-B-JF-B) firmware, version
+    59.601f3a66.0 (iwlwifi-Qu-b0-jf-b0-59.ucode)
+  * Intel Wireless 22000 series (QU-B-JF-B) firmware, version
+    72.daa05125.0 (iwlwifi-Qu-b0-jf-b0-72.ucode)
+  * Intel Wireless 22000 series (QU-C-HR-B) firmware, version
+    50.3e391d3e.0 (iwlwifi-Qu-c0-hr-b0-50.ucode)
+  * Intel Wireless 22000 series (QU-C-HR-B) firmware, version
+    59.601f3a66.0 (iwlwifi-Qu-c0-hr-b0-59.ucode)
+  * Intel Wireless 22000 series (QU-C-HR-B) firmware, version
+    72.daa05125.0 (iwlwifi-Qu-c0-hr-b0-72.ucode)
+  * Intel Wireless 22000 series (QU-C-JF-B) firmware, version
+    50.3e391d3e.0 (iwlwifi-Qu-c0-jf-b0-50.ucode)
+  * Intel Wireless 22000 series (QU-C-JF-B) firmware, version
+    59.601f3a66.0 (iwlwifi-Qu-c0-jf-b0-59.ucode)
+  * Intel Wireless 22000 series (QU-C-JF-B) firmware, version
+    72.daa05125.0 (iwlwifi-Qu-c0-jf-b0-72.ucode)
+  * Intel Wireless 22000 series (QUZ-A-HR-B) firmware, version
+    50.3e391d3e.0 (iwlwifi-QuZ-a0-hr-b0-50.ucode)
+  * Intel Wireless 22000 series (QUZ-A-HR-B) firmware, version
+    59.601f3a66.0 (iwlwifi-QuZ-a0-hr-b0-59.ucode)
+  * Intel Wireless 22000 series (QUZ-A-HR-B) firmware, version
+    72.daa05125.0 (iwlwifi-QuZ-a0-hr-b0-72.ucode)
+  * Intel Wireless 22000 series (QUZ-A-JF-B) firmware, version
+    50.3e391d3e.0 (iwlwifi-QuZ-a0-jf-b0-50.ucode)
+  * Intel Wireless 22000 series (QUZ-A-JF-B) firmware, version
+    59.601f3a66.0 (iwlwifi-QuZ-a0-jf-b0-59.ucode)
+  * Intel Wireless 22000 series (QUZ-A-JF-B) firmware, version
+    72.daa05125.0 (iwlwifi-QuZ-a0-jf-b0-72.ucode)
+  * Intel Wireless series (CC-A0) firmware, version 50.3e391d3e.0
+    (iwlwifi-cc-a0-50.ucode)
+  * Intel Wireless series (CC-A0) firmware, version 59.601f3a66.0
+    (iwlwifi-cc-a0-59.ucode)
+  * Intel Wireless series (CC-A0) firmware, version 72.daa05125.0
+    (iwlwifi-cc-a0-72.ucode)
+  * Intel Wireless (TY-A0-GF-A0) firmware, version 59.601f3a66.0
+    (iwlwifi-ty-a0-gf-a0-59.ucode)
+  * Intel Wireless (TY-A0-GF-A0) firmware, version 66.55c64978.0
+    (iwlwifi-ty-a0-gf-a0-66.ucode)
+  * Intel Wireless (TY-A0-GF-A0) firmware, version 72.daa05125.0
+    (iwlwifi-ty-a0-gf-a0-72.ucode)
+  * Intel Wireless (TY-A0-GF-A0) PNVM firmware, version 76.27f1c37b.0
+    (iwlwifi-ty-a0-gf-a0.pnvm)
+  * Intel Wireless (SO-A0-GF-A0) firmware, version 72.daa05125.0
+    (iwlwifi-so-a0-gf-a0-72.ucode)
+  * Intel Wireless (SO-A0-GF-A0) PNVM firmware, version 76.27f1c37b.0
+    (iwlwifi-so-a0-gf-a0.pnvm)
+  * iwlwifi-so-a0-gf4-a0-72.ucode
+  * Intel Wireless (SO-A0-GF4-A0) PNVM firmware, version 76.27f1c37b.0
+    (iwlwifi-so-a0-gf4-a0.pnvm)
+  * Intel Wireless (SO-A0-HR-B0) firmware, version 72.daa05125.0
+    (iwlwifi-so-a0-hr-b0-72.ucode)
+  * Intel Wireless (SO-A0-JF-B0) firmware, version 72.daa05125.0
+    (iwlwifi-so-a0-jf-b0-72.ucode)
+
+Package: firmware-realtek
+Status: install ok unpacked
+Priority: optional
+Section: non-free-firmware/kernel
+Installed-Size: 6881
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 20230210-5
+Suggests: initramfs-tools
+Description: Binary firmware for Realtek wired/wifi/BT adapters
+ This package contains the binary firmware for Realtek Ethernet, wifi and
+ Bluetooth adapters supported by various drivers.
+ .
+ Contents:
+  * Realtek RTL8192E boot code (RTL8192E/boot.img)
+  * Realtek RTL8192E init data (RTL8192E/data.img)
+  * Realtek RTL8192E main code (RTL8192E/main.img)
+  * Realtek RTL8192EE Bluetooth firmware (rtl_bt/rtl8192ee_fw.bin)
+  * Realtek RTL8192EU Bluetooth firmware (rtl_bt/rtl8192eu_fw.bin)
+  * Realtek RTL8723AU rev A Bluetooth firmware (rtl_bt/rtl8723a_fw.bin)
+  * Realtek RTL8723BU rev B Bluetooth firmware (rtl_bt/rtl8723b_fw.bin)
+  * Realtek RTL8723BS Bluetooth config
+    (rtl_bt/rtl8723bs_config-OBDA8723.bin,
+    rtl_bt/rtl8723bs_config-OBDA0623.bin)
+  * Realtek RTL8723BS Bluetooth firmware (rtl_bt/rtl8723bs_fw.bin)
+  * Realtek RTL8723D Bluetooth config (rtl_bt/rtl8723d_config.bin)
+  * Realtek RTL8723D Bluetooth firmware (rtl_bt/rtl8723d_fw.bin)
+  * Realtek RTL8761A Bluetooth firmware (rtl_bt/rtl8761a_fw.bin)
+  * Realtek RTL8761B Bluetooth config (rtl_bt/rtl8761b_config.bin)
+  * Realtek RTL8761B Bluetooth firmware (rtl_bt/rtl8761b_fw.bin)
+  * Realtek RTL8761BU Bluetooth config (rtl_bt/rtl8761bu_config.bin)
+  * Realtek RTL8761BU Bluetooth firmware (rtl_bt/rtl8761bu_fw.bin)
+  * Realtek RTL8812AE Bluetooth firmware (rtl_bt/rtl8812ae_fw.bin)
+  * Realtek RTL8821A Bluetooth firmware (rtl_bt/rtl8821a_fw.bin)
+  * Realtek RTL8821C Bluetooth config (rtl_bt/rtl8821c_config.bin,
+    rtl_bt/rtl8821a_config.bin)
+  * Realtek RTL8821C Bluetooth firmware (rtl_bt/rtl8821c_fw.bin)
+  * Realtek RTL8822B Bluetooth config (rtl_bt/rtl8822b_config.bin)
+  * Realtek RTL8822B Bluetooth firmware (rtl_bt/rtl8822b_fw.bin)
+  * Realtek RTL8822CS Bluetooth config (rtl_bt/rtl8822cs_config.bin)
+  * Realtek RTL8822CS Bluetooth firmware (rtl_bt/rtl8822cs_fw.bin)
+  * Realtek RTL8822CU Bluetooth config (rtl_bt/rtl8822cu_config.bin)
+  * Realtek RTL8822CU Bluetooth firmware (rtl_bt/rtl8822cu_fw.bin)
+  * Realtek RTL8852AU Bluetooth config (rtl_bt/rtl8852au_config.bin)
+  * Realtek RTL8852AU Bluetooth firmware (rtl_bt/rtl8852au_fw.bin)
+  * Realtek RTL8852BU Bluetooth config (rtl_bt/rtl8852bu_config.bin)
+  * Realtek RTL8852BU Bluetooth firmware (rtl_bt/rtl8852bu_fw.bin)
+  * Realtek RTL8852CU Bluetooth config (rtl_bt/rtl8852cu_config.bin)
+  * Realtek RTL8852CU Bluetooth firmware (rtl_bt/rtl8852cu_fw.bin)
+  * Realtek RTL8105E-1 firmware (rtl_nic/rtl8105e-1.fw)
+  * Realtek RTL8106E-1 firmware, version 0.0.1 (rtl_nic/rtl8106e-1.fw)
+  * Realtek RTL8106E-2 firmware, version 0.0.1 (rtl_nic/rtl8106e-2.fw)
+  * Realtek RTL8107E-1 firmware, version 0.0.2 (rtl_nic/rtl8107e-1.fw)
+  * Realtek RTL8107E-2 firmware, version 0.0.2 (rtl_nic/rtl8107e-2.fw)
+  * Realtek RTL8125 firmware (rtl_nic/rtl8125a-3.fw)
+  * Realtek RTL8125B firmware (rtl_nic/rtl8125b-1.fw)
+  * Realtek RTL8125B firmware (rtl_nic/rtl8125b-2.fw)
+  * Realtek RTL8152/RTL8153 firmware (rtl_nic/rtl8153a-2.fw)
+  * Realtek RTL8152/RTL8153 firmware (rtl_nic/rtl8153a-3.fw)
+  * Realtek RTL8152/RTL8153 firmware (rtl_nic/rtl8153a-4.fw)
+  * Realtek RTL8152/RTL8153 firmware (rtl_nic/rtl8153b-2.fw)
+  * Realtek RTL8153C firwmare (rtl_nic/rtl8153c-1.fw)
+  * Realtek RTL8156A firwmare (rtl_nic/rtl8156a-2.fw)
+  * Realtek RTL8156B firwmare (rtl_nic/rtl8156b-2.fw)
+  * Realtek RTL8111D-1/RTL8168D-1 firmware (rtl_nic/rtl8168d-1.fw)
+  * Realtek RTL8111D-2/RTL8168D-2 firmware (rtl_nic/rtl8168d-2.fw)
+  * Realtek RTL8168E-1 firmware (rtl_nic/rtl8168e-1.fw)
+  * Realtek RTL8168E-2 firmware (rtl_nic/rtl8168e-2.fw)
+  * Realtek RTL8168E-3 firmware, version 0.0.4 (rtl_nic/rtl8168e-3.fw)
+  * Realtek RTL8168F-1 firmware, version 0.0.5 (rtl_nic/rtl8168f-1.fw)
+  * Realtek RTL8168F-2 firmware, version 0.0.4 (rtl_nic/rtl8168f-2.fw)
+  * Realtek's RTL8168fp/RTL8117 firmware (rtl_nic/rtl8168fp-3.fw)
+  * Realtek RTL8168G-1 firmware, version 0.0.3 (rtl_nic/rtl8168g-1.fw)
+  * Realtek RTL8168G-2 firmware, version 0.0.1 (rtl_nic/rtl8168g-2.fw)
+  * Realtek RTL8168G-3 firmware, version 0.0.1 (rtl_nic/rtl8168g-3.fw)
+  * Realtek RTL8168H-1 firmware, version 0.0.2 (rtl_nic/rtl8168h-1.fw)
+  * Realtek RTL8168H-2 firmware, version 0.0.2 (rtl_nic/rtl8168h-2.fw)
+  * Realtek RTL8402-1 firmware, version 0.0.1 (rtl_nic/rtl8402-1.fw)
+  * Realtek RTL8411-1 firmware, version 0.0.3 (rtl_nic/rtl8411-1.fw)
+  * Realtek RTL8411-2 firmware, version 0.0.1 (rtl_nic/rtl8411-2.fw)
+  * Realtek RTL8188EE firmware (rtlwifi/rtl8188efw.bin)
+  * Realtek RTL8188EU firmware (rtlwifi/rtl8188eufw.bin)
+  * Realtek RTL8192CE/RTL8188CE firmware (rtlwifi/rtl8192cfw.bin)
+  * Realtek RTL8192CE/RTL8188CE B-cut firmware
+    (rtlwifi/rtl8192cfwU_B.bin)
+  * Realtek RTL8188CE A-cut firmware, version 4.816.2011
+    (rtlwifi/rtl8192cfwU.bin)
+  * Realtek RTL8192CU/RTL8188CU UMC A-cut firmware
+    (rtlwifi/rtl8192cufw_A.bin)
+  * Realtek RTL8192CU/RTL8188CU UMC B-cut firmware
+    (rtlwifi/rtl8192cufw_B.bin)
+  * Realtek RTL8192CU/RTL8188CU fallback firmware
+    (rtlwifi/rtl8192cufw.bin)
+  * Realtek RTL8192CU/RTL8188CU TMSC firmware
+    (rtlwifi/rtl8192cufw_TMSC.bin)
+  * Realtek RTL8192DE firmware (rtlwifi/rtl8192defw.bin)
+  * rtlwifi/rtl8192eu_ap_wowlan.bin
+  * Realtek RTl8192EU non-WoWLAN firmware (rtlwifi/rtl8192eu_nic.bin,
+    rtlwifi/rtl8192eefw.bin)
+  * Realtek RTl8192EU WoWLAN firmware (rtlwifi/rtl8192eu_wowlan.bin)
+  * Realtek RTL8192SE/RTL8191SE firmware, version 4.816.2011
+    (rtlwifi/rtl8192sefw.bin)
+  * Realtek RTL8192SU/RTL8712U firmware (rtlwifi/rtl8712u.bin)
+  * Realtek RTL8723AU rev A wifi-with-BT firmware
+    (rtlwifi/rtl8723aufw_A.bin)
+  * Realtek RTL8723AU rev B wifi-with-BT firmware
+    (rtlwifi/rtl8723aufw_B.bin)
+  * Realtek RTL8723AU rev B wifi-only firmware
+    (rtlwifi/rtl8723aufw_B_NoBT.bin)
+  * Realtek RTL8723BE firmware, version 36 (rtlwifi/rtl8723befw_36.bin)
+  * Realtek RTL8723BE firmware (rtlwifi/rtl8723befw.bin)
+  * Realtek RTL8723BS BT firmware (rtlwifi/rtl8723bs_bt.bin)
+  * Realtek RTl8723BU AP WoWLAN firmware
+    (rtlwifi/rtl8723bu_ap_wowlan.bin, rtlwifi/rtl8723bs_ap_wowlan.bin)
+  * Realtek RTl8723BU non-WoWLAN firmware (rtlwifi/rtl8723bu_nic.bin,
+    rtlwifi/rtl8723bs_nic.bin)
+  * Realtek RTl8723BU WoWLAN firmware (rtlwifi/rtl8723bu_wowlan.bin,
+    rtlwifi/rtl8723bs_wowlan.bin)
+  * Realtek RTL8723DE firmware (rtlwifi/rtl8723defw.bin)
+  * Realtek RTL8723AE rev B firmware (rtlwifi/rtl8723fw_B.bin)
+  * Realtek RTL8723AE rev A firmware (rtlwifi/rtl8723fw.bin)
+  * Realtek RTL8821AEFW firmware (rtlwifi/rtl8812aefw.bin)
+  * Realtek RTL8821AEFW wowlan firmware (rtlwifi/rtl8812aefw_wowlan.bin)
+  * Realtek RTL8821AE firmware, version 29 (rtlwifi/rtl8821aefw_29.bin)
+  * Realtek RTL8821AE firmware (rtlwifi/rtl8821aefw.bin)
+  * Realtek RTL8821AE firmware (rtlwifi/rtl8821aefw_wowlan.bin)
+  * Realtek RTL8822BE firmware (rtlwifi/rtl8822befw.bin)
+  * Realtek 8821C firmware (rtw88/rtw8821c_fw.bin)
+  * Realtek 8822BE firmware (rtw88/rtw8822b_fw.bin)
+  * Realtek 8822CE firmware (rtw88/rtw8822c_fw.bin)
+  * Realtek 8822C firmware (rtw88/rtw8822c_wow_fw.bin)
+  * rtw88/rtw8723d_fw.bin
+  * Realtek RTL8852A firmware, version v0.9.12.2 (rtw89/rtw8852a_fw.bin)
+  * Realtek RTL8852B firmware, version v0.27.32.1
+    (rtw89/rtw8852b_fw.bin)
+  * Realtek RTL8852C firmware, version v0.27.56.10
+    (rtw89/rtw8852c_fw.bin)
+
+Package: libaio1-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 20
+Maintainer: Guillem Jover <guillem@debian.org>
+Version: 0.3.113-4
+Depends: libc6-udeb (>= 2.36)
+Description: Linux kernel AIO access library - shared library
+ This library enables userspace to use Linux kernel asynchronous I/O
+ system calls, important for the performance of databases and other
+ advanced applications.
+ .
+ This package contains the udeb shared library.
+
+Package: lvm2-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 3145
+Maintainer: Debian LVM Team <team+lvm@tracker.debian.org>
+Version: 2.03.16-2
+Depends: libaio1-udeb (>= 0.3.113), libblkid1-udeb (>= 2.31), libc6-udeb (>= 2.35)
+Description: Linux Logical Volume Manager
+ This is a udeb, or a microdeb, for the debian-installer.
+ .
+ This is LVM2, the rewrite of The Linux Logical Volume Manager.  LVM
+ supports enterprise level volume management of disk and disk subsystems
+ by grouping arbitrary disks into volume groups. The total capacity of
+ volume groups can be allocated to logical volumes, which are accessed as
+ regular block devices.
+
+Package: partman-auto-lvm
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 306
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 91
+Depends: cdebconf-udeb, partman-base, partman-auto, partman-lvm, di-utils
+Description: Automatically partition storage devices using LVM
+
+Package: partman-lvm
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 1035
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 146
+Depends: cdebconf-udeb (>= 0.133), partman-base (>= 134), di-utils (>= 1.14), md-modules, lvm2-udeb
+Description: Adds support for LVM to partman
+
+Package: partman-auto-crypto
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 20
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 34
+Depends: cdebconf-udeb, partman-auto (>= 81), partman-auto-lvm (>= 24), partman-crypto (>= 25), partman-base (>= 114)
+Description: Automatically partition storage devices using crypto and LVM
+
+Package: partman-crypto
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 988
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 121
+Depends: partman-base, cdebconf-udeb, libc6-udeb (>= 2.36)
+Description: Add to partman support for block device encryption
+
+Package: fuse-modules-6.1.0-27-amd64-di
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 410
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Version: 6.1.115-1
+Depends: kernel-image-6.1.0-27-amd64-di
+Provides: fuse-modules
+Description: FUSE modules
+ This package contains the Filesystem in Userspace (FUSE) module.
+

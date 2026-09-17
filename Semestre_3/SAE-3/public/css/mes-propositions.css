@@ -1,0 +1,100 @@
+body {
+    font-family: var(--font-main);
+    background: var(--light-color);
+    color: var(--dark-color);
+    margin: 0;
+}
+
+main {
+    padding: var(--spacing);
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2rem;
+    color: var(--primary-color-title);
+}
+
+h2 {
+    margin: 40px 0 20px;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    border-left: 5px solid var(--secondary-color);
+    padding-left: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+thead {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid var(--light-color);
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+tbody tr:hover {
+    background: var(--tertiary-color);
+}
+
+td img {
+    border-radius: var(--border-radius);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.status {
+    font-weight: bold;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.status.valide {
+    background: var(--success-color);
+    color: #fff;
+}
+
+.status.refuse {
+    background: var(--danger-color);
+    color: #fff;
+}
+
+.status.attente {
+    background: var(--tertiary-color);
+    color: var(--dark-color);
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px 0;
+    color: var(--grey-color);
+}
+
+.no-items {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+    margin: 40px 0;
+}

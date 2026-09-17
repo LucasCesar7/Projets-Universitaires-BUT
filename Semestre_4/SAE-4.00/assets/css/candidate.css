@@ -1,0 +1,456 @@
+/* candidate.css - Dashboard Candidat */
+@import 'base.css';
+
+.candidate-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-gray);
+}
+
+/* Header do Candidato */
+.candidate-header {
+    background-color: var(--white);
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.candidate-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    text-decoration: none;
+}
+
+.candidate-logo h2 {
+    color: var(--principal);
+    font-size: var(--font-size-lg);
+    margin: 0;
+}
+
+.candidate-nav ul {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-lg);
+    margin: 0;
+    padding: 0;
+}
+
+.candidate-nav a {
+    color: var(--gray);
+    text-decoration: none;
+    font-weight: 500;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    transition: all 0.3s ease;
+}
+
+.candidate-nav a:hover,
+.candidate-nav a.active {
+    color: var(--principal);
+    background-color: rgba(79, 189, 171, 0.1);
+}
+
+.candidate-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.candidate-profile {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.profile-info {
+    text-align: right;
+}
+
+.profile-name {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: var(--font-size-base);
+}
+
+.profile-role {
+    color: var(--gray);
+    font-size: var(--font-size-sm);
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: var(--principal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: var(--font-size-lg);
+}
+
+/* Conteúdo Principal */
+.candidate-content {
+    flex: 1;
+    padding: var(--spacing-xl) 0;
+}
+
+.candidate-content .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Seção de Boas-Vindas */
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--principal) 0%, var(--principal-dark) 100%);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    color: var(--white);
+    margin-bottom: var(--spacing-xl);
+}
+
+.welcome-text h1 {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.welcome-text p {
+    font-size: var(--font-size-lg);
+    opacity: 0.9;
+    margin: 0;
+}
+
+.profile-avatar.large {
+    width: 100px;
+    height: 100px;
+    font-size: var(--font-size-3xl);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Cartões de Status */
+.status-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.status-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.status-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.status-card.status-pending {
+    border-color: var(--warning);
+}
+
+.status-card.status-approved {
+    border-color: var(--success);
+}
+
+.status-card.status-rejected {
+    border-color: var(--danger);
+}
+
+.status-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-2xl);
+    color: var(--white);
+    flex-shrink: 0;
+}
+
+.status-pending .status-icon {
+    background-color: var(--warning);
+}
+
+.status-approved .status-icon {
+    background-color: var(--success);
+}
+
+.status-rejected .status-icon {
+    background-color: var(--danger);
+}
+
+.default-status .status-icon {
+    background-color: var(--principal);
+}
+
+.status-info h3 {
+    font-size: var(--font-size-lg);
+    color: var(--dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.status-pending .status-badge {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: var(--warning);
+}
+
+.status-approved .status-badge {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--success);
+}
+
+.status-rejected .status-badge {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: var(--danger);
+}
+
+.status-number {
+    font-size: var(--font-size-2xl);
+    font-weight: bold;
+    color: var(--principal);
+    margin-bottom: var(--spacing-xs);
+}
+
+.status-info p {
+    color: var(--gray);
+    font-size: var(--font-size-base);
+    margin: 0;
+}
+
+/* Ações do Candidato */
+.candidate-actions {
+    margin-bottom: var(--spacing-xl);
+}
+
+.candidate-actions h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--dark);
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.action-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    text-decoration: none;
+    color: var(--dark);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.action-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--principal);
+}
+
+.action-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--principal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-2xl);
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.action-card:hover .action-icon {
+    background-color: var(--principal-dark);
+    transform: scale(1.1);
+}
+
+.action-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--dark);
+}
+
+.action-card p {
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Seção de Candidaturas */
+.applications-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.applications-section h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--dark);
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.applications-list {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.empty-state {
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+.empty-state i {
+    font-size: 4rem;
+    color: var(--light-gray);
+    margin-bottom: var(--spacing-lg);
+}
+
+.empty-state h3 {
+    font-size: var(--font-size-xl);
+    color: var(--gray);
+    margin-bottom: var(--spacing-sm);
+}
+
+.empty-state p {
+    color: var(--gray);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Tabela de Candidaturas (quando houver dados) */
+.applications-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.applications-table th {
+    background-color: var(--light-gray);
+    padding: var(--spacing-md);
+    text-align: left;
+    color: var(--gray);
+    font-weight: 600;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.applications-table td {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--dark);
+}
+
+.status-badge.table {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        padding: var(--spacing-md);
+    }
+    
+    .candidate-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .welcome-section {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-lg);
+        padding: var(--spacing-lg);
+    }
+    
+    .status-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .candidate-content .container {
+        padding: 0 var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-text h1 {
+        font-size: var(--font-size-2xl);
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .status-card {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-lg);
+    }
+    
+    .applications-list {
+        padding: var(--spacing-md);
+    }
+    
+    .applications-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

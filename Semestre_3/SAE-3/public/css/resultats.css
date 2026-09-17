@@ -1,0 +1,312 @@
+
+.resultats-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header */
+.resultats-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(4, 108, 246, 0.3);
+}
+
+.resultats-header h1 {
+    font-size: 48px;
+    margin: 0 0 15px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: var(--font-main);
+}
+
+.resultats-header .subtitle {
+    font-size: 20px;
+    margin: 0;
+    opacity: 0.95;
+}
+
+/* Statistiques globales */
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid var(--border-color);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.stat-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.stat-number {
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-family: var(--font-main);
+}
+
+.stat-label {
+    font-size: 16px;
+    color: var(--grey-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Sections de résultats */
+.resultats-section {
+    margin-bottom: 60px;
+}
+
+.resultats-section h2 {
+    font-size: 36px;
+    color: var(--primary-color-title);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--font-main);
+}
+
+/* Catégories */
+.categorie-block {
+    margin-bottom: 50px;
+    background: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-color);
+}
+
+.categorie-title {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border-left: 5px solid var(--secondary-color);
+    font-family: var(--font-main);
+}
+
+/* Podium */
+.podium {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.podium-item {
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    position: relative;
+    transition: all 0.3s;
+    border: 3px solid transparent;
+}
+
+.podium-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Médailles par position */
+.podium-item.position-1 {
+    border-color: var(--tertiary-color);
+    background: linear-gradient(135deg, rgba(232, 204, 131, 0.1), white);
+}
+
+.podium-item.position-2 {
+    border-color: var(--grey-color);
+    background: linear-gradient(135deg, rgba(128, 128, 128, 0.1), white);
+}
+
+.podium-item.position-3 {
+    border-color: var(--dark-gold-color);
+    background: linear-gradient(135deg, rgba(173, 128, 42, 0.1), white);
+}
+
+.medal {
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 15px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.podium-item.position-1 .medal {
+    animation-delay: 0s;
+}
+
+.podium-item.position-2 .medal {
+    animation-delay: 0.2s;
+}
+
+.podium-item.position-3 .medal {
+    animation-delay: 0.4s;
+}
+
+/* Informations de l'item */
+.item-info {
+    text-align: center;
+}
+
+.item-image {
+    width: 100%;
+    max-width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    border: 2px solid var(--border-color);
+}
+
+.item-image:hover {
+    transform: scale(1.05);
+}
+
+.item-info h4 {
+    font-size: 22px;
+    color: var(--dark-color);
+    margin: 15px 0 8px 0;
+    font-weight: bold;
+    font-family: var(--font-main);
+}
+
+.item-year {
+    font-size: 16px;
+    color: var(--grey-color);
+    margin-bottom: 15px;
+}
+
+/* Barre de votes */
+.votes-bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(201, 164, 84, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+    position: relative;
+    border: 1px solid var(--border-color);
+}
+
+.votes-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+    transition: width 1s ease;
+    animation: progressLoad 1.5s ease-in-out;
+}
+
+@keyframes progressLoad {
+    from { width: 0; }
+}
+
+.votes-count {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
+/* Message si pas de résultats */
+.no-results {
+    text-align: center;
+    font-size: 18px;
+    color: var(--grey-color);
+    padding: 40px;
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    margin: 20px 0;
+    border: 1px solid var(--border-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .resultats-header h1 {
+        font-size: 32px;
+    }
+    
+    .resultats-header .subtitle {
+        font-size: 16px;
+    }
+    
+    .stats-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .resultats-section h2 {
+        font-size: 28px;
+    }
+    
+    .categorie-title {
+        font-size: 22px;
+    }
+    
+    .podium {
+        grid-template-columns: 1fr;
+    }
+    
+    .medal {
+        font-size: 48px;
+    }
+    
+    .item-info h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resultats-container {
+        padding: 20px 10px;
+    }
+    
+    .resultats-header {
+        padding: 25px 15px;
+    }
+    
+    .resultats-header h1 {
+        font-size: 24px;
+    }
+    
+    .categorie-block {
+        padding: 20px 15px;
+    }
+    
+    .stat-card {
+        padding: 20px;
+    }
+    
+    .stat-number {
+        font-size: 32px;
+    }
+}

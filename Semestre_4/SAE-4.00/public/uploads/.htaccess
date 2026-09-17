@@ -1,0 +1,12 @@
+Options -ExecCGI -Indexes
+
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .phar .cgi .pl .py .jsp .asp .aspx .sh
+RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8 .phar .cgi .pl .py .jsp .asp .aspx .sh
+
+<FilesMatch "\.(php|phtml|php[0-9]*|phar|cgi|pl|py|jsp|asp|aspx|sh)$">
+    Require all denied
+</FilesMatch>

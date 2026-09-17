@@ -1,0 +1,535 @@
+// assets/js/candidat.js - Modern Dashboard JavaScript
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Inicializar todos os componentes
+    initAnimations();
+    initCountdowns();
+    initTooltips();
+    initForms();
+    initNotifications();
+    initSidebar();
+    initStatsCounter();
+});
+
+function getAppBasePath() {
+    const path = window.location.pathname;
+    const markers = ['/views/', '/assets/', '/config/', '/app/'];
+
+    for (const marker of markers) {
+        const index = path.indexOf(marker);
+        if (index !== -1) {
+            return path.slice(0, index);
+        }
+    }
+
+    const segments = path.split('/').filter(Boolean);
+    if (segments.length > 1) {
+        return `/${segments.slice(0, -1).join('/')}`;
+    }
+
+    return '';
+}
+
+function appUrl(path = '') {
+    const normalizedPath = path.replace(/^\/+/, '');
+    const basePath = getAppBasePath();
+
+    return normalizedPath ? `${basePath}/${normalizedPath}` : (basePath || '/');
+}
+
+/**
+ * Inicializar animações
+ */
+function initAnimations() {
+    // Adicionar classes de animação
+    const elements = document.querySelectorAll('.stat-card, .feature-card, .main-card');
+    elements.forEach((el, index) => {
+        el.classList.add('fade-in');
+        el.style.animationDelay = `${index * 0.1}s`;
+    });
+    
+    // Animar sidebar
+    const sidebarItems = document.querySelectorAll('.nav-candidat .nav-link');
+    sidebarItems.forEach((item, index) => {
+        item.classList.add('slide-in');
+        item.style.animationDelay = `${index * 0.05}s`;
+    });
+    
+    // Efeito parallax no hero
+    const hero = document.querySelector('.nominee-hero');
+    if (hero) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            hero.style.transform = `translate3d(0px, ${rate}px, 0px)`;
+        });
+    }
+}
+
+/**
+ * Inicializar contadores regressivos
+ */
+function initCountdowns() {
+    const countdowns = document.querySelectorAll('[data-countdown]');
+    
+    countdowns.forEach(element => {
+        const endDate = new Date(element.getAttribute('data-countdown')).getTime();
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = endDate - now;
+            
+            if (distance < 0) {
+                element.innerHTML = '<div class="alert alert-warning mb-0">Terminé</div>';
+                return;
+            }
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Atualizar elementos específicos se existirem
+            const dayEl = element.querySelector('.countdown-days');
+            const hourEl = element.querySelector('.countdown-hours');
+            const minEl = element.querySelector('.countdown-minutes');
+            const secEl = element.querySelector('.countdown-seconds');
+            
+            if (dayEl) dayEl.textContent = days;
+            if (hourEl) hourEl.textContent = hours.toString().padStart(2, '0');
+            if (minEl) minEl.textContent = minutes.toString().padStart(2, '0');
+            if (secEl) secEl.textContent = seconds.toString().padStart(2, '0');
+            
+            // Animar mudança
+            [dayEl, hourEl, minEl, secEl].forEach(el => {
+                if (el) {
+                    el.classList.add('pulse');
+                    setTimeout(() => el.classList.remove('pulse'), 300);
+                }
+            });
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    });
+}
+
+/**
+ * Inicializar tooltips
+ */
+function initTooltips() {
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl, {
+            delay: { show: 500, hide: 100 }
+        });
+    });
+}
+
+/**
+ * Inicializar formulários
+ */
+function initForms() {
+    const forms = document.querySelectorAll('.needs-validation');
+    
+    forms.forEach(form => {
+        form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+                
+                // Adicionar efeito visual nos campos inválidos
+                const invalidFields = form.querySelectorAll(':invalid');
+                invalidFields.forEach(field => {
+                    field.classList.add('is-invalid');
+                    
+                    // Criar feedback se não existir
+                    if (!field.nextElementSibling?.classList.contains('invalid-feedback')) {
+                        const feedback = document.createElement('div');
+                        feedback.className = 'invalid-feedback';
+                        feedback.textContent = 'Ce champ est requis.';
+                        field.parentNode.appendChild(feedback);
+                    }
+                });
+            }
+            
+            form.classList.add('was-validated');
+        }, false);
+    });
+    
+    // Remover classe de erro ao digitar
+    document.querySelectorAll('.form-control').forEach(input => {
+        input.addEventListener('input', function() {
+            if (this.classList.contains('is-invalid')) {
+                this.classList.remove('is-invalid');
+                const feedback = this.nextElementSibling;
+                if (feedback?.classList.contains('invalid-feedback')) {
+                    feedback.remove();
+                }
+            }
+        });
+    });
+}
+
+/**
+ * Inicializar sistema de notificações
+ */
+function initNotifications() {
+    // Verificar se há novas notificações
+    if ('Notification' in window && Notification.permission === 'granted') {
+        checkForNewNotifications();
+    }
+    
+    // Pedir permissão se necessário
+    const notificationBtn = document.getElementById('enable-notifications');
+    if (notificationBtn) {
+        notificationBtn.addEventListener('click', requestNotificationPermission);
+    }
+}
+
+function checkForNewNotifications() {
+    // Simular verificação de notificações
+    setTimeout(() => {
+        const hasNewNotifications = Math.random() > 0.7;
+        if (hasNewNotifications) {
+            showNotification('Nouvelle mise à jour', 'Votre candidature a été mise à jour.');
+        }
+    }, 5000);
+}
+
+function requestNotificationPermission() {
+    if ('Notification' in window) {
+        Notification.requestPermission().then(permission => {
+            if (permission === 'granted') {
+                showNotification('Notifications activées', 'Vous recevrez maintenant les mises à jour importantes.');
+            }
+        });
+    }
+}
+
+function showNotification(title, body) {
+    if ('Notification' in window && Notification.permission === 'granted') {
+        const notification = new Notification(title, {
+            body: body,
+            icon: appUrl('assets/images/logo.png'),
+            badge: appUrl('assets/images/badge.png')
+        });
+        
+        notification.onclick = function() {
+            window.focus();
+            notification.close();
+        };
+    }
+}
+
+/**
+ * Inicializar sidebar interativa
+ */
+function initSidebar() {
+    const sidebar = document.querySelector('.sidebar-container');
+    const toggleBtn = document.getElementById('sidebar-toggle');
+    
+    if (toggleBtn && sidebar) {
+        toggleBtn.addEventListener('click', function() {
+            sidebar.classList.toggle('collapsed');
+            localStorage.setItem('sidebar-collapsed', sidebar.classList.contains('collapsed'));
+        });
+    }
+    
+    // Restaurar estado da sidebar
+    if (localStorage.getItem('sidebar-collapsed') === 'true') {
+        sidebar?.classList.add('collapsed');
+    }
+    
+    // Highlight menu ativo
+    const currentPath = window.location.pathname;
+    const menuItems = document.querySelectorAll('.nav-candidat .nav-link');
+    
+    menuItems.forEach(item => {
+        const href = item.getAttribute('href');
+        if (href && currentPath.includes(href)) {
+            item.classList.add('active');
+        }
+    });
+}
+
+/**
+ * Animar contadores de estatísticas
+ */
+function initStatsCounter() {
+    const statNumbers = document.querySelectorAll('.stat-number[data-count]');
+    
+    statNumbers.forEach(element => {
+        const target = parseInt(element.getAttribute('data-count'));
+        const duration = 2000;
+        const increment = target / (duration / 16);
+        let current = 0;
+        
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            element.textContent = Math.floor(current).toLocaleString('fr-FR');
+        }, 16);
+    });
+}
+
+/**
+ * Sistema de temas claro/escuro
+ */
+function initThemeToggle() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    if (themeToggle) {
+        // Verificar tema salvo
+        const currentTheme = localStorage.getItem('theme') || 
+                           (prefersDarkScheme.matches ? 'dark' : 'light');
+        
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+        
+        themeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+            
+            const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+            
+            themeToggle.innerHTML = theme === 'dark' ? 
+                '<i class="fas fa-sun"></i>' : 
+                '<i class="fas fa-moon"></i>';
+        });
+    }
+}
+
+/**
+ * Copiar para área de transferência
+ */
+function copyToClipboard(text, element) {
+    navigator.clipboard.writeText(text).then(() => {
+        // Feedback visual
+        if (element) {
+            const original = element.innerHTML;
+            element.innerHTML = '<i class="fas fa-check"></i> Copié';
+            element.classList.add('btn-success');
+            
+            setTimeout(() => {
+                element.innerHTML = original;
+                element.classList.remove('btn-success');
+            }, 2000);
+        }
+        
+        // Toast de sucesso
+        showToast('Texte copié dans le presse-papier');
+    }).catch(err => {
+        console.error('Erreur de copie:', err);
+        showToast('Erreur lors de la copie', 'error');
+    });
+}
+
+/**
+ * Mostrar toast de notificação
+ */
+function showToast(message, type = 'success') {
+    // Criar container se não existir
+    let container = document.getElementById('toast-container');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'toast-container';
+        container.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        `;
+        document.body.appendChild(container);
+    }
+    
+    // Criar toast
+    const toast = document.createElement('div');
+    toast.className = `toast toast-${type}`;
+    toast.style.cssText = `
+        background: ${type === 'success' ? '#4CAF50' : type === 'error' ? '#f44336' : '#2196F3'};
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        animation: slideInRight 0.3s ease-out;
+    `;
+    
+    toast.innerHTML = `
+        <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
+        <span>${message}</span>
+    `;
+    
+    container.appendChild(toast);
+    
+    // Remover automaticamente
+    setTimeout(() => {
+        toast.style.animation = 'slideOutRight 0.3s ease-out';
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
+
+/**
+ * Funções utilitárias globais
+ */
+window.CandidatDashboard = {
+    copyToClipboard,
+    showToast,
+    initCountdowns,
+    initThemeToggle,
+    showNotification
+};
+
+// Adicionar estilos CSS para animações
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes slideInRight {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    
+    @keyframes slideOutRight {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
+    }
+    
+    .pulse {
+        animation: pulse 0.3s ease;
+    }
+    
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .dark-theme {
+        --primary-color: #5a67d8;
+        --secondary-color: #4c51bf;
+        --light-color: #1a202c;
+        --dark-color: #f7fafc;
+        background: #121212;
+        color: #e2e8f0;
+    }
+    
+    .dark-theme .card,
+    .dark-theme .sidebar-card,
+    .dark-theme .stat-card {
+        background: #1e1e1e;
+        color: #e2e8f0;
+    }
+    
+    .dark-theme .table {
+        background: #1e1e1e;
+        color: #e2e8f0;
+    }
+    
+    .dark-theme .table thead th {
+        background: #2d3748;
+        color: #e2e8f0;
+    }
+    
+    .sidebar-container.collapsed {
+        transform: translateX(-100%);
+    }
+`;
+document.head.appendChild(style);
+
+
+// Função para verificar se já tem candidatura na categoria
+async function checkExistingCandidature(categoryId) {
+    if (!categoryId) return false;
+    
+    try {
+        const endpoint = appUrl(`candidate/api/check-duplicate?category_id=${categoryId}`);
+        const response = await fetch(endpoint, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        
+        const result = await response.json();
+        return result.has_candidature;
+    } catch (error) {
+        console.error('Erreur de vérification:', error);
+        return false;
+    }
+}
+
+// Modificar a função checkFormValidity()
+async function checkFormValidity() {
+    const libelle = document.getElementById('libelle').value.trim();
+    const argumentaire = document.getElementById('argumentaire').value.trim();
+    const platform = document.getElementById('plateformeInput').value;
+    const category = document.getElementById('categorie').value;
+    const url = document.getElementById('url_contenu').value.trim();
+    const edition = document.getElementById('edition').value;
+    const categoryId = document.getElementById('categorie').value;
+    
+    // Verificar duplicação
+    let hasDuplicate = false;
+    if (categoryId) {
+        hasDuplicate = await checkExistingCandidature(categoryId);
+    }
+    
+    // Adicionar mensagem de erro se já tiver candidatura
+    const duplicateError = document.getElementById('duplicate-error');
+    if (hasDuplicate && !duplicateError) {
+        const errorDiv = document.createElement('div');
+        errorDiv.id = 'duplicate-error';
+        errorDiv.className = 'alert alert-warning mt-3';
+        errorDiv.innerHTML = `
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <strong>Attention :</strong> Vous avez déjà une candidature dans cette catégorie.
+            Vous ne pouvez soumettre qu'une seule candidature par catégorie.
+        `;
+        const form = document.getElementById('candidatureForm');
+        form.insertBefore(errorDiv, form.firstChild);
+    } else if (!hasDuplicate && duplicateError) {
+        duplicateError.remove();
+    }
+    
+    // Verificar se todos os campos obrigatórios estão preenchidos
+    const isFormValid = libelle && 
+                       argumentaire.length >= 200 && 
+                       platform && 
+                       category && 
+                       url && 
+                       edition && 
+                       hasValidImage &&
+                       !hasDuplicate; // Adicionar esta condição
+    
+    // Habilitar/desabilitar botão de submit
+    submitButton.disabled = !isFormValid;
+    
+    // Atualizar mensagem no botão se houver duplicação
+    if (hasDuplicate) {
+        submitButton.innerHTML = '<i class="fas fa-ban me-2"></i> Déjà candidaté dans cette catégorie';
+        submitButton.classList.remove('btn-primary');
+        submitButton.classList.add('btn-secondary');
+    } else {
+        submitButton.innerHTML = editId 
+            ? '<i class="fas fa-paper-plane me-2"></i> Mettre à jour la Candidature'
+            : '<i class="fas fa-paper-plane me-2"></i> Soumettre la Candidature';
+        if (isFormValid) {
+            submitButton.classList.remove('btn-secondary');
+            submitButton.classList.add('btn-primary');
+        } else {
+            submitButton.classList.remove('btn-primary');
+            submitButton.classList.add('btn-secondary');
+        }
+    }
+}

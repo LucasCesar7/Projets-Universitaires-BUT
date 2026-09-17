@@ -1,0 +1,20 @@
+# ============================================
+# BLOQUER ACCÈS DIRECT AUX IMAGES
+# Forcer passage OBLIGATOIRE par image.php
+# ============================================
+
+# Activer le moteur de réécriture
+RewriteEngine On
+
+# Bloquer TOUS les accès directs aux images
+RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|webp)$ [NC]
+RewriteCond %{REQUEST_URI} !image\.php [NC]
+RewriteRule ^ - [F,L]
+
+# Bloquer l'indexation
+Options -Indexes
+
+# Bloquer l'exécution de scripts
+<FilesMatch "\.(php|phtml|php3|php4|php5|pl|py|jsp|asp|sh|cgi|exe)$">
+    Require all denied
+</FilesMatch>

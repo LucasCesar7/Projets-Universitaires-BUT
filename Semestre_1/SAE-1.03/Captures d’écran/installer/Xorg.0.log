@@ -1,0 +1,864 @@
+[     4.373] 
+X.Org X Server 1.21.1.7
+X Protocol Version 11, Revision 0
+[     4.373] Current Operating System: Linux (none) 6.1.0-27-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.115-1 (2024-11-01) x86_64
+[     4.373] Kernel command line: BOOT_IMAGE=/install.amd/vmlinuz vga=788 --- quiet
+[     4.373] xorg-server 2:21.1.7-3+deb12u8 (https://www.debian.org/support) 
+[     4.373] Current version of pixman: 0.42.2
+[     4.373] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     4.373] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     4.374] (==) Log file: "/var/log/Xorg.0.log", Time: Thu Dec 12 14:03:33 2024
+[     4.374] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     4.374] (==) No Layout section.  Using the first Screen section.
+[     4.374] (==) No screen section available. Using defaults.
+[     4.374] (**) |-->Screen "Default Screen Section" (0)
+[     4.374] (**) |   |-->Monitor "<default monitor>"
+[     4.374] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     4.374] (==) Automatically adding devices
+[     4.374] (==) Automatically enabling devices
+[     4.374] (==) Automatically adding GPU devices
+[     4.374] (==) Automatically binding GPU devices
+[     4.374] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     4.374] (==) FontPath set to:
+	built-ins
+[     4.374] (==) ModulePath set to "/usr/lib/xorg/modules"
+[     4.374] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     4.374] (II) Loader magic: 0x55d14df0db80
+[     4.374] (II) Module ABI versions:
+[     4.374] 	X.Org ANSI C Emulation: 0.4
+[     4.374] 	X.Org Video Driver: 25.2
+[     4.374] 	X.Org XInput driver : 24.4
+[     4.374] 	X.Org Server Extension : 10.0
+[     4.375] (--) PCI:*(0@0:2:0) 8086:9a49:1025:1464 rev 1, Mem @ 0x6002000000/16777216, 0x4000000000/268435456, I/O @ 0x00004000/64, BIOS @ 0x????????/131072
+[     4.375] (==) Matched modesetting as autoconfigured driver 0
+[     4.375] (==) Matched fbdev as autoconfigured driver 1
+[     4.375] (==) Matched vesa as autoconfigured driver 2
+[     4.375] (==) Assigned the driver to the xf86ConfigLayout
+[     4.375] (II) LoadModule: "modesetting"
+[     4.375] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[     4.375] (II) Module modesetting: vendor="X.Org Foundation"
+[     4.375] 	compiled for 1.21.1.7, module version = 1.21.1
+[     4.375] 	Module class: X.Org Video Driver
+[     4.375] 	ABI class: X.Org Video Driver, version 25.2
+[     4.375] (II) LoadModule: "fbdev"
+[     4.375] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[     4.375] (II) Module fbdev: vendor="X.Org Foundation"
+[     4.375] 	compiled for 1.21.1.3, module version = 0.5.0
+[     4.375] 	Module class: X.Org Video Driver
+[     4.375] 	ABI class: X.Org Video Driver, version 25.2
+[     4.375] (II) LoadModule: "vesa"
+[     4.375] (WW) Warning, couldn't open module vesa
+[     4.375] (EE) Failed to load module "vesa" (module does not exist, 0)
+[     4.375] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[     4.375] (II) FBDEV: driver for framebuffer: fbdev
+[     4.375] (--) using VT number 5
+
+[     4.376] (EE) open /dev/dri/card0: No such file or directory
+[     4.376] (WW) Falling back to old probe method for modesetting
+[     4.376] (EE) open /dev/dri/card0: No such file or directory
+[     4.376] (II) Loading sub module "fbdevhw"
+[     4.376] (II) LoadModule: "fbdevhw"
+[     4.376] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[     4.376] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     4.376] 	compiled for 1.21.1.7, module version = 0.0.2
+[     4.376] 	ABI class: X.Org Video Driver, version 25.2
+[     4.376] (EE) Unable to find a valid framebuffer device
+[     4.376] (WW) Falling back to old probe method for fbdev
+[     4.376] (II) Loading sub module "fbdevhw"
+[     4.376] (II) LoadModule: "fbdevhw"
+[     4.376] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[     4.376] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     4.376] 	compiled for 1.21.1.7, module version = 0.0.2
+[     4.376] 	ABI class: X.Org Video Driver, version 25.2
+[     4.376] (II) FBDEV(2): using default device
+[     4.376] (EE) Screen 0 deleted because of no matching config section.
+[     4.376] (II) UnloadModule: "modesetting"
+[     4.376] (EE) Screen 0 deleted because of no matching config section.
+[     4.376] (II) UnloadModule: "fbdev"
+[     4.376] (II) UnloadSubModule: "fbdevhw"
+[     4.376] (II) FBDEV(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[     4.376] (==) FBDEV(0): Depth 24, (==) framebuffer bpp 32
+[     4.376] (==) FBDEV(0): RGB weight 888
+[     4.376] (==) FBDEV(0): Default visual is TrueColor
+[     4.376] (II) FBDEV(0): hardware: EFI VGA (video memory: 1876kB)
+[     4.376] (DB) xf86MergeOutputClassOptions unsupported bus type 0
+[     4.376] (II) FBDEV(0): checking modes against framebuffer device...
+[     4.376] (II) FBDEV(0): checking modes against monitor...
+[     4.376] (II) FBDEV(0): Virtual size is 800x600 (pitch 800)
+[     4.376] (**) FBDEV(0):  Built-in mode "current": 48.0 MHz, 46.9 kHz, 75.1 Hz
+[     4.376] (II) FBDEV(0): Modeline "current"x0.0   48.00  800 832 928 1024  600 604 608 624 -hsync -vsync -csync (46.9 kHz b)
+[     4.376] (==) FBDEV(0): DPI set to (96, 96)
+[     4.376] (II) Loading sub module "fb"
+[     4.376] (II) LoadModule: "fb"
+[     4.376] (II) Module "fb" already built-in
+[     4.376] (**) FBDEV(0): using shadow framebuffer
+[     4.376] (II) Loading sub module "shadow"
+[     4.376] (II) LoadModule: "shadow"
+[     4.376] (II) Loading /usr/lib/xorg/modules/libshadow.so
+[     4.376] (II) Module shadow: vendor="X.Org Foundation"
+[     4.376] 	compiled for 1.21.1.7, module version = 1.1.0
+[     4.376] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     4.376] (II) FBDEV(0): FBIOBLANK: Invalid argument (Screen blanking not supported by kernel - disabling)
+[     4.376] (==) FBDEV(0): Backing store disabled
+[     4.376] (WW) FBDEV(0): The fbdev driver didn't call xf86SetGamma() to initialise
+	the gamma values.
+[     4.376] (WW) FBDEV(0): PLEASE FIX THE `fbdev' DRIVER!
+[     4.376] (==) FBDEV(0): DPMS enabled
+[     4.376] (II) Initializing extension Generic Event Extension
+[     4.376] (II) Initializing extension SHAPE
+[     4.376] (II) Initializing extension MIT-SHM
+[     4.376] (II) Initializing extension XInputExtension
+[     4.376] (II) Initializing extension XTEST
+[     4.376] (II) Initializing extension BIG-REQUESTS
+[     4.376] (II) Initializing extension SYNC
+[     4.376] (II) Initializing extension XKEYBOARD
+[     4.376] (II) Initializing extension XC-MISC
+[     4.376] (II) Initializing extension XFIXES
+[     4.376] (II) Initializing extension RENDER
+[     4.376] (II) Initializing extension RANDR
+[     4.376] (II) Initializing extension DAMAGE
+[     4.376] (II) Initializing extension DOUBLE-BUFFER
+[     4.376] (II) Initializing extension DPMS
+[     4.376] (II) Initializing extension Present
+[     4.376] (II) Initializing extension DRI3
+[     4.376] (II) Initializing extension X-Resource
+[     4.376] (II) Initializing extension XFree86-DGA
+[     4.376] (II) Initializing extension DRI2
+[     4.389] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/event4)
+[     4.389] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[     4.389] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[     4.389] (II) LoadModule: "libinput"
+[     4.389] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[     4.389] (II) Module libinput: vendor="X.Org Foundation"
+[     4.389] 	compiled for 1.21.1.3, module version = 1.2.1
+[     4.389] 	Module class: X.Org XInput Driver
+[     4.389] 	ABI class: X.Org XInput driver, version 24.4
+[     4.389] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[     4.389] (**) Logitech G Pro : always reports core events
+[     4.389] (**) Option "Device" "/dev/input/event4"
+[     4.390] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[     4.390] (II) event4  - Logitech G Pro : device is a pointer
+[     4.390] (II) event4  - Logitech G Pro : device is a keyboard
+[     4.390] (II) event4  - Logitech G Pro : device removed
+[     4.464] (II) libinput: Logitech G Pro : needs a virtual subdevice
+[     4.464] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[     4.464] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: MOUSE, id 6)
+[     4.464] (**) Option "AccelerationScheme" "none"
+[     4.464] (**) Logitech G Pro : (accel) selected scheme none/0
+[     4.464] (**) Logitech G Pro : (accel) acceleration factor: 2.000
+[     4.464] (**) Logitech G Pro : (accel) acceleration threshold: 4
+[     4.466] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[     4.466] (II) event4  - Logitech G Pro : device is a pointer
+[     4.466] (II) event4  - Logitech G Pro : device is a keyboard
+[     4.468] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/mouse2)
+[     4.468] (II) No input driver specified, ignoring this device.
+[     4.468] (II) This device may have been added with another device file.
+[     4.469] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/event1)
+[     4.469] (**) SYNA7DB5:01 06CB:CD41 Mouse: Applying InputClass "libinput pointer catchall"
+[     4.469] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Mouse'
+[     4.469] (**) SYNA7DB5:01 06CB:CD41 Mouse: always reports core events
+[     4.469] (**) Option "Device" "/dev/input/event1"
+[     4.470] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[     4.471] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[     4.471] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[     4.512] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input4/event1"
+[     4.512] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Mouse" (type: MOUSE, id 7)
+[     4.512] (**) Option "AccelerationScheme" "none"
+[     4.512] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) selected scheme none/0
+[     4.512] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration factor: 2.000
+[     4.512] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration threshold: 4
+[     4.513] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[     4.514] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[     4.515] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/mouse0)
+[     4.515] (II) No input driver specified, ignoring this device.
+[     4.515] (II) This device may have been added with another device file.
+[     4.516] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/event2)
+[     4.516] (**) SYNA7DB5:01 06CB:CD41 Touchpad: Applying InputClass "libinput touchpad catchall"
+[     4.516] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Touchpad'
+[     4.516] (**) SYNA7DB5:01 06CB:CD41 Touchpad: always reports core events
+[     4.516] (**) Option "Device" "/dev/input/event2"
+[     4.517] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[     4.520] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[     4.520] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[     4.552] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input5/event2"
+[     4.552] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Touchpad" (type: TOUCHPAD, id 8)
+[     4.555] (**) Option "AccelerationScheme" "none"
+[     4.555] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) selected scheme none/0
+[     4.555] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration factor: 2.000
+[     4.555] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration threshold: 4
+[     4.556] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[     4.558] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[     4.559] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/mouse1)
+[     4.559] (II) No input driver specified, ignoring this device.
+[     4.559] (II) This device may have been added with another device file.
+[     4.560] (II) config/udev: Adding input device sof-hda-dsp Front Headphone (/dev/input/event3)
+[     4.560] (II) No input driver specified, ignoring this device.
+[     4.560] (II) This device may have been added with another device file.
+[     4.560] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event0)
+[     4.560] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[     4.560] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[     4.560] (**) AT Translated Set 2 keyboard: always reports core events
+[     4.560] (**) Option "Device" "/dev/input/event0"
+[     4.561] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     4.561] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[     4.562] (II) event0  - AT Translated Set 2 keyboard: device removed
+[     4.592] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input0/event0"
+[     4.592] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 9)
+[     4.593] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     4.593] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[     4.598] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[     4.598] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[     4.598] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[     4.598] (**) Logitech G Pro : always reports core events
+[     4.598] (**) Option "Device" "/dev/input/event4"
+[     4.598] (II) libinput: Logitech G Pro : is a virtual subdevice
+[     4.598] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[     4.598] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: KEYBOARD, id 10)
+[    62.243] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/mouse2)
+[    62.243] (II) No input driver specified, ignoring this device.
+[    62.243] (II) This device may have been added with another device file.
+[    62.244] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/mouse1)
+[    62.244] (II) No input driver specified, ignoring this device.
+[    62.244] (II) This device may have been added with another device file.
+[    62.244] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/mouse0)
+[    62.244] (II) No input driver specified, ignoring this device.
+[    62.244] (II) This device may have been added with another device file.
+[    62.285] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Mouse
+[    62.285] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[    62.336] (II) UnloadModule: "libinput"
+[    62.336] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/event1)
+[    62.336] (**) SYNA7DB5:01 06CB:CD41 Mouse: Applying InputClass "libinput pointer catchall"
+[    62.336] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Mouse'
+[    62.336] (**) SYNA7DB5:01 06CB:CD41 Mouse: always reports core events
+[    62.336] (**) Option "Device" "/dev/input/event1"
+[    62.337] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[    62.338] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[    62.339] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[    62.376] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input4/event1"
+[    62.376] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Mouse" (type: MOUSE, id 7)
+[    62.376] (**) Option "AccelerationScheme" "none"
+[    62.376] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) selected scheme none/0
+[    62.376] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration factor: 2.000
+[    62.376] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration threshold: 4
+[    62.377] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[    62.378] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[    62.379] (II) config/udev: removing device AT Translated Set 2 keyboard
+[    62.379] (II) event0  - AT Translated Set 2 keyboard: device removed
+[    62.424] (II) UnloadModule: "libinput"
+[    62.424] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event0)
+[    62.424] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    62.424] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    62.424] (**) AT Translated Set 2 keyboard: always reports core events
+[    62.424] (**) Option "Device" "/dev/input/event0"
+[    62.425] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    62.425] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[    62.426] (II) event0  - AT Translated Set 2 keyboard: device removed
+[    62.480] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input0/event0"
+[    62.480] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 9)
+[    62.480] (**) Option "xkb_model" "pc105"
+[    62.480] (**) Option "xkb_layout" "fr"
+[    62.480] (**) Option "xkb_variant" "latin9"
+[    62.480] (WW) Option "xkb_options" requires a string value
+[    62.497] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    62.497] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[    62.498] (II) config/udev: removing device Logitech G Pro 
+[    62.498] (II) UnloadModule: "libinput"
+[    62.498] (II) config/udev: removing device Logitech G Pro 
+[    62.498] (II) event4  - Logitech G Pro : device removed
+[    62.560] (II) UnloadModule: "libinput"
+[    62.560] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/event4)
+[    62.560] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[    62.560] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[    62.560] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[    62.561] (**) Logitech G Pro : always reports core events
+[    62.561] (**) Option "Device" "/dev/input/event4"
+[    62.562] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[    62.562] (II) event4  - Logitech G Pro : device is a pointer
+[    62.562] (II) event4  - Logitech G Pro : device is a keyboard
+[    62.563] (II) event4  - Logitech G Pro : device removed
+[    62.612] (II) libinput: Logitech G Pro : needs a virtual subdevice
+[    62.612] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[    62.612] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: MOUSE, id 6)
+[    62.612] (**) Option "AccelerationScheme" "none"
+[    62.612] (**) Logitech G Pro : (accel) selected scheme none/0
+[    62.612] (**) Logitech G Pro : (accel) acceleration factor: 2.000
+[    62.612] (**) Logitech G Pro : (accel) acceleration threshold: 4
+[    62.614] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[    62.614] (II) event4  - Logitech G Pro : device is a pointer
+[    62.614] (II) event4  - Logitech G Pro : device is a keyboard
+[    62.620] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[    62.620] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[    62.620] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[    62.620] (**) Logitech G Pro : always reports core events
+[    62.620] (**) Option "Device" "/dev/input/event4"
+[    62.620] (II) libinput: Logitech G Pro : is a virtual subdevice
+[    62.620] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[    62.620] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: KEYBOARD, id 10)
+[    62.620] (**) Option "xkb_model" "pc105"
+[    62.620] (**) Option "xkb_layout" "fr"
+[    62.620] (**) Option "xkb_variant" "latin9"
+[    62.620] (WW) Option "xkb_options" requires a string value
+[    62.621] (II) config/udev: Adding input device sof-hda-dsp Front Headphone (/dev/input/event3)
+[    62.621] (II) No input driver specified, ignoring this device.
+[    62.621] (II) This device may have been added with another device file.
+[    62.621] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Touchpad
+[    62.621] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[    62.668] (II) UnloadModule: "libinput"
+[    62.668] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/event2)
+[    62.668] (**) SYNA7DB5:01 06CB:CD41 Touchpad: Applying InputClass "libinput touchpad catchall"
+[    62.668] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Touchpad'
+[    62.668] (**) SYNA7DB5:01 06CB:CD41 Touchpad: always reports core events
+[    62.668] (**) Option "Device" "/dev/input/event2"
+[    62.670] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[    62.672] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[    62.672] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[    62.708] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input5/event2"
+[    62.708] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Touchpad" (type: TOUCHPAD, id 8)
+[    62.711] (**) Option "AccelerationScheme" "none"
+[    62.711] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) selected scheme none/0
+[    62.711] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration factor: 2.000
+[    62.711] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration threshold: 4
+[    62.712] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[    62.714] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[    62.715] (II) event4  - Logitech G Pro : SYN_DROPPED event - some input events have been lost.
+[    86.461] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/mouse2)
+[    86.461] (II) No input driver specified, ignoring this device.
+[    86.461] (II) This device may have been added with another device file.
+[    86.462] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/mouse0)
+[    86.462] (II) No input driver specified, ignoring this device.
+[    86.462] (II) This device may have been added with another device file.
+[    86.462] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/mouse1)
+[    86.462] (II) No input driver specified, ignoring this device.
+[    86.462] (II) This device may have been added with another device file.
+[    86.493] (II) config/udev: removing device AT Translated Set 2 keyboard
+[    86.493] (II) event0  - AT Translated Set 2 keyboard: device removed
+[    86.560] (II) UnloadModule: "libinput"
+[    86.560] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event0)
+[    86.560] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    86.560] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    86.560] (**) AT Translated Set 2 keyboard: always reports core events
+[    86.560] (**) Option "Device" "/dev/input/event0"
+[    86.561] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    86.561] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[    86.562] (II) event0  - AT Translated Set 2 keyboard: device removed
+[    86.608] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input0/event0"
+[    86.608] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 9)
+[    86.608] (**) Option "xkb_model" "pc105"
+[    86.608] (**) Option "xkb_layout" "fr"
+[    86.608] (**) Option "xkb_variant" "latin9"
+[    86.608] (WW) Option "xkb_options" requires a string value
+[    86.609] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    86.609] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[    86.610] (II) config/udev: removing device Logitech G Pro 
+[    86.610] (II) UnloadModule: "libinput"
+[    86.610] (II) config/udev: removing device Logitech G Pro 
+[    86.610] (II) event4  - Logitech G Pro : device removed
+[    86.640] (II) UnloadModule: "libinput"
+[    86.640] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/event4)
+[    86.640] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[    86.640] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[    86.640] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[    86.640] (**) Logitech G Pro : always reports core events
+[    86.640] (**) Option "Device" "/dev/input/event4"
+[    86.641] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[    86.641] (II) event4  - Logitech G Pro : device is a pointer
+[    86.641] (II) event4  - Logitech G Pro : device is a keyboard
+[    86.641] (II) event4  - Logitech G Pro : device removed
+[    86.696] (II) libinput: Logitech G Pro : needs a virtual subdevice
+[    86.696] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[    86.696] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: MOUSE, id 6)
+[    86.696] (**) Option "AccelerationScheme" "none"
+[    86.696] (**) Logitech G Pro : (accel) selected scheme none/0
+[    86.696] (**) Logitech G Pro : (accel) acceleration factor: 2.000
+[    86.696] (**) Logitech G Pro : (accel) acceleration threshold: 4
+[    86.697] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[    86.697] (II) event4  - Logitech G Pro : device is a pointer
+[    86.697] (II) event4  - Logitech G Pro : device is a keyboard
+[    86.698] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[    86.698] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[    86.698] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[    86.698] (**) Logitech G Pro : always reports core events
+[    86.698] (**) Option "Device" "/dev/input/event4"
+[    86.698] (II) libinput: Logitech G Pro : is a virtual subdevice
+[    86.698] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[    86.698] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: KEYBOARD, id 10)
+[    86.698] (**) Option "xkb_model" "pc105"
+[    86.698] (**) Option "xkb_layout" "fr"
+[    86.698] (**) Option "xkb_variant" "latin9"
+[    86.698] (WW) Option "xkb_options" requires a string value
+[    86.698] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Mouse
+[    86.698] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[    86.740] (II) UnloadModule: "libinput"
+[    86.740] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/event1)
+[    86.740] (**) SYNA7DB5:01 06CB:CD41 Mouse: Applying InputClass "libinput pointer catchall"
+[    86.740] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Mouse'
+[    86.740] (**) SYNA7DB5:01 06CB:CD41 Mouse: always reports core events
+[    86.740] (**) Option "Device" "/dev/input/event1"
+[    86.742] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[    86.742] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[    86.743] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[    86.788] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input4/event1"
+[    86.788] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Mouse" (type: MOUSE, id 7)
+[    86.788] (**) Option "AccelerationScheme" "none"
+[    86.788] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) selected scheme none/0
+[    86.788] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration factor: 2.000
+[    86.788] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration threshold: 4
+[    86.789] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[    86.790] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[    86.795] (II) config/udev: Adding input device sof-hda-dsp Front Headphone (/dev/input/event3)
+[    86.795] (II) No input driver specified, ignoring this device.
+[    86.795] (II) This device may have been added with another device file.
+[    86.795] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Touchpad
+[    86.795] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[    86.828] (II) UnloadModule: "libinput"
+[    86.828] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/event2)
+[    86.828] (**) SYNA7DB5:01 06CB:CD41 Touchpad: Applying InputClass "libinput touchpad catchall"
+[    86.828] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Touchpad'
+[    86.828] (**) SYNA7DB5:01 06CB:CD41 Touchpad: always reports core events
+[    86.828] (**) Option "Device" "/dev/input/event2"
+[    86.830] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[    86.832] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[    86.833] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[    86.868] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input5/event2"
+[    86.868] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Touchpad" (type: TOUCHPAD, id 8)
+[    86.871] (**) Option "AccelerationScheme" "none"
+[    86.871] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) selected scheme none/0
+[    86.871] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration factor: 2.000
+[    86.871] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration threshold: 4
+[    86.872] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[    86.875] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[   427.850] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/mouse2)
+[   427.850] (II) No input driver specified, ignoring this device.
+[   427.850] (II) This device may have been added with another device file.
+[   427.851] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/mouse0)
+[   427.851] (II) No input driver specified, ignoring this device.
+[   427.851] (II) This device may have been added with another device file.
+[   427.851] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/mouse1)
+[   427.851] (II) No input driver specified, ignoring this device.
+[   427.851] (II) This device may have been added with another device file.
+[   427.877] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Mouse
+[   427.877] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[   427.936] (II) UnloadModule: "libinput"
+[   427.936] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/event1)
+[   427.936] (**) SYNA7DB5:01 06CB:CD41 Mouse: Applying InputClass "libinput pointer catchall"
+[   427.936] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Mouse'
+[   427.936] (**) SYNA7DB5:01 06CB:CD41 Mouse: always reports core events
+[   427.936] (**) Option "Device" "/dev/input/event1"
+[   427.938] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[   427.938] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[   427.939] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[   427.980] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input4/event1"
+[   427.980] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Mouse" (type: MOUSE, id 7)
+[   427.980] (**) Option "AccelerationScheme" "none"
+[   427.980] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) selected scheme none/0
+[   427.980] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration factor: 2.000
+[   427.980] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration threshold: 4
+[   427.981] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[   427.981] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[   427.981] (II) config/udev: removing device AT Translated Set 2 keyboard
+[   427.981] (II) event0  - AT Translated Set 2 keyboard: device removed
+[   428.012] (II) UnloadModule: "libinput"
+[   428.012] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event0)
+[   428.012] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[   428.012] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[   428.012] (**) AT Translated Set 2 keyboard: always reports core events
+[   428.012] (**) Option "Device" "/dev/input/event0"
+[   428.013] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   428.013] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[   428.014] (II) event0  - AT Translated Set 2 keyboard: device removed
+[   428.060] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input0/event0"
+[   428.060] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 9)
+[   428.060] (**) Option "xkb_model" "pc105"
+[   428.060] (**) Option "xkb_layout" "fr"
+[   428.060] (**) Option "xkb_variant" "latin9"
+[   428.060] (WW) Option "xkb_options" requires a string value
+[   428.061] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   428.061] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[   428.062] (II) event4  - Logitech G Pro : SYN_DROPPED event - some input events have been lost.
+[   428.065] (II) config/udev: removing device Logitech G Pro 
+[   428.065] (II) UnloadModule: "libinput"
+[   428.065] (II) config/udev: removing device Logitech G Pro 
+[   428.065] (II) event4  - Logitech G Pro : device removed
+[   428.112] (II) UnloadModule: "libinput"
+[   428.113] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/event4)
+[   428.113] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[   428.113] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[   428.113] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[   428.113] (**) Logitech G Pro : always reports core events
+[   428.113] (**) Option "Device" "/dev/input/event4"
+[   428.115] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[   428.115] (II) event4  - Logitech G Pro : device is a pointer
+[   428.115] (II) event4  - Logitech G Pro : device is a keyboard
+[   428.116] (II) event4  - Logitech G Pro : device removed
+[   428.152] (II) libinput: Logitech G Pro : needs a virtual subdevice
+[   428.152] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[   428.152] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: MOUSE, id 6)
+[   428.152] (**) Option "AccelerationScheme" "none"
+[   428.152] (**) Logitech G Pro : (accel) selected scheme none/0
+[   428.152] (**) Logitech G Pro : (accel) acceleration factor: 2.000
+[   428.152] (**) Logitech G Pro : (accel) acceleration threshold: 4
+[   428.154] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[   428.154] (II) event4  - Logitech G Pro : device is a pointer
+[   428.154] (II) event4  - Logitech G Pro : device is a keyboard
+[   428.155] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[   428.155] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[   428.155] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[   428.155] (**) Logitech G Pro : always reports core events
+[   428.155] (**) Option "Device" "/dev/input/event4"
+[   428.155] (II) libinput: Logitech G Pro : is a virtual subdevice
+[   428.155] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[   428.155] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: KEYBOARD, id 10)
+[   428.155] (**) Option "xkb_model" "pc105"
+[   428.155] (**) Option "xkb_layout" "fr"
+[   428.155] (**) Option "xkb_variant" "latin9"
+[   428.155] (WW) Option "xkb_options" requires a string value
+[   428.156] (II) config/udev: Adding input device sof-hda-dsp Front Headphone (/dev/input/event3)
+[   428.156] (II) No input driver specified, ignoring this device.
+[   428.156] (II) This device may have been added with another device file.
+[   428.156] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Touchpad
+[   428.156] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[   428.192] (II) UnloadModule: "libinput"
+[   428.192] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/event2)
+[   428.192] (**) SYNA7DB5:01 06CB:CD41 Touchpad: Applying InputClass "libinput touchpad catchall"
+[   428.192] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Touchpad'
+[   428.193] (**) SYNA7DB5:01 06CB:CD41 Touchpad: always reports core events
+[   428.193] (**) Option "Device" "/dev/input/event2"
+[   428.194] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[   428.197] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[   428.197] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[   428.232] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input5/event2"
+[   428.232] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Touchpad" (type: TOUCHPAD, id 8)
+[   428.235] (**) Option "AccelerationScheme" "none"
+[   428.235] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) selected scheme none/0
+[   428.235] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration factor: 2.000
+[   428.235] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration threshold: 4
+[   428.236] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[   428.239] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[   710.095] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/mouse2)
+[   710.095] (II) No input driver specified, ignoring this device.
+[   710.095] (II) This device may have been added with another device file.
+[   710.095] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/mouse0)
+[   710.095] (II) No input driver specified, ignoring this device.
+[   710.095] (II) This device may have been added with another device file.
+[   710.095] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/mouse1)
+[   710.095] (II) No input driver specified, ignoring this device.
+[   710.095] (II) This device may have been added with another device file.
+[   710.129] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Mouse
+[   710.129] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[   710.180] (II) UnloadModule: "libinput"
+[   710.180] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/event1)
+[   710.180] (**) SYNA7DB5:01 06CB:CD41 Mouse: Applying InputClass "libinput pointer catchall"
+[   710.180] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Mouse'
+[   710.180] (**) SYNA7DB5:01 06CB:CD41 Mouse: always reports core events
+[   710.180] (**) Option "Device" "/dev/input/event1"
+[   710.182] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[   710.182] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[   710.183] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[   710.232] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input4/event1"
+[   710.232] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Mouse" (type: MOUSE, id 7)
+[   710.232] (**) Option "AccelerationScheme" "none"
+[   710.232] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) selected scheme none/0
+[   710.232] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration factor: 2.000
+[   710.232] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration threshold: 4
+[   710.233] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[   710.234] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[   710.235] (II) config/udev: removing device AT Translated Set 2 keyboard
+[   710.235] (II) event0  - AT Translated Set 2 keyboard: device removed
+[   710.272] (II) UnloadModule: "libinput"
+[   710.272] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event0)
+[   710.272] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[   710.272] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[   710.272] (**) AT Translated Set 2 keyboard: always reports core events
+[   710.272] (**) Option "Device" "/dev/input/event0"
+[   710.273] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   710.273] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[   710.274] (II) event0  - AT Translated Set 2 keyboard: device removed
+[   710.324] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input0/event0"
+[   710.324] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 9)
+[   710.324] (**) Option "xkb_model" "pc105"
+[   710.324] (**) Option "xkb_layout" "fr"
+[   710.324] (**) Option "xkb_variant" "latin9"
+[   710.324] (WW) Option "xkb_options" requires a string value
+[   710.325] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   710.325] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[   710.326] (II) config/udev: removing device Logitech G Pro 
+[   710.326] (II) UnloadModule: "libinput"
+[   710.326] (II) config/udev: removing device Logitech G Pro 
+[   710.326] (II) event4  - Logitech G Pro : device removed
+[   710.380] (II) UnloadModule: "libinput"
+[   710.381] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/event4)
+[   710.381] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[   710.381] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[   710.381] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[   710.381] (**) Logitech G Pro : always reports core events
+[   710.381] (**) Option "Device" "/dev/input/event4"
+[   710.382] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[   710.383] (II) event4  - Logitech G Pro : device is a pointer
+[   710.383] (II) event4  - Logitech G Pro : device is a keyboard
+[   710.383] (II) event4  - Logitech G Pro : device removed
+[   710.424] (II) libinput: Logitech G Pro : needs a virtual subdevice
+[   710.424] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[   710.424] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: MOUSE, id 6)
+[   710.424] (**) Option "AccelerationScheme" "none"
+[   710.424] (**) Logitech G Pro : (accel) selected scheme none/0
+[   710.424] (**) Logitech G Pro : (accel) acceleration factor: 2.000
+[   710.424] (**) Logitech G Pro : (accel) acceleration threshold: 4
+[   710.426] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[   710.426] (II) event4  - Logitech G Pro : device is a pointer
+[   710.426] (II) event4  - Logitech G Pro : device is a keyboard
+[   710.430] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[   710.430] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[   710.430] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[   710.430] (**) Logitech G Pro : always reports core events
+[   710.430] (**) Option "Device" "/dev/input/event4"
+[   710.430] (II) libinput: Logitech G Pro : is a virtual subdevice
+[   710.430] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[   710.430] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: KEYBOARD, id 10)
+[   710.430] (**) Option "xkb_model" "pc105"
+[   710.430] (**) Option "xkb_layout" "fr"
+[   710.430] (**) Option "xkb_variant" "latin9"
+[   710.430] (WW) Option "xkb_options" requires a string value
+[   710.431] (II) config/udev: Adding input device sof-hda-dsp Front Headphone (/dev/input/event3)
+[   710.431] (II) No input driver specified, ignoring this device.
+[   710.431] (II) This device may have been added with another device file.
+[   710.431] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Touchpad
+[   710.431] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[   710.464] (II) UnloadModule: "libinput"
+[   710.464] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/event2)
+[   710.464] (**) SYNA7DB5:01 06CB:CD41 Touchpad: Applying InputClass "libinput touchpad catchall"
+[   710.464] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Touchpad'
+[   710.464] (**) SYNA7DB5:01 06CB:CD41 Touchpad: always reports core events
+[   710.464] (**) Option "Device" "/dev/input/event2"
+[   710.466] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[   710.468] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[   710.469] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[   710.504] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input5/event2"
+[   710.504] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Touchpad" (type: TOUCHPAD, id 8)
+[   710.507] (**) Option "AccelerationScheme" "none"
+[   710.507] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) selected scheme none/0
+[   710.507] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration factor: 2.000
+[   710.507] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration threshold: 4
+[   710.509] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[   710.511] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[   710.512] (EE) event4  - Logitech G Pro : client bug: event processing lagging behind by 77ms, your system is too slow
+[   944.167] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/mouse0)
+[   944.167] (II) No input driver specified, ignoring this device.
+[   944.167] (II) This device may have been added with another device file.
+[   944.167] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/mouse1)
+[   944.167] (II) No input driver specified, ignoring this device.
+[   944.167] (II) This device may have been added with another device file.
+[   944.177] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/mouse2)
+[   944.177] (II) No input driver specified, ignoring this device.
+[   944.177] (II) This device may have been added with another device file.
+[   944.201] (II) config/udev: removing device Logitech G Pro 
+[   944.201] (II) UnloadModule: "libinput"
+[   944.201] (II) config/udev: removing device Logitech G Pro 
+[   944.201] (II) event4  - Logitech G Pro : device removed
+[   944.244] (II) UnloadModule: "libinput"
+[   944.244] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/event4)
+[   944.244] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[   944.245] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[   944.245] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[   944.245] (**) Logitech G Pro : always reports core events
+[   944.245] (**) Option "Device" "/dev/input/event4"
+[   944.246] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[   944.247] (II) event4  - Logitech G Pro : device is a pointer
+[   944.247] (II) event4  - Logitech G Pro : device is a keyboard
+[   944.247] (II) event4  - Logitech G Pro : device removed
+[   944.300] (II) libinput: Logitech G Pro : needs a virtual subdevice
+[   944.300] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[   944.300] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: MOUSE, id 6)
+[   944.300] (**) Option "AccelerationScheme" "none"
+[   944.300] (**) Logitech G Pro : (accel) selected scheme none/0
+[   944.300] (**) Logitech G Pro : (accel) acceleration factor: 2.000
+[   944.300] (**) Logitech G Pro : (accel) acceleration threshold: 4
+[   944.301] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[   944.302] (II) event4  - Logitech G Pro : device is a pointer
+[   944.302] (II) event4  - Logitech G Pro : device is a keyboard
+[   944.302] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[   944.302] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[   944.302] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[   944.302] (**) Logitech G Pro : always reports core events
+[   944.302] (**) Option "Device" "/dev/input/event4"
+[   944.302] (II) libinput: Logitech G Pro : is a virtual subdevice
+[   944.303] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[   944.303] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: KEYBOARD, id 10)
+[   944.303] (**) Option "xkb_model" "pc105"
+[   944.303] (**) Option "xkb_layout" "fr"
+[   944.303] (**) Option "xkb_variant" "latin9"
+[   944.303] (WW) Option "xkb_options" requires a string value
+[   944.303] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Mouse
+[   944.303] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[   944.348] (II) UnloadModule: "libinput"
+[   944.348] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/event1)
+[   944.348] (**) SYNA7DB5:01 06CB:CD41 Mouse: Applying InputClass "libinput pointer catchall"
+[   944.348] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Mouse'
+[   944.348] (**) SYNA7DB5:01 06CB:CD41 Mouse: always reports core events
+[   944.348] (**) Option "Device" "/dev/input/event1"
+[   944.348] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[   944.348] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[   944.349] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[   944.408] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input4/event1"
+[   944.408] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Mouse" (type: MOUSE, id 7)
+[   944.408] (**) Option "AccelerationScheme" "none"
+[   944.408] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) selected scheme none/0
+[   944.408] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration factor: 2.000
+[   944.408] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration threshold: 4
+[   944.409] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[   944.410] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[   944.411] (II) event4  - Logitech G Pro : SYN_DROPPED event - some input events have been lost.
+[   944.413] (II) config/udev: removing device AT Translated Set 2 keyboard
+[   944.414] (II) event0  - AT Translated Set 2 keyboard: device removed
+[   944.448] (II) UnloadModule: "libinput"
+[   944.448] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event0)
+[   944.448] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[   944.448] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[   944.448] (**) AT Translated Set 2 keyboard: always reports core events
+[   944.448] (**) Option "Device" "/dev/input/event0"
+[   944.449] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   944.449] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[   944.450] (II) event0  - AT Translated Set 2 keyboard: device removed
+[   944.488] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input0/event0"
+[   944.488] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 9)
+[   944.488] (**) Option "xkb_model" "pc105"
+[   944.488] (**) Option "xkb_layout" "fr"
+[   944.488] (**) Option "xkb_variant" "latin9"
+[   944.488] (WW) Option "xkb_options" requires a string value
+[   944.489] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   944.489] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[   944.490] (II) config/udev: Adding input device sof-hda-dsp Front Headphone (/dev/input/event3)
+[   944.491] (II) No input driver specified, ignoring this device.
+[   944.491] (II) This device may have been added with another device file.
+[   944.491] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Touchpad
+[   944.491] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[   944.520] (II) UnloadModule: "libinput"
+[   944.520] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/event2)
+[   944.520] (**) SYNA7DB5:01 06CB:CD41 Touchpad: Applying InputClass "libinput touchpad catchall"
+[   944.520] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Touchpad'
+[   944.520] (**) SYNA7DB5:01 06CB:CD41 Touchpad: always reports core events
+[   944.520] (**) Option "Device" "/dev/input/event2"
+[   944.522] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[   944.524] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[   944.525] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[   944.584] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input5/event2"
+[   944.584] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Touchpad" (type: TOUCHPAD, id 8)
+[   944.587] (**) Option "AccelerationScheme" "none"
+[   944.587] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) selected scheme none/0
+[   944.587] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration factor: 2.000
+[   944.587] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration threshold: 4
+[   944.588] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[   944.591] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[  1910.487] (EE) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.22.1/touchpad-jumping-cursors.html for details
+[  2281.654] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/mouse2)
+[  2281.654] (II) No input driver specified, ignoring this device.
+[  2281.654] (II) This device may have been added with another device file.
+[  2281.655] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/mouse1)
+[  2281.655] (II) No input driver specified, ignoring this device.
+[  2281.655] (II) This device may have been added with another device file.
+[  2281.656] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/mouse0)
+[  2281.656] (II) No input driver specified, ignoring this device.
+[  2281.656] (II) This device may have been added with another device file.
+[  2281.673] (II) config/udev: removing device AT Translated Set 2 keyboard
+[  2281.673] (II) event0  - AT Translated Set 2 keyboard: device removed
+[  2281.732] (II) UnloadModule: "libinput"
+[  2281.732] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event0)
+[  2281.732] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[  2281.732] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[  2281.732] (**) AT Translated Set 2 keyboard: always reports core events
+[  2281.732] (**) Option "Device" "/dev/input/event0"
+[  2281.733] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  2281.733] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[  2281.734] (II) event0  - AT Translated Set 2 keyboard: device removed
+[  2281.780] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input0/event0"
+[  2281.780] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 9)
+[  2281.780] (**) Option "xkb_model" "pc105"
+[  2281.780] (**) Option "xkb_layout" "fr"
+[  2281.780] (**) Option "xkb_variant" "latin9"
+[  2281.780] (WW) Option "xkb_options" requires a string value
+[  2281.781] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  2281.781] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[  2281.782] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Mouse
+[  2281.782] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[  2281.816] (II) UnloadModule: "libinput"
+[  2281.816] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Mouse (/dev/input/event1)
+[  2281.816] (**) SYNA7DB5:01 06CB:CD41 Mouse: Applying InputClass "libinput pointer catchall"
+[  2281.816] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Mouse'
+[  2281.816] (**) SYNA7DB5:01 06CB:CD41 Mouse: always reports core events
+[  2281.816] (**) Option "Device" "/dev/input/event1"
+[  2281.818] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[  2281.818] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[  2281.819] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device removed
+[  2281.848] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input4/event1"
+[  2281.848] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Mouse" (type: MOUSE, id 7)
+[  2281.848] (**) Option "AccelerationScheme" "none"
+[  2281.848] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) selected scheme none/0
+[  2281.848] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration factor: 2.000
+[  2281.848] (**) SYNA7DB5:01 06CB:CD41 Mouse: (accel) acceleration threshold: 4
+[  2281.849] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: is tagged by udev as: Mouse Pointingstick
+[  2281.850] (II) event1  - SYNA7DB5:01 06CB:CD41 Mouse: device is a pointer
+[  2281.851] (II) config/udev: removing device Logitech G Pro 
+[  2281.851] (II) UnloadModule: "libinput"
+[  2281.851] (II) config/udev: removing device Logitech G Pro 
+[  2281.851] (II) event4  - Logitech G Pro : device removed
+[  2281.888] (II) UnloadModule: "libinput"
+[  2281.889] (II) config/udev: Adding input device Logitech G Pro  (/dev/input/event4)
+[  2281.889] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[  2281.889] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[  2281.889] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[  2281.889] (**) Logitech G Pro : always reports core events
+[  2281.889] (**) Option "Device" "/dev/input/event4"
+[  2281.891] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[  2281.891] (II) event4  - Logitech G Pro : device is a pointer
+[  2281.891] (II) event4  - Logitech G Pro : device is a keyboard
+[  2281.891] (II) event4  - Logitech G Pro : device removed
+[  2281.920] (II) libinput: Logitech G Pro : needs a virtual subdevice
+[  2281.920] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[  2281.920] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: MOUSE, id 6)
+[  2281.920] (**) Option "AccelerationScheme" "none"
+[  2281.920] (**) Logitech G Pro : (accel) selected scheme none/0
+[  2281.920] (**) Logitech G Pro : (accel) acceleration factor: 2.000
+[  2281.920] (**) Logitech G Pro : (accel) acceleration threshold: 4
+[  2281.922] (II) event4  - Logitech G Pro : is tagged by udev as: Keyboard Mouse
+[  2281.922] (II) event4  - Logitech G Pro : device is a pointer
+[  2281.922] (II) event4  - Logitech G Pro : device is a keyboard
+[  2281.923] (**) Logitech G Pro : Applying InputClass "libinput pointer catchall"
+[  2281.923] (**) Logitech G Pro : Applying InputClass "libinput keyboard catchall"
+[  2281.923] (II) Using input driver 'libinput' for 'Logitech G Pro '
+[  2281.923] (**) Logitech G Pro : always reports core events
+[  2281.923] (**) Option "Device" "/dev/input/event4"
+[  2281.923] (II) libinput: Logitech G Pro : is a virtual subdevice
+[  2281.923] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:046D:C539.0004/0003:046D:4079.0005/input/input18/event4"
+[  2281.923] (II) XINPUT: Adding extended input device "Logitech G Pro " (type: KEYBOARD, id 10)
+[  2281.923] (**) Option "xkb_model" "pc105"
+[  2281.923] (**) Option "xkb_layout" "fr"
+[  2281.923] (**) Option "xkb_variant" "latin9"
+[  2281.923] (WW) Option "xkb_options" requires a string value
+[  2281.924] (II) config/udev: Adding input device sof-hda-dsp Front Headphone (/dev/input/event3)
+[  2281.924] (II) No input driver specified, ignoring this device.
+[  2281.924] (II) This device may have been added with another device file.
+[  2281.924] (II) config/udev: removing device SYNA7DB5:01 06CB:CD41 Touchpad
+[  2281.924] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[  2281.960] (II) UnloadModule: "libinput"
+[  2281.960] (II) config/udev: Adding input device SYNA7DB5:01 06CB:CD41 Touchpad (/dev/input/event2)
+[  2281.960] (**) SYNA7DB5:01 06CB:CD41 Touchpad: Applying InputClass "libinput touchpad catchall"
+[  2281.960] (II) Using input driver 'libinput' for 'SYNA7DB5:01 06CB:CD41 Touchpad'
+[  2281.960] (**) SYNA7DB5:01 06CB:CD41 Touchpad: always reports core events
+[  2281.960] (**) Option "Device" "/dev/input/event2"
+[  2281.962] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[  2281.964] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad
+[  2281.965] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device removed
+[  2282.008] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.3/i2c_designware.1/i2c-1/i2c-SYNA7DB5:01/0018:06CB:CD41.0001/input/input5/event2"
+[  2282.008] (II) XINPUT: Adding extended input device "SYNA7DB5:01 06CB:CD41 Touchpad" (type: TOUCHPAD, id 8)
+[  2282.011] (**) Option "AccelerationScheme" "none"
+[  2282.011] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) selected scheme none/0
+[  2282.011] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration factor: 2.000
+[  2282.011] (**) SYNA7DB5:01 06CB:CD41 Touchpad: (accel) acceleration threshold: 4
+[  2282.012] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: is tagged by udev as: Touchpad
+[  2282.015] (II) event2  - SYNA7DB5:01 06CB:CD41 Touchpad: device is a touchpad

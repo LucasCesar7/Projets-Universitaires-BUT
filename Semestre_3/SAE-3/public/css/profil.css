@@ -1,0 +1,102 @@
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.profile-container {
+    background: var(--tertiary-color);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h1 {
+    text-align: center;
+    color: var(--primary-color-title);
+    margin-bottom: 30px;
+}
+
+.profile-section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: var(--light-color);
+    border-radius: 10px;
+}
+
+.profile-section h2 {
+    color: var(--primary-color-title);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-group input:disabled {
+    background: #ecf0f1;
+    cursor: not-allowed;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #7f8c8d;
+    font-size: 12px;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-success {
+    background: #27ae60;
+    color: white;
+}
+
+.badge-warning {
+    background: var(--error-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-section {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,6 @@
+.git
+.gitignore
+config/.env
+public/uploads
+memories
+node_modules

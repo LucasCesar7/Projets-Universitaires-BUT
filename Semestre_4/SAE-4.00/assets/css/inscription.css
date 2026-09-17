@@ -1,0 +1,528 @@
+/* Reset do body para considerar header/footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal que empurra o footer para baixo */
+main.inscription-container {
+    flex: 1;
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: calc(100vh - 160px); /* Ajuste para header/footer */
+}
+
+/* Container para centralizar conteúdo */
+.inscription-container .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Header da inscrição */
+.inscription-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+}
+
+.inscription-header h1 {
+    font-size: var(--font-size-3xl);
+    color: var(--dark);
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.inscription-header p {
+    color: var(--gray);
+    font-size: var(--font-size-lg);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Carte d'inscription */
+.inscription-card {
+    background: var(--white);
+    border-radius: var(--border-radius-xl);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-xl);
+    max-width: 900px;
+    margin: 0 auto var(--spacing-xl);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.inscription-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--principal), var(--secondary), var(--tertiary));
+}
+
+/* Formulaire */
+.inscription-form {
+    margin-bottom: var(--spacing-xl);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+    color: var(--dark);
+    font-size: var(--font-size-base);
+}
+
+.form-label i {
+    color: var(--principal);
+    width: 20px;
+    text-align: center;
+}
+
+.form-text {
+    display: block;
+    margin-top: var(--spacing-xs);
+    color: var(--gray);
+    font-size: var(--font-size-sm);
+    line-height: 1.4;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    transition: all 0.3s ease;
+    background-color: var(--white);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--principal);
+    box-shadow: 0 0 0 3px rgba(79, 189, 171, 0.1);
+}
+
+/* Groupes de radio */
+.radio-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-xs);
+}
+
+@media (max-width: 480px) {
+    .radio-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    color: var(--gray);
+    padding: var(--spacing-sm);
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    transition: all 0.3s ease;
+    background-color: var(--light-gray);
+}
+
+.radio-label:hover {
+    border-color: var(--principal);
+    background-color: rgba(79, 189, 171, 0.05);
+}
+
+.radio-label input[type="radio"] {
+    margin: 0;
+}
+
+.radio-label span {
+    font-weight: 500;
+}
+
+/* Checkbox terms */
+.terms-group {
+    margin: var(--spacing-lg) 0 var(--spacing-xl);
+    padding: var(--spacing-md);
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    color: var(--dark);
+    line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.checkbox-label a {
+    color: var(--principal);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.checkbox-label a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton d'inscription */
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Footer du formulaire */
+.inscription-footer {
+    text-align: center;
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border-color);
+}
+
+.inscription-footer p {
+    color: var(--gray);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-base);
+}
+
+.inscription-footer a {
+    color: var(--principal);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.inscription-footer a:hover {
+    color: var(--principal-dark);
+    text-decoration: underline;
+}
+
+.login-link {
+    color: var(--secondary) !important;
+    font-weight: 700;
+}
+
+/* Alertes spécifiques à l'inscription */
+.alert {
+    max-width: 900px;
+    margin: 0 auto var(--spacing-xl);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+.alert-success {
+    background-color: rgba(40, 167, 69, 0.1);
+    border: 1px solid rgba(40, 167, 69, 0.2);
+    color: var(--success);
+}
+
+.alert-danger {
+    background-color: rgba(220, 53, 69, 0.1);
+    border: 1px solid rgba(220, 53, 69, 0.2);
+    color: var(--danger);
+}
+
+.alert i {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.alert h3 {
+    margin: 0 0 var(--spacing-xs) 0;
+    font-size: var(--font-size-lg);
+}
+
+.alert ul {
+    margin: var(--spacing-sm) 0 0;
+    padding-left: var(--spacing-lg);
+}
+
+.alert li {
+    margin-bottom: 0.25rem;
+}
+
+/* Responsividade améliorée */
+@media (max-width: 768px) {
+    main.inscription-container {
+        padding: var(--spacing-lg) var(--spacing-sm);
+        min-height: calc(100vh - 140px);
+    }
+    
+    .inscription-header {
+        margin-bottom: var(--spacing-lg);
+        padding-top: 0;
+    }
+    
+    .inscription-header h1 {
+        font-size: var(--font-size-2xl);
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .inscription-header p {
+        font-size: var(--font-size-base);
+    }
+    
+    .inscription-card {
+        padding: var(--spacing-lg);
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .form-label {
+        font-size: var(--font-size-sm);
+    }
+    
+    .form-control {
+        padding: 0.75rem;
+        font-size: var(--font-size-base);
+    }
+    
+    .btn-lg {
+        padding: 0.875rem 1.5rem;
+        font-size: var(--font-size-base);
+    }
+}
+
+@media (max-width: 480px) {
+    .inscription-header h1 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .inscription-header p {
+        font-size: var(--font-size-sm);
+    }
+    
+    .inscription-card {
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius-lg);
+    }
+    
+    .form-label {
+        font-size: var(--font-size-sm);
+    }
+    
+    .form-text {
+        font-size: 0.8rem;
+    }
+    
+    .terms-group {
+        padding: var(--spacing-sm);
+    }
+    
+    .checkbox-label {
+        font-size: var(--font-size-sm);
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow: auto;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: var(--white);
+    margin: 2% auto;
+    padding: var(--spacing-xl);
+    width: 90%;
+    max-width: 800px;
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-xl);
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close {
+    position: absolute;
+    right: var(--spacing-lg);
+    top: var(--spacing-lg);
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--gray);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 10;
+}
+
+.close:hover {
+    color: var(--danger);
+}
+
+.modal h2 {
+    color: var(--dark);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.modal h2 i {
+    color: var(--principal);
+}
+
+.modal-date {
+    color: var(--gray);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-xl);
+    font-style: italic;
+    text-align: center;
+}
+
+.modal-body {
+    line-height: 1.6;
+    color: var(--dark-gray);
+}
+
+.terms-section, .privacy-section {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.terms-section:last-child, .privacy-section:last-child {
+    border-bottom: none;
+}
+
+.terms-section h3, .privacy-section h3 {
+    color: var(--principal-dark);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-lg);
+}
+
+.modal-body ul {
+    margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg);
+    padding-left: 0;
+}
+
+.modal-body li {
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.5;
+}
+
+.modal-body strong {
+    color: var(--dark);
+}
+
+.terms-footer, .privacy-footer {
+    background-color: var(--light-gray);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    margin-top: var(--spacing-xl);
+    border-left: 4px solid var(--principal);
+}
+
+.terms-footer p, .privacy-footer p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.terms-footer a, .privacy-footer a {
+    color: var(--principal);
+    text-decoration: none;
+}
+
+.terms-footer a:hover, .privacy-footer a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Scrollbar personalizada para modal */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: var(--light-gray);
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--principal);
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: var(--principal-dark);
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 1% auto;
+        padding: var(--spacing-lg);
+    }
+    
+    .close {
+        right: var(--spacing-md);
+        top: var(--spacing-md);
+        font-size: 24px;
+    }
+    
+    .modal h2 {
+        font-size: var(--font-size-xl);
+        padding-right: var(--spacing-xl);
+    }
+}

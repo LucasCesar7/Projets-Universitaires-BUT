@@ -1,0 +1,247 @@
+/* ===========================
+   STRUCTURE GÉNÉRALE
+   =========================== */
+.categories-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+/* ===========================
+   EN-TÊTE
+   =========================== */
+.categories-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.categories-header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.categories-header p {
+    color: #666;
+    font-size: 18px;
+}
+
+/* ===========================
+   GRILLE DE CATÉGORIES
+   =========================== */
+.category-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* ===========================
+   CARTE DE CATÉGORIE
+   =========================== */
+.card-item {
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.card-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(229, 9, 20, 0.3);
+}
+
+.card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===========================
+   IMAGE DE LA CARTE
+   =========================== */
+.card-image {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-item:nth-child(1) .card-image {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card-item:nth-child(2) .card-image {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.card-item:nth-child(3) .card-image {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.card-icon-large {
+    font-size: 100px;
+    position:   relative;
+    bottom: -20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* ===========================
+   CORPS DE LA CARTE
+   =========================== */
+.card-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: white;
+    color: #333;
+}
+
+.card-body h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #000;
+}
+
+.card-body p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* ===========================
+   FOOTER DE LA CARTE
+   =========================== */
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.btn-explore {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-explore:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(229, 9, 20, 0.4);
+}
+
+.btn-explore:active {
+    transform: scale(0.98);
+}
+
+.proposition {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn-proposition {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding: 15px 40px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 768px) {
+    .categories-container {
+        padding: 20px 15px;
+    }
+
+    .categories-header h1 {
+        font-size: 36px;
+    }
+
+    .categories-header p {
+        font-size: 16px;
+    }
+
+    .category-cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-body h2 {
+        font-size: 20px;
+    }
+
+    .card-body p {
+        font-size: 14px;
+    }
+
+    .card-icon-large {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-image {
+        height: 200px;
+    }
+
+    .card-icon-large {
+        font-size: 50px;
+    }
+
+    .btn-explore {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,13 @@
+﻿.env
+config/.env
+.phpunit.result.cache
+
+# Local-only project tracking docs (must stay out of Git)
+SUIVI_PROJET.md
+SUIVI_LOCAL.md
+TRELLO.md
+trello-sync.php
+app/Services/TrelloService.php
+app/Services/TrelloProjectSyncService.php
+
+vendor/

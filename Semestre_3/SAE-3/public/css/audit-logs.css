@@ -1,0 +1,151 @@
+.admin-container {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.admin-container h1 {
+    font-size: 1.8rem;
+    color: var(--primary-color-title);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+/* Filtres */
+.audit-filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+.audit-filters select,
+.audit-filters input {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--light-color);
+}
+
+.audit-filters button {
+    padding: 0.75rem 1.5rem;
+    background: var(--secondary-color);
+    color: var(--dark-color);
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.audit-filters button:hover {
+    opacity: 0.9;
+}
+
+/* Table */
+.audit-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+}
+
+.audit-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.audit-table thead {
+    background: var(--primary-color);
+    color: white;
+}
+
+.audit-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+.audit-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.audit-table tbody tr:hover {
+    background: rgba(201, 164, 84, 0.1);
+}
+
+/* Badges */
+.badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.badge-LOGIN_SUCCESS { background: var(--success-color); color: white; }
+.badge-LOGIN_FAILED { background: var(--danger-color); color: white; }
+.badge-REGISTER { background: var(--primary-color); color: white; }
+.badge-VOTE { background: var(--secondary-color); color: var(--dark-color); }
+.badge-UPDATE { background: var(--error-color); color: white; }
+.badge-DELETE { background: var(--dark-pink-color); color: white; }
+.badge-LOGOUT { background: var(--grey-color); color: white; }
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.pagination a {
+    padding: 0.75rem 1rem;
+    background: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.pagination .active {
+    background: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+/* Message vide */
+.no-logs {
+    text-align: center;
+    padding: 3rem;
+    color: var(--grey-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .audit-filters {
+        grid-template-columns: 1fr;
+    }
+    
+    .audit-table th,
+    .audit-table td {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+}

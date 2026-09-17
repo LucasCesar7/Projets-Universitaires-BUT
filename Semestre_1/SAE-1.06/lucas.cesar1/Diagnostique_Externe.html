@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open AI</title>
+    <link rel="stylesheet" href="Diagnostique_Externe.css" >
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    >
+  </head>
+  <body>
+    <header id="chevron-up-link">
+      <nav>
+        <ul class="menu">
+          <li class="logo">
+            <a href="index.html"
+              ><img src="Assets/Image/openai_logo.png" alt="logo"
+            ></a>
+          </li>
+          <li>
+            <a href="Diagnostique_Interne.html">Diagnostique Interne</a>
+            <ul class="sousmenu">
+              <li><a href="Diagnostique_Interne.html#SWOT">SWOT</a></li>
+              <li><a href="Diagnostique_Interne.html#RSE">RSE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="Diagnostique_Externe.html">Diagnostique Externe</a>
+            <ul class="sousmenu">
+              <li><a href="Diagnostique_Externe.html#PORTER">PORTER</a></li>
+              <li><a href="Diagnostique_Externe.html#PESTEL">PESTEL</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="A_propos_de_nous.html">À propos de nous</a>
+            <ul class="sousmenu">
+              <li><a href="A_propos_de_nous.html#demande">DEMANDE</a></li>
+              <li>
+                <a href="A_propos_de_nous.html#concurrence">CONCURRENCE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="recherche">
+            <input type="text">
+            <i class="bx bx-search"></i>
+          </li>
+          <li class="connexion"><a href="Connexion.html">Se connecter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="diagnostique">
+        <h1>Diagnostique Externe</h1>
+        <p>
+          Analyse approfondie des opportunités, menaces et dynamiques
+          concurrentielles de notre entreprise selon les cadres PESTEL et les 5
+          forces de Porter.
+        </p>
+      </section>
+      <section id="inporter" class="porter">
+        <h2 id="PORTER">Analyse Porter</h2>
+        <div class="table-container">
+          <table class="table table-striped table-hover table-bordered">
+            <thead>
+              <tr>
+                <th colspan="5">Les 5 Forces de Porter</th>
+              </tr>
+              <tr>
+                <th>Concurrents actuels</th>
+                <th>Pouvoir des fournisseurs</th>
+                <th>Pouvoir des clients</th>
+                <th>Nouveaux entrants</th>
+                <th>Produits de substitution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Concurrents actuels">
+                  Google (chatbot Gemini) rivalise avec OpenAI grâce à ses ressources financières massives. <br>
+                  Google a déclaré une "alerte rouge" face à ChatGPT, mettant en avant la pression concurrentielle.
+                </td>
+                <td data-label="Pouvoir des fournisseurs">
+                  NVIDIA (croissance 122 %, 30 Mds USD, avril-juillet 2023) fournit les GPU, et Microsoft Azure gère le cloud. <br>
+                  OpenAI et NVIDIA sont interdépendants.
+                </td>
+                <td data-label="Pouvoir des clients">
+                  OpenAI collabore avec des entreprises comme Apple, qui utilise son IA pour ses produits, influençant crédibilité et visibilité. <br>
+                  Les secteurs clés incluent la santé et les sciences de la vie.
+                </td>
+                <td data-label="Nouveaux entrants">
+                  Accès limité à l’IA : compétences avancées et investissements massifs requis. <br>
+                  Nouveaux acteurs peinent à rivaliser avec OpenAI et Google.
+                </td>
+                <td data-label="Produits de substitution">
+                  Produits alternatifs présents, mais l’IA pourrait devenir irremplaçable. <br>
+                  IA spécialisée (médecine, finance) : opportunité ou risque pour OpenAI.
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="5">
+                  Les analyses montrent que la position concurrentielle d'OpenAI est solide, mais dépend de ses partenariats clés (NVIDIA, Microsoft Azure) et de l'évolution de l'IA spécialisée.
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+      <section id="inpestel" class="pestel">
+        <h2 id="PESTEL">Analyse Pestel</h2>
+        <div class="container">
+          <div class="box">
+            <h2>Politique</h2>
+            <p>
+              Les tensions politiques peuvent pousser les investisseurs à réfléchir avant d’investir. La stabilité politique des États-Unis influence les conditions d’OpenAI. Les relations internationales jouent un rôle crucial dans l’accès à leur technologie.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Économique</h2>
+            <p>
+              OpenAI propose des services payants, influencés par la croissance économique et le coût élevé des data centers (énergie, stockage). Le chômage peut freiner les investissements en R&D.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Socio-culturel</h2>
+            <p>
+              Les projets d’OpenAI (ChatGPT, DALL-E) impactent l’éducation et la créativité. Une démographie croissante encourage l’adoption de l’IA, mais les zones rurales restent défavorisées.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Technologique</h2>
+            <p>
+              Les risques de cybersécurité augmentent avec l’évolution technologique. OpenAI doit garantir la sécurité des données utilisateurs. Les ordinateurs quantiques offrent des avantages mais aussi des risques.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Écologique</h2>
+            <p>
+              En Europe, des lois strictes régulent l’énergie des data centers. L’IA peut prédire la consommation énergétique, permettant des ajustements en temps réel.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Légal</h2>
+            <p>
+              Le RGPD impose des règles strictes sur les données. L’AI Act (2024) régule les abus liés à l’IA, abordant les responsabilités et la neutralité des modèles.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer>
+      <section class="section5">
+        <h2 class="cacher">Footer1</h2>
+        <nav>
+          <ul>
+            <li id="section5-reseaux-sociaux">
+              Réseaux Sociaux <br >
+              <div id="section5-reseaux-sociaux-icones">
+                <a
+                  href="https://www.instagram.com/openai/?hl=en"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/OpenAI" target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/openai"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </li>
+            <li class="section5-li">
+              <a href="Diagnostique_Interne.html">Diagnostic interne</a>
+            </li>
+            <li class="section5-li">
+              <a href="Diagnostique_Externe.html">Diagnostic externe</a>
+            </li>
+            <li class="section5-li">
+              <a href="A_propos_de_nous.html">À propos de nous</a>
+            </li>
+            <li>
+              <a href="index.html">
+                <img src="Assets/Image/openai_logo.png" alt="" >
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div id="section5-chevron-up">
+          <a href="#chevron-up-link">
+            <i
+              id="chevron-icon"
+              class="fa-solid fa-chevron-up fa-beat-fade"
+            ></i>
+          </a>
+        </div>
+      </section>
+      <section class="section6">
+        <h2 class="cacher">Footer2</h2>
+        <div>
+          <p>© Copyright  - OpenAI. All rights reserved</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

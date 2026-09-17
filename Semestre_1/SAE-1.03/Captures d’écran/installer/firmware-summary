@@ -1,0 +1,8 @@
+#Package                         Component           Reason
+firmware-iwlwifi                 non-free-firmware   dmesg
+firmware-realtek                 non-free-firmware   dmesg
+firmware-iwlwifi                 non-free-firmware   modalias
+firmware-misc-nonfree            non-free-firmware   modalias
+firmware-realtek                 non-free-firmware   modalias
+firmware-sof-signed              non-free-firmware   modalias
+intel-microcode                  non-free-firmware   cpu

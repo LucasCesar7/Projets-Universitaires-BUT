@@ -1,0 +1,10 @@
+{
+  "folders": [],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Cours HTML",
+    "files.associations": {
+      "stdio.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+  }
+}

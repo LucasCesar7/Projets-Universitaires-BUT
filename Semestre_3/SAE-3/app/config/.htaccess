@@ -1,0 +1,15 @@
+
+<Files ".env">
+    Require all denied
+</Files>
+
+<Files "config.php">
+    Require all denied
+</Files>
+
+<Files "Env.php">
+    Require all denied
+</Files>
+
+# Interdire la liste des fichiers du dossier
+Options -Indexes

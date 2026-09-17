@@ -1,0 +1,12 @@
+
+# Activer le module de réécriture
+RewriteEngine On
+
+# BLOQUER tous les accès HTTP directs aux images
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|webp|svg|ico)$ [NC]
+RewriteRule ^ - [F,L]
+
+# Bloquer l'indexation
+Options -Indexes
+Require all denied

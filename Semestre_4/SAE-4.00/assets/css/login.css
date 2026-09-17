@@ -1,0 +1,375 @@
+/* STYLES POUR LA PAGE DE CONNEXION - SOCIAL MEDIA AWARDS */
+
+/* Variables CSS - Charte Graphique */
+:root {
+    --principal: #4FBDAB;
+    --principal-dark: #45a999;
+    --secondary: #FF5A79;
+    --tertiary: #FFD166;
+    --white: #ffffff;
+    --dark: #2c3e50;
+    --gray: #6c757d;
+    --light-gray: #f8f9fa;
+}
+
+/* RESET ET CONFIGURATION GÉNÉRALE */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTAINER PRINCIPAL */
+.login-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 160px);
+}
+
+/* EN-TÊTE DE CONNEXION */
+.login-header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeInDown 0.6s ease;
+}
+
+.login-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.login-header h1 {
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login-header p {
+    color: var(--gray);
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* CARTE DE CONNEXION */
+.login-card {
+    background: var(--white);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeInUp 0.8s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--principal), var(--secondary), var(--tertiary));
+}
+
+/* ALERTES */
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.alert-error {
+    background: rgba(255, 90, 121, 0.1);
+    border: 1px solid rgba(255, 90, 121, 0.2);
+    color: var(--secondary);
+}
+
+.alert-info {
+    background: rgba(79, 189, 171, 0.1);
+    border: 1px solid rgba(79, 189, 171, 0.2);
+    color: var(--principal);
+}
+
+.alert i {
+    font-size: 1.2rem;
+}
+
+/* FORMULAIRE */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: var(--dark);
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-group label i {
+    color: var(--principal);
+    width: 20px;
+}
+
+.form-group input {
+    padding: 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--principal);
+    box-shadow: 0 0 0 3px rgba(79, 189, 171, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #adb5bd;
+}
+
+/* OPTIONS DU FORMULAIRE */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--gray);
+}
+
+.checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: var(--principal);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: var(--principal-dark);
+    text-decoration: underline;
+}
+
+/* BOUTON DE CONNEXION */
+.btn-primary {
+    background: var(--principal);
+    color: var(--white);
+    border: none;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background: var(--principal-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(79, 189, 171, 0.3);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* PIED DE PAGE DE CONNEXION */
+.login-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #e9ecef;
+}
+
+.login-footer p {
+    color: var(--gray);
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+.login-footer a {
+    color: var(--principal);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.login-footer a:hover {
+    color: var(--principal-dark);
+    text-decoration: underline;
+}
+
+.register-link {
+    color: var(--principal);
+    font-weight: 600;
+}
+
+/* SECTION SÉCURITÉ */
+.login-security {
+    margin-top: 40px;
+    text-align: center;
+    max-width: 500px;
+    animation: fadeIn 0.8s ease 0.4s forwards;
+    opacity: 0;
+}
+
+.login-security h3 {
+    color: var(--dark);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.login-security ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login-security li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.login-security li i {
+    color: var(--principal);
+}
+
+/* ANIMATIONS */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* DESIGN RESPONSIVE */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px 15px;
+        min-height: calc(100vh - 80px);
+    }
+    
+    .login-header h1 {
+        font-size: 2rem;
+    }
+    
+    .login-card {
+        padding: 40px 25px;
+    }
+    
+    .login-security ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .login-card {
+        padding: 30px 20px;
+    }
+    
+    .form-options {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .login-footer p {
+        font-size: 0.9rem;
+    }
+}
